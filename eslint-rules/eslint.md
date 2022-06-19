@@ -1,13 +1,15 @@
----
-title: "eslint"
-free: false
----
+# eslint
 
-https://www.npmjs.com/package/eslint
-https://github.com/eslint/eslint
-https://eslint.org/
+[npm] [github] [web]
+version: 8.18.0
 
-## array-callback-return
+[npm]: https://www.npmjs.com/package/eslint
+[github]: https://github.com/eslint/eslint
+[web]: https://eslint.org/
+
+## [array-callback-return]
+
+[array-callback-return]: 
 
 配列の `map` 系メソッドのコールバックで `return` を強制する
 
