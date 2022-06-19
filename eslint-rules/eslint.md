@@ -7,9 +7,7 @@ version: 8.18.0
 [github]: https://github.com/eslint/eslint
 [web]: https://eslint.org/
 
-## [array-callback-return]
-
-[array-callback-return]: 
+## array-callback-return
 
 配列の `map` 系メソッドのコールバックで `return` を強制する
 
@@ -543,7 +541,8 @@ version: 8.18.0
 
 使っていない変数を禁止する
 
-- オブジェクトオプション
+- `"all" | "local"` またはオブジェクトオプション
+  文字列の場合は `"vars"` オプションになる
   - `"vars": "all" | "local"`
     デフォルト: `"all"`
     - `"all"`: グローバル変数を含めて検証する
@@ -648,41 +647,147 @@ version: 8.18.0
 | `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
-# Suggestions
-
-https://eslint.org/docs/rules/#suggestions
-
 ## accessor-pairs
 
-ゲッター関数とセッター関数が対になるようにする
+ゲッター関数とセッター関数が対になるように強制する
+
+- オブジェクトオプション
+  - `"setWithoutGet": boolean`
+    デフォルト: `true`
+    ゲッター関数のないセッター関数を禁止する
+  - `"getWithoutSet": boolean`
+    デフォルト: `false`
+    セッター関数のないゲッター関数を禁止する
+  - `"enforceForClassMembers": boolean`
+    デフォルト: `true`
+    クラス宣言を検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## arrow-body-style
 
-アロー関数の本体に中括弧をつける
+アロー関数の本体にブロック文を強制する
+
+- `"always" | "as-needed" | "never"`
+  - `"always"`: 常に強制する
+  - `"as-needed"`: 省略できる場合は禁止する
+  - `"never"`: 常に禁止する
+- オブジェクトオプション
+  - `"requireReturnForObjectLiteral": boolean`
+    デフォルト: `false`
+    `"as-needed"` で戻り値がオブジェクトリテラルの場合に強制する
+
+| extends      | value   |
+| ------------ | ------- |
+| `eslint:all` | `error` |
 
 ## block-scoped-var
 
-ブロックスコープの中で `var` 宣言した変数をブロックスコープの外で使わない
+ブロック文の中で `var` 宣言した変数を外側で使用を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## camelcase
 
-命名をキャメルケースにする
+キャメルケースを強制する
+
+- オブジェクトオプション
+  - `"properties": "always" | "never"`
+    デフォルト: `"always"`
+    - `"always"`: プロパティ名を検証する
+    - `"never"`: プロパティ名を検証しない
+  - `"ignoreDestructuring": boolean`
+    デフォルト: `false`
+    分割代入の変数名にスネークケースを許可する
+  - `"ignoreImports": boolean`
+    デフォルト: `false`
+    名前付きインポートの変数名にスネークケースを許可する
+  - `"ignoreGlobals": boolean`
+    デフォルト: `false`
+    グローバル変数の変数名にスネークケースを許可する
+  - `"allow": string[]`
+    デフォルト: `[]`
+    パターンにマッチする変数名を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## capitalized-comments
 
-コメントの最初の文字を大文字で書く
+最初の文字が小文字で始まるコメントを禁止する
+設定コメントとURLは許可する
+
+- `"always" | "never"`
+  - `"always"`: 小文字を禁止する
+  - `"never"`: 大文字を禁止する
+- オブジェクトオプション
+  - `"ignorePattern": string`
+    デフォルト: `false`
+    先頭の単語がパターンにマッチするコメントを許可する
+  - `"ignoreInlineComments": boolean`
+    デフォルト: `false`
+    行の中にあるコメントを許可する
+  - `"ignoreConsecutiveComments": boolean`
+    デフォルト: `false`
+    別の行コメントの直後にある行コメントを許可する
+  - `"line": object`
+    デフォルト: `{}`
+    行コメントのみのルールを設定する
+  - `"block": object`
+    デフォルト: `{}`
+    ブロックコメントのみのルールを設定する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## class-methods-use-this
 
-クラスの静的でないメソッドの中で必ず `this` を使う
+クラスで `this` を使わないメソッドを禁止する
+
+- オブジェクトオプション
+  - `"exceptMethods": string[]`
+    デフォルト: `[]`
+    指定したメソッド名を許可する
+  - `"enforceForClassFields": boolean`
+    デフォルト: `true`
+    クラスフィールドの関数式を検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## complexity
 
-関数の循環的複雑度の上限を設定する
+関数の循環的複雑度を制限する
+
+- `number` またはオブジェクトオプション
+  数値の場合は `"max"` オプションになる
+  - `"max": number`
+    デフォルト: `20`
+    許可する最大の循環的複雑度
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## consistent-return
 
-同じ関数の中で `return` が値を返すか返さないかを統一する
+同じ関数で `return` で値を指定するか統一する
+
+- オブジェクトオプション
+  - `"treatUndefinedAsUnspecified": boolean`
+    デフォルト: `false`
+    暗黙的な `return` と明示的な `return undefined` を同時に使用を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## consistent-this
 
