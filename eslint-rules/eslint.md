@@ -11,7 +11,7 @@ version: 8.18.0
 
 配列の `map` 系メソッドのコールバックで `return` を強制する
 
-- オブジェクトオプション
+- `object`
   - `"allowImplicit" : boolean`
     デフォルト: `false`
     暗黙の `return undefined` を許可する
@@ -45,7 +45,7 @@ version: 8.18.0
 
 クラスやオブジェクトのゲッター関数で `retrun` を強制する
 
-- オブジェクトオプション
+- `object`
   - `"allowImplicit": boolean`
     デフォルト: `false`
     暗黙の `return undefined` を許可する
@@ -125,7 +125,7 @@ version: 8.18.0
 
 `if` 文と三項演算子の条件式で常に `true` `false` に評価される式を禁止する
 
-- オブジェクトオプション
+- `object`
   - `"checkLoops": boolean`
     デフォルト: `true`
     `for` `while` 文の条件式で常に `true` `false` に評価される式を禁止する
@@ -210,7 +210,7 @@ version: 8.18.0
 
 `import` 文で同じモジュールからのインポートを禁止する
 
-- オブジェクトオプション
+- `object`
   - `"includeExports": boolean`
     デフォルト: `false`
     モジュールの重複に `export-from` を含める
@@ -250,7 +250,7 @@ version: 8.18.0
 
 `switch` 文の `case` 節でフォールスルーを禁止する
 
-- オブジェクトオプション
+- `object`
   - `"commentPattern": string`
     デフォルト: `"falls?\s?through"`
     パターンにマッチするコメントがある場合はフォールスルーを許可する
@@ -296,7 +296,7 @@ version: 8.18.0
 
 `RegExp` コンストラクターで不正な正規表現を禁止する
 
-- オブジェクトオプション
+- `object`
   - `"allowConstructorFlags": string[]`
     デフォルト: `[]`
     コンストラクターの第二引数で許可するフラグのリスト
@@ -310,7 +310,7 @@ version: 8.18.0
 
 タブとスペース以外の空白文字を禁止する
 
-- オブジェクトオプション
+- `object`
   - `"skipStrings": boolean`
     デフォルト: `true`
     文字列リテラルで他の空白文字を許可する
@@ -386,7 +386,7 @@ version: 8.18.0
 
 同じ変数に再代入を禁止する
 
-- オブジェクトオプション
+- `object`
   - `"props": boolean`
     デフォルト: `true`
     同じオブジェクトの同じプロパティに再代入を禁止する
@@ -443,7 +443,7 @@ version: 8.18.0
 
 宣言されていない変数を禁止する
 
-- オブジェクトオプション
+- `object`
   - `"typeof": boolean`
     デフォルト: `false`
     `typeof` 演算子で宣言されていない変数を禁止する
@@ -483,7 +483,7 @@ version: 8.18.0
 
 一回までしか実行しないループを禁止する
 
-- オブジェクトオプション
+- `object`
   - `"ignore": ("WhileStatement" | "DoWhileStatement" | "ForStatement" | "ForInStatement" | "ForOfStatement")[]`
     デフォルト: `[]`
     指定されたループ文で許可する
@@ -505,7 +505,7 @@ version: 8.18.0
 
 `in` `instanceof` 演算子の左辺で `!` 演算子を禁止する
 
-- オブジェクトオプション
+- `object`
   - `"enforceForOrderingRelations": boolean`
     デフォルト: `false`
     `<` `>` `<=` `>=` 演算子の左辺で `!` 演算子を禁止する
@@ -519,7 +519,7 @@ version: 8.18.0
 
 `undefined` が許可されていない式で `?.` 演算子を禁止する
 
-- オブジェクトオプション
+- `object`
   - `"disallowArithmeticOperators": boolean`
     デフォルト: `false`
     算術演算子の式で `?.` 演算子を禁止する
@@ -541,7 +541,7 @@ version: 8.18.0
 
 使っていない変数を禁止する
 
-- `"all" | "local"` またはオブジェクトオプション
+- `"all" | "local" | object`
   文字列の場合は `"vars"` オプションになる
   - `"vars": "all" | "local"`
     デフォルト: `"all"`
@@ -581,7 +581,7 @@ version: 8.18.0
 
 変数を定義する前に使うことを禁止する
 
-- オブジェクトオプション
+- `object`
   - `"functions": boolean`
     デフォルト: `true`
     関数宣言を検証する
@@ -620,7 +620,7 @@ version: 8.18.0
 
 変数が `NaN` かどうか調べるために `isNaN()` 関数の使用を強制する
 
-- オブジェクトオプション
+- `object`
   - `"enforceForSwitchCase": boolean`
     デフォルト: `true`
     `switch` 文で `switch (NaN)` `case NaN` を禁止する
@@ -637,7 +637,7 @@ version: 8.18.0
 
 `typeof` 演算子は `"undefined"` `"object"` `"boolean"` `"number"` `"string"` `"function"` `"symbol"` `"bigint"` との比較に強制する
 
-- オブジェクトオプション
+- `object`
   - `"requireStringLiterals": boolean`
     デフォルト: `false`
     `typeof` 演算子との比較は文字列リテラルか別の `typeof` 演算子に強制する
@@ -651,7 +651,7 @@ version: 8.18.0
 
 ゲッター関数とセッター関数が対になるように強制する
 
-- オブジェクトオプション
+- `object`
   - `"setWithoutGet": boolean`
     デフォルト: `true`
     ゲッター関数のないセッター関数を禁止する
@@ -674,7 +674,7 @@ version: 8.18.0
   - `"always"`: 常に強制する
   - `"as-needed"`: 省略できる場合は禁止する
   - `"never"`: 常に禁止する
-- オブジェクトオプション
+- `object`
   - `"requireReturnForObjectLiteral": boolean`
     デフォルト: `false`
     `"as-needed"` で戻り値がオブジェクトリテラルの場合に強制する
@@ -695,7 +695,7 @@ version: 8.18.0
 
 キャメルケースを強制する
 
-- オブジェクトオプション
+- `object`
   - `"properties": "always" | "never"`
     デフォルト: `"always"`
     - `"always"`: プロパティ名を検証する
@@ -725,7 +725,7 @@ version: 8.18.0
 - `"always" | "never"`
   - `"always"`: 小文字を禁止する
   - `"never"`: 大文字を禁止する
-- オブジェクトオプション
+- `object`
   - `"ignorePattern": string`
     デフォルト: `false`
     先頭の単語がパターンにマッチするコメントを許可する
@@ -750,7 +750,7 @@ version: 8.18.0
 
 クラスで `this` を使わないメソッドを禁止する
 
-- オブジェクトオプション
+- `object`
   - `"exceptMethods": string[]`
     デフォルト: `[]`
     指定したメソッド名を許可する
@@ -766,7 +766,7 @@ version: 8.18.0
 
 関数の循環的複雑度を制限する
 
-- `number` またはオブジェクトオプション
+- `number | object`
   数値の場合は `"max"` オプションになる
   - `"max": number`
     デフォルト: `20`
@@ -780,7 +780,7 @@ version: 8.18.0
 
 同じ関数で `return` で値を指定するか統一する
 
-- オブジェクトオプション
+- `object`
   - `"treatUndefinedAsUnspecified": boolean`
     デフォルト: `false`
     暗黙的な `return` と明示的な `return undefined` を同時に使用を許可する
@@ -791,43 +791,151 @@ version: 8.18.0
 
 ## consistent-this
 
-現在の `this` をキャプチャーするためのエイリアスを統一する
+現在の `this` をキャプチャーするためのエイリアス名を統一する
+
+- `string`
+  デフォルト: `"that"`
+  指定されたエイリアス名を強制する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## curly
 
-`if` `else` `for` `while` 文でブロック文を使う
+`if` `else` `for` `while` 文でブロック文を強制する
+
+- `"multi" | "multi-line" | "multi-or-nest"`
+  - `"multi"`: 一つの文の場合は禁止する
+  - `"multi-line"`: 一行の場合は許可する
+  - `"multi-or-nest"`: ネストした文を除いた一つの文の場合は禁止する
+- `"consistent"`
+  一つの `if-else` 文でブロック文を使う場合は統一する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## default-case
 
-`switch` 文の中で `default` 節を書く
+`switch` 文の中で `default` 節を強制する
+
+- `object`
+  - `"commentPattern": string`
+    デフォルト: `"^no default$"`
+    パターンにマッチするコメントは `default` 節が無いことを許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## default-case-last
 
-`switch` 文の中で `default` 節は最後に書く
+`switch` 文の中で `default` 節は最後に強制する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## default-param-last
 
 関数の引数リストでデフォルト引数は最後に書く
 
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+
 ## dot-notation
 
-プロパティアクセサーでブラケット表記法 `[]` の代わりにドット表記法 `.` が使えるなら使う
+プロパティアクセサーでブラケット表記法 `[]` の代わりにドット表記法 `.` を強制する
+
+- `object`
+  - `"allowKeywords": boolean`
+    デフォルト: `true`
+    予約キーワードを許可する
+  - `"allowPattern": string`
+    デフォルト: `""`
+    パターンにマッチしたプロパティ名を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## eqeqeq
 
-等値比較で厳密同値演算子 `===` `!==` を使う
+等値比較で厳密同値演算子 `===` `!==` を強制する
+
+- `"always" | "smart"`
+  - `"always"`: 常に強制する
+  - `"smart"`: リテラル同士、 `typeof` 演算子、 `null` との比較で許可する
+- `object`
+  - `"null": "always" | "never" | "ignore"`
+    デフォルト: `"always"`
+    一つ目のオプションが `"always"` の時に有効
+    - `"always"`: `null` との比較で強制する
+    - `"never"`: `null` との比較で禁止する
+    - `"ignore"`: `null` との比較を検証しない
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## func-name-matching
 
-名前付き `function` 式を変数に代入するとき関数名と変数名を揃える
+名前付き `function` 式を変数に代入するとき関数名と変数名を揃えるよう強制する
+
+- `"always" | "never" | object`
+  デフォルト: `"always"`
+  - `"always"`: 常に強制する
+  - `"never"`: 常に禁止する
+- `object`
+  - `"considerPropertyDescriptor": boolean`
+    デフォルト: `false`
+    `Object.create` `Object.defineProperty` `Object.defineProperties` `Reflect.defineProperty` で検証する
+  - `"includeCommonJSModuleExports": boolean`
+    デフォルト: `false`
+    `module.exports` で検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## func-names
 
-`function` 式を名前付きにする
+名前付き `function` 式を強制する
+
+- `"always" | "as-needed" | "never"`
+  デフォルト: `"always"`
+  - `"always"`: 常に強制する
+  - `"as-needed"`: 自動割り当てされない場合に強制する
+  - `"never"`: 常に禁止する
+- `object`
+  - `"generators": "always" | "as-needed" | "never"`
+    デフォルト: 一つ目のオプションと同じ
+    - `"always"`: 常に強制する
+    - `"as-needed"`: 自動割り当てされない場合に強制する
+    - `"never"`: 常に禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## func-style
 
-関数の定義に `function` 宣言と `function` 式でどちらかに統一する
+関数の定義を `function` 式に強制する
+
+- `"expression" | "declaration"`
+  デフォルト: `"expression"`
+  - `"expression"`: `function` 式に強制する
+  - `"declaration"`: `function` 宣言に強制する
+- `object`
+  - `"allowArrowFunctions": boolean`
+    デフォルト: `false`
+    アロー関数を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## grouped-accessor-pairs
 
