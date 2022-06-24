@@ -939,51 +939,190 @@ version: 8.18.0
 
 ## grouped-accessor-pairs
 
-同じプロパティのゲッター関数とセッター関数を隣り合わせる
+同じプロパティのゲッター関数とセッター関数を隣り合わせることを強制する
+
+- `"anyOrder" | "getBeforeSet" | "setBeforeGet"`
+  デフォルト: `"anyOrder"`
+  - `"anyOrder"`: 順番を検証しない
+  - `"getBeforeSet"`: ゲッター関数をセッター関数の前に強制する
+  - `"setBeforeGet"`: セッター関数をゲッター関数の前に強制する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## guard-for-in
 
-`for-in` ループの中で `Object.prototype.hasOwnProperty` を使ってフィルタリングする
+`for-in` ループの中で `Object.prototype.hasOwnProperty` を強制する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## id-denylist
 
-指定した識別子を使わない
+指定した識別子名を禁止する
+
+- `...string[]`
+  指定した識別子名を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## id-length
 
-識別子の文字数を制限する
+識別子名の文字数を制限する
+
+- `object`
+  - `"min": number`
+    デフォルト: `2`
+    許可する最小の識別子名長さ
+  - `"max": number`
+    デフォルト: `Infinity`
+    許可する最大の識別子名長さ
+  - `"properties": "always" | "never"`
+    デフォルト: `"always"`
+    - `"always"`: オブジェクトのプロパティ名を検証する
+    - `"never"`: オブジェクトのプロパティ名を検証しない
+  - `"exceptions": string[]`
+    デフォルト: `[]`
+    指定した識別子名を許可する
+  - `"exceptionPatterns": string[]`
+    デフォルト: `[]`
+    パターンにマッチした識別子名を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## id-match
 
-識別子を指定した正規表現にマッチするものにする
+パターンにマッチしない識別子名を禁止する
+
+- `string`
+  パターンにマッチしない識別子名を禁止する
+- `object`
+  - `"properties": boolean`
+    デフォルト: `false`
+    オブジェクトのプロパティ名を検証する
+  - `"classFields": boolean`
+    デフォルト: `false`
+    クラスのフィールド名を検証する
+  - `"onlyDeclarations": boolean`
+    デフォルト: `false`
+    変数宣言、関数宣言、クラス宣言のみを検証する
+  - `"ignoreDestructuring": boolean`
+    デフォルト: `false`
+    分割代入の変数名を検証しない
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## init-declarations
 
-変数を宣言した時に初期化する
+変数を宣言した時に初期化を強制する
+
+- `"always" | "naver"`
+  - `"always"`: 常に強制する
+  - `"never"`: `var` `let` 宣言で禁止する
+- `object`
+  - `"ignoreForLoopInit": boolean`
+    デフォルト: `false`
+    `for` 文の初期化式で検証しない
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## max-classes-per-file
 
-１つのファイルでクラス定義の上限を設定する
+１つのファイルあたりのクラス定義数を制限する
+
+- `object`
+  - `"max": number`
+    デフォルト: `1`
+    許可する最大のクラス定義数
+  - `"ignoreExpressions": boolean`
+    デフォルト: `false`
+    クラス式を検証しない
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## max-depth
 
-コードブロックのネスト数の上限を設定する
+コードブロックのネスト数を制限する
+
+- `object`
+  - `"max": number`
+    デフォルト: `4`
+    許可する最大のネスト数
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## max-lines
 
-１つのファイルで行数の上限を設定する
+１つのファイルあたりの行数を制限する
+
+- `object`
+  - `"max": number`
+    デフォルト: `300`
+    許可する最大の行数
+  - `"skipBlankLines": boolean`
+    デフォルト: `false`
+    空白のみの行を検証しない
+  - `"skipComments": boolean`
+    デフォルト: `false`
+    コメントのみの行を検証しない
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## max-lines-per-function
 
-関数の中で行数の上限を設定する
+1つの関数あたりの行数を制限する
+
+- `number | object`
+  数値の場合は "max" オプションになる
+  - `"max": number`
+    デフォルト: `50`
+    許可する最大の行数
+  - `"skipBlankLines": boolean`
+    デフォルト: `false`
+    空白のみの行を検証しない
+  - `"skipComments": boolean`
+    デフォルト: `false`
+    コメントのみの行を検証しない
+  - `"IIFEs": boolean`
+    デフォルト: `false`
+    即時実行関数式を検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## max-nested-callbacks
 
-コールバック関数のネスト数の上限を設定する
+コールバック関数のネスト数を制限する
+
+- `object`
+  - `"max": number`
+    デフォルト: `10`
+    許可する最大のネスト数
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## max-params
 
-関数の引数の数の上限を設定する
+関数定義で仮引数の数を制限する
 
 ## max-statements
 
