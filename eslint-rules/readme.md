@@ -1,1 +1,1 @@
-- [eslint](./eslint.md)
+- [eslint](./eslint.md) @ 8.18.0
