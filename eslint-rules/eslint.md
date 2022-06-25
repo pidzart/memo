@@ -1038,7 +1038,7 @@ version: 8.18.0
 
 ## max-classes-per-file
 
-１つのファイルあたりのクラス定義数を制限する
+一つのファイルあたりのクラス定義数を制限する
 
 - `object`
   - `"max": number`
@@ -1067,7 +1067,7 @@ version: 8.18.0
 
 ## max-lines
 
-１つのファイルあたりの行数を制限する
+一つのファイルあたりの行数を制限する
 
 - `object`
   - `"max": number`
@@ -1086,7 +1086,7 @@ version: 8.18.0
 
 ## max-lines-per-function
 
-1つの関数あたりの行数を制限する
+一つの関数あたりの行数を制限する
 
 - `number | object`
   数値の場合は "max" オプションになる
@@ -1124,105 +1124,323 @@ version: 8.18.0
 
 関数定義で仮引数の数を制限する
 
+- `object`
+  - `"max": number`
+    デフォルト: `3`
+    許可する最大の仮引数の数
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+
 ## max-statements
 
-関数の中で文の数の上限を設定する
+一つの関数あたりの文の数を制限する
+
+- `object`
+  - `"max": number`
+    デフォルト: `10`
+    許可する最大の文の数
+  - `"ignoreTopLevelFunctions": boolean`
+    デフォルト: `false`
+    トップレベル関数を検証しない
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## multiline-comment-style
 
 複数行のコメントの書き方を統一する
 
+- `"starred-block" | "bare-block" | "separate-lines"`
+  デフォルト: `"starred-block"`
+  - `"starred-block"`: 各行の前に `*` をつけたブロックコメントを強制する
+  - `"bare-block"`: 各行の前に `*` をつけないブロックコメントを強制する
+  - `"separate-lines"`: 連続する行コメントを強制する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+
 ## new-cap
 
-`new` 演算子で使うコンストラクターは大文字で始める
+`new` 演算子で使う関数は先頭を大文字に強制する
+
+- `object`
+  - `"newIsCap": boolean`
+    デフォルト: `true`
+    `new` 演算子で使う関数は先頭を大文字に強制する
+  - `"capIsNew": boolean`
+    デフォルト: `true`
+    先頭が大文字の関数は `new` 演算子を強制する
+  - `"newIsCapExceptions": string[]`
+    デフォルト: `[]`
+    指定した関数名は先頭が小文字の `new` 演算子を許可する
+  - `"newIsCapExceptionPattern": string`
+    デフォルト: `""`
+    パターンにマッチした関数名は先頭が小文字の `new` 演算子を許可する
+  - `"capIsNewExceptions": string[]`
+    デフォルト: `[]`
+    指定した関数名は `new` 演算子でない先頭が大文字を許可する
+  - `"capIsNewExceptionPattern": string`
+    デフォルト: `""`
+    パターンにマッチした関数名は `new` 演算子でない先頭が大文字を許可する
+  - `"properties": boolean`
+    デフォルト: `true`
+    オブジェクトプロパティを検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-alert
 
-`alert` `confirm` `prompt` 関数を使わない
+`alert` `confirm` `prompt` 関数を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-array-constructor
 
-`Array` コンストラクターを使わない
+組み込み `Array` オブジェクトで値のリストのコンストラクターを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-bitwise
 
-ビット演算子を使わない
+ビット演算子を禁止する
+
+- `object`
+  - `"allow": string[]`
+    デフォルト: `[]`
+    指定した演算子を許可する
+  - `"int32Hint": boolean`
+    デフォルト: `false`
+    整数にキャストする `| 0` を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-caller
 
-`arguments.caller` `arguments.callee` を使わない
+`arguments.caller` `arguments.callee` を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-case-declarations
 
 `switch` 文の `case` 節で変数の宣言をしない
 
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
+
 ## no-confusing-arrow
 
-比較演算子と間違われるようなアロー演算子を使わない
+比較演算子と間違われるアロー演算子を禁止する
+
+- `object`
+  - `"allowParens": boolean`
+    デフォルト: `true`
+    関数の本体を `()` で囲った場合に許可する
+  - `"onlyOneSimpleParam": boolean`
+    デフォルト: `false`
+    仮引数が1つの識別子のみの場合のみ検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-console
 
-`console` オブジェクトを使わない
+`console` オブジェクトのメソッドを禁止する
+
+- `object`
+  - `"allow": string[]`
+    デフォルト: `[]`
+    指定したメソッド名を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-continue
 
-`continue` 文を使わない
+`continue` 文を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-delete-var
 
-`delete` 文で変数を削除しない
+`delete` 文で変数の削除を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-div-regex
 
-除算演算子と間違われるような正規表現リテラルを使わない
+除算演算子と間違われる正規表現リテラルを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-else-return
 
-`if` 文で `return` した後に `else` 文を使わない
+`if` 文で `return` した後に `else` 節を禁止する
+
+- `object`
+  - `"allowElseIf": boolean`
+    デフォルト: `true`
+    `else-if` 節を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-empty
 
-空のブロック文を書かない
+空のブロック文を禁止する
+
+- `object`
+  - `"allowEmptyCatch": boolean`
+    デフォルト: `false`
+    `catch` 節を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-empty-function
 
-空の関数を書かない
+空の関数を禁止する
+
+- `object`
+  - `"allow": string[]`
+    デフォルト: `[]`
+    指定した関数を許可する
+    - `"functions"`: 関数
+    - `"arrowFunctions"`: アロー関数
+    - `"generatorFunctions"`: ジェネレーター関数
+    - `"methods"`: メソッド
+    - `"generatorMethods"`: ジェネレーターメソッド
+    - `"getters"`: ゲッター関数
+    - `"setters"`: セッター関数
+    - `"constructors"`: コンストラクター
+    - `"asyncFunctions"`: 非同期関数
+    - `"asyncMethods"`: 非同期メソッド
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-eq-null
 
-`null` と比較 `== null` `!= null` をしない
+`null` との比較 `== null` `!= null` を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-eval
 
-`eval()` 関数を使わない
+`eval()` 関数を禁止する
+
+- `object`
+  - `"allowIndirect": boolean`
+    デフォルト: `false`
+    間接的な呼び出しを許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-extend-native
 
-組み込みオブジェクトを拡張しない
+組み込みオブジェクトのプロトタイプ拡張を禁止する
+
+- `object`
+  - `"exceptions": string[]`
+    デフォルト: `[]`
+    指定したオブジェクトのプロトタイプ拡張を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-extra-bind
 
-`this` を使わない関数やアロー関数で不要な `.bind()` メソッドの呼び出しをしない
+関数の不要な `.bind()` メソッドを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-extra-boolean-cast
 
-条件式で不要な論理型へ型変換をしない
+不要な論理型への型変換を禁止する
+
+- `object`
+  - `"enforceForLogicalOperands": boolean`
+    デフォルト: `false`
+    論理演算子の中の不要な型変換を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-extra-label
 
-ネストされていないループや `switch` 文で不要なラベルを使わない
+不要なラベルを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-extra-semi
 
-不要なセミコロンを書かない
+不要なセミコロンを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-floating-decimal
 
-小数は常にドットの前後ともに数字を書く
+浮動小数点数リテラルは小数点の前後の数字の省略を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-global-assign
 
 組み込みのグローバル変数に代入しない
+
+- `object`
+  - `"exceptions": string[]`
+    デフォルト: `[]`
+    指定したオブジェクトの代入を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-implicit-coercion
 
