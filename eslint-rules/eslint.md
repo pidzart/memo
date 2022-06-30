@@ -1444,51 +1444,156 @@ version: 8.18.0
 
 ## no-implicit-coercion
 
-型変換のショートハンドを使わない
+型変換のショートハンドを禁止する
+
+- `object`
+  - `"boolean": boolean`
+    デフォルト: `true`
+    `boolean` 型へのショートハンドを禁止する
+  - `"number": boolean`
+    デフォルト: `true`
+    `number` 型へのショートハンドを禁止する
+  - `"string": boolean`
+    デフォルト: `true`
+    `string` 型へのショートハンドを禁止する
+  - `"disallowTemplateShorthand": boolean`
+    デフォルト: `false`
+    テンプレートリテラルを使った `string` 型へのショートハンドを禁止する
+  - `"allow": ("~" | "!!" | "+" | "*")[]`
+    デフォルト: `[]`
+    指定された演算子を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-implicit-globals
 
-グローバル変数を宣言しない
+グローバルの `var` `finction` 宣言を禁止する
+
+- `object`
+  - `"lexicalBindings": boolean`
+    デフォルト: `false`
+    グローバルの `const` `let` `class` 宣言を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-implied-eval
 
-`eval()` のような関数 `setTimeout()` `setInterval()` `execScript()` を文字列を渡して使わない
+`eval()` のような関数 `setTimeout()` `setInterval()` `execScript()` の文字列で呼び出しを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-inline-comments
 
-コードと同じ行にコメントを書かない
+コードと同じ行のコメントを禁止する
+
+- `object`
+  - `"ignorePattern": string`
+    デフォルト: `""`
+    パターンにマッチしたコメントを許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-invalid-this
 
-`this` が `undefined` の可能性があるとき `this` を使わない
+`this` が `undefined` の可能性があるときは禁止する
+
+- `object`
+  - `"capIsConstructor": boolean`
+    デフォルト: `true`
+    大文字で始まる関数はコンストラクターとして検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-iterator
 
-オブジェクトの `__iterator__` プロパティを使わない
+オブジェクトの `__iterator__` プロパティを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-label-var
 
-変数とラベルを同じ名前にしない
+スコープ内で変数とラベルの共有する名前を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-labels
 
-ラベル付き文を使わない
+ラベル付き文とラベル付き `break` `continue` 文を禁止する
+
+- `object`
+  - `"allowLoop": boolean`
+    デフォルト: `false`
+    ループ文のラベルを許可する
+  - `"allowSwitch": boolean`
+    デフォルト: `false`
+    `switch` 文のラベルを許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-lone-blocks
 
-不要なブロック文を使わない
+不要なブロック文を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-lonely-if
 
-`else` ブロックの中で `if` 文１つだけ書くことをしない
+`else` 節のブロック文の中でただ一つの `if` 文を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-loop-func
 
-ループの中で外側の変数を使った関数を定義しない
+ループの中で安全でない参照の関数を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-magic-numbers
 
-マジックナンバーを使わない
+マジックナンバーを禁止する
+
+- `object`
+  - `"ignore": (number | string)[]`
+    デフォルト: `[]`
+    指定した `number` `bigint` 数値を許可する
+  - `"ignoreArrayIndexes": boolean`
+    デフォルト: `false`
+    配列の添字を許可する
+  - `"ignoreDefaultValues": boolean`
+    デフォルト: `false`
+    デフォルト値を許可する
+  - `"enforceConst": boolean`
+    デフォルト: `false`
+    値の宣言に `const` 宣言を強制する
+  - `"detectObjects": boolean`
+    デフォルト: `false`
+    オブジェクトリテラルを検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-mixed-operators
 
