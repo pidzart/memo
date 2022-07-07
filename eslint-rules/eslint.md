@@ -1608,41 +1608,75 @@ version: 8.18.0
       ["&&", "||"],
       ["in", "instanceof"],
     ]```
-    指定したグループを許可する
-  - `"ignoreArrayIndexes": boolean`
-    デフォルト: `false`
-    配列の添字を許可する
+    同じグループの演算子を一つの式で混ぜることを禁止する
+  - `"allowSamePrecedence": boolean`
+    デフォルト: `true`
+    同じ優先度の演算子を許可する
+
 | extends      | value   |
 | -------------| ------- |
 | `eslint:all` | `error` |
 
 ## no-multi-assign
 
-連鎖した代入をしない
+連鎖代入を禁止する
+
+- `object`
+  - `"ignoreNonDeclaration": boolean`
+    デフォルト: `false`
+    宣言式でない連鎖代入文を検証しない
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-multi-str
 
-`\` を使用した複数行の文字列を使わない
+改行の前に `\` を使用した複数行の文字列を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-negated-condition
 
-`if-else` や三項演算子で否定的な条件式を使わない
+`if-else` 文や三項演算子で否定的な条件式を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-nested-ternary
 
-三項演算子をネストしない
+ネストした三項演算子を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-new
 
-代入しない所で `new` operators 演算子を使わない
+副作用のために単独で `new` 演算子を使うことを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-new-func
 
-disallow `new` operators with the `Function` object
+`Function` コンストラクターを使って関数を作成することを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-new-object
 
-disallow `Object` constructors
+`Object` コンストラクターを使ってオブジェクトを作成することを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-new-wrappers
 
