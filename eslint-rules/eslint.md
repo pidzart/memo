@@ -1680,135 +1680,418 @@ version: 8.18.0
 
 ## no-new-wrappers
 
-disallow `new` operators with the `String`, `Number`, and `Boolean` objects
+`new` 演算子と `String` `Number` `Boolean` コンストラクターを使ってプリミティブ値のラッパーオブジェクトを作成することを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-nonoctal-decimal-escape
 
-disallow `\8` and `\9` escape sequences in string literals
+文字列リテラルの `\8` `\9` エスケープを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-octal
 
-disallow octal literals
+数値リテラルの `0` で始まる8進数を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-octal-escape
 
-disallow octal escape sequences in string literals
+文字列リテラルの8進数エスケープを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-param-reassign
 
-disallow reassigning `function` parameters
+関数宣言の仮引数への再代入を禁止する
+
+- `object`
+  - `"props": boolean`
+    デフォルト: `false`
+    オブジェクトのプロパティを検証する
+  - `"ignorePropertyModificationsFor": string[]`
+    デフォルト: `[]`
+    指定した識別子の仮引数のプロパティを許可する
+  - `"ignorePropertyModificationsForRegex": string[]`
+    デフォルト: `[]`
+    パターンにマッチした仮引数のプロパティを許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-plusplus
 
-disallow the unary operators `++` and `--`
+`++` `--` 演算子を禁止する
+
+- `object`
+  - `"allowForLoopAfterthoughts": boolean`
+    デフォルト: `false`
+    `for` 文の更新式で許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-proto
 
-disallow the use of the `__proto__` property
+オブジェクトの `__proto__` プロパティを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-redeclare
 
-disallow variable redeclaration
+`var` 宣言での再宣言を禁止する
+
+- `object`
+  - `"builtinGlobals": boolean`
+    デフォルト: `true`
+    組み込みグローバル変数の再宣言を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-regex-spaces
 
-disallow multiple spaces in regular expressions
+正規表現パターンで連続した空白文字を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-restricted-exports
 
-disallow specified names in exports
+指定した識別子名のエクスポートを禁止する
+
+- `object`
+  - `"restrictedNamedExports": string[]`
+    デフォルト: `[]`
+    指定した識別子名のエクスポートを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-restricted-globals
 
-disallow specified global variables
+指定した識別子名のグローバル変数を禁止する
+
+- `...(string | object)[]`
+  指定した識別子名のグローバル変数を禁止する
+  - `"name": string`
+    指定した識別子名のグローバル変数を禁止する
+  - `"message": string`
+    指定した識別子名のグローバル変数を使用したときのカスタムメッセージ
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-restricted-imports
 
-disallow specified modules when loaded by `import`
+指定したモジュールの `import` 文でのインポートを禁止する
+
+- `object | ...(string | object)[]`
+  配列の場合は `"paths"` と同じ
+  - `"paths": (string | object)[]`
+    文字列の場合は `"name"` と同じ
+    - `"name": string`
+      指定したモジュールのインポートを禁止する
+    - `"message": string`
+      カスタムメッセージ
+    - `"importNames": string[]`
+      指定したインポートのみを禁止する
+  - `"patterns": (string | object)[]`
+    文字列の場合は `"group"` と同じ
+    - `"group": string[]`
+      パターンにマッチしたインポートを禁止する
+    - `"message": string`
+      カスタムメッセージ
+    - `"importNames": string[]`
+      指定したインポートのみを禁止する
+    - `"caseSensitive": boolean`
+      デフォルト: `false`
+      大文字と小文字を区別する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-restricted-properties
 
-disallow certain properties on certain objects
+指定したオブジェクトの指定したプロパティを禁止する
+
+- `...object[]`
+  - `"object": string`
+    指定したオブジェクト名のプロパティアクセスを禁止する
+  - `"property": string`
+    指定したプロパティ名のプロパティアクセスを禁止する
+  - `"message": string`
+    カスタムメッセージ
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-restricted-syntax
 
-disallow specified syntax
+指定した構文を禁止する
+
+- `...(string | object)[]`
+  文字列の場合は `"selector"` と同じ
+  - `"selector": string`
+    指定した構文を禁止する
+  - `"message": string`
+    カスタムメッセージ
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-return-assign
 
-disallow assignment operators in `return` statements
+`return` 文で代入を禁止する
+
+- `"expect-parens" | "always"`
+  デフォルト: `"expect-parens"`
+  - `"expect-parens"`: `()` で囲まれている場合は許可する
+  - `"always"`: 常に禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-return-await
 
-disallow unnecessary `return await`
+`return await` を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-script-url
 
-disallow `javascript:` urls
+`javascript:` で始まる文字列を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-sequences
 
-disallow comma operators
+`,` 演算子を `for` 文の初期化式と更新式を除いて禁止する
+
+- `object`
+  - `"allowInParentheses": boolean`
+    デフォルト: `true`
+    `()` で囲まれている場合は許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-shadow
 
-disallow variable declarations from shadowing variables declared in the outer scope
+外のスコープの変数をシャドウイングする宣言を禁止する
+
+- `object`
+  - `"builtinGlobals": boolean`
+    デフォルト: `false`
+    組み込みグローバル変数のシャドウイングを禁止する
+  - `"hoist": "functions" | "all" | "never"`
+    デフォルト: `"functions"`
+    宣言前のシャドウイングを禁止する
+    - `"functions"`: 関数の宣言前のシャドウイングを禁止する
+    - `"all"`: 関数と変数の宣言前のシャドウイングを禁止する
+    - `"never"`: 宣言前のシャドウイングを許可する
+  - `"allow": string[]`
+    デフォルト: `[]`
+    指定した識別子名を許可する
+  - `"ignoreOnInitialization": boolean`
+    デフォルト: `false`
+    変数の初期化式のIIFE関数やコールバックでシャドウイングを許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-shadow-restricted-names
 
-disallow identifiers from shadowing restricted names
+グローバルオブジェクト `undefined` `NaN` `Infinity` `arguments` `eval` をシャドウイングする宣言を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-ternary
 
-disallow ternary operators
+三項演算子を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-throw-literal
 
-disallow throwing literals as exceptions
+`throw` 文でリテラルを投げることを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-undef-init
 
-disallow initializing variables to `undefined`
+`lett `var` 宣言で `undefined` に初期化を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-undefined
 
-disallow the use of `undefined` as an identifier
+識別子名 `undefined` の使用を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-underscore-dangle
 
-disallow dangling underscores in identifiers
+識別子名の端についた下線を禁止する
+
+- `object`
+  - `"allow": string[]`
+    デフォルト: `[]`
+    指定した識別子名を許可する
+  - `"allowAfterThis": boolean`
+    デフォルト: `false`
+    `this` オブジェクトのプロパティ名を許可する
+  - `"allowAfterSuper": boolean`
+    デフォルト: `false`
+    `super` オブジェクトのプロパティ名を許可する
+  - `"allowAfterThisConstructor": boolean`
+    デフォルト: `false`
+    `this.constructor` オブジェクトのプロパティ名を許可する
+  - `"enforceInMethodNames": boolean`
+    デフォルト: `false`
+    クラス宣言のメソッド名を検証する
+  - `"enforceInClassFields": boolean`
+    デフォルト: `false`
+    クラス宣言のフィールド名を検証する
+  - `"allowFunctionParams": boolean`
+    デフォルト: `true`
+    関数宣言の仮引数名を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-unneeded-ternary
 
-disallow ternary operators when simpler alternatives exist
+不必要な三項演算子を禁止する
+
+- `object`
+  - `"defaultAssignment": boolean`
+    デフォルト: `true`
+    デフォルト値のための三項演算子を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-unused-expressions
 
-disallow unused expressions
+未使用の式を禁止する
+
+- `object`
+  - `"allowShortCircuit": boolean`
+    デフォルト: `false`
+    短絡評価のための未使用の式を許可する
+  - `"allowTernary": boolean`
+    デフォルト: `false`
+    短絡評価のための未使用の三項演算子を許可する
+  - `"allowTaggedTemplates": boolean`
+    デフォルト: `false`
+    副作用のための未使用のタグ付きテンプレートリテラルを許可する
+  - `"enforceForJSX": boolean`
+    デフォルト: `false`
+    JSX式を検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-unused-labels
 
-disallow unused labels
+未使用のラベルを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-useless-call
 
-disallow unnecessary calls to `.call()` and `.apply()`
+通常の関数呼び出しに置き換え可能な不必要な `.call()` `.apply()` 呼び出しを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-useless-catch
 
-disallow unnecessary `catch` clauses
+エラーを再び投げるだけの不必要な `catch` 節を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-useless-computed-key
 
-disallow unnecessary computed property keys in objects and classes
+オブジェクトリテラルやクラス宣言でリテラル式を使った不必要な計算プロパティキーを禁止する
+
+- `object`
+  - `"enforceForClassMembers": boolean`
+    デフォルト: `false`
+    クラス宣言とクラス式を検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-useless-concat
 
-disallow unnecessary concatenation of literals or template literals
+文字列リテラルやテンプレートリテラル同士の `+` 演算子による不必要な結合を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-useless-constructor
 
-disallow unnecessary constructors
+不必要なコンストラクターを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-useless-escape
 
