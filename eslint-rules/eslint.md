@@ -2095,39 +2095,141 @@ version: 8.18.0
 
 ## no-useless-escape
 
-disallow unnecessary escape characters
+意味のない文字エスケープを禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## no-useless-rename
 
-disallow renaming import, export, and destructured assignments to the same name
+`import` `export` 文と分割代入で同じ名前への意味のない名前変更を禁止する
+
+- `object`
+  - `"ignoreImport": boolean`
+    デフォルト: `false`
+    `import` 文を検証しない
+  - `"ignoreExport": boolean`
+    デフォルト: `false`
+    `export` 文を検証しない
+  - `"ignoreDestructuring": boolean`
+    デフォルト: `false`
+    分割代入を検証しない
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-useless-return
 
-disallow redundant return statements
+関数の最後で値のない `return` 文を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-var
 
-require `let` or `const` instead of `var`
+`var` 宣言を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-void
 
-disallow `void` operators
+`void` 演算子を禁止する
+
+- `object`
+  - `"allowAsStatement": boolean`
+    デフォルト: `false`
+    文としての `void` 演算子を許可する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-warning-comments
 
-disallow specified warning terms in comments
+開発途中のためのコメントを禁止する
+
+- `object`
+  - `"terms": string[]`
+    デフォルト: `["todo", "fixme", "xxx"]`
+    指定した文字列で始まるコメントを報告する
+  - `"terms": "start" | "anywhere"`
+    デフォルト: `"start"`
+    - `"start"`: 先頭に `terms` が含まれるコメントを報告する
+    - `"anywhere"`: いずれかに `terms` が含まれるコメントを報告する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## no-with
 
-disallow `with` statements
+`with` 文を禁止する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
+| `eslint:recommended` | `error` |
 
 ## object-shorthand
 
-require or disallow method and property shorthand syntax for object literals
+オブジェクトリテラルでプロパティやメソッドのショートハンドを強制する
+
+- `string`
+  デフォルト: `"always"`
+  - `"always"`: 常にショートハンドを強制する
+  - `"methods"`: メソッドのショートハンドを強制する
+  - `"properties"`: プロパティのショートハンドを強制する
+  - `"never"`: 常にショートハンドを禁止する
+  - `"consistent"`: 一つのオブジェクトリテラルでショートハンドを統一する
+  - `"consistent-as-needed"`: 一つのオブジェクトリテラルでショートハンドを統一する
+    ただし、全てショートハンドでかける場合はショートハンドを強制する
+- `object`
+  - `"avoidQuotes": boolean`
+    デフォルト: `false`
+    キーが文字列リテラルの場合に禁止する
+  - `"ignoreConstructors": boolean`
+    デフォルト: `false`
+    コンストラクター関数を検証しない
+  - `"avoidExplicitReturnArrows": boolean`
+    デフォルト: `false`
+    アロー関数の代わりにメソッドのショートハンドを強制する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## one-var
 
-enforce variables to be declared either together or separately in functions
+同じスコープの変数を一つの宣言文で宣言を強制する
+
+- `string | object`
+  デフォルト: `"always"`
+  文字列の場合は `var` `let` `const` で検証する
+  - `"always"`: 常に強制する
+  - `"never"`: 常に禁止する
+  - `"consecutive"`: 連続した宣言で強制する
+  - `"var": string`
+    `var` 宣言を指定したルールで検証する
+  - `"let": string`
+    `let` 宣言を指定したルールで検証する
+  - `"const": string`
+    `const` 宣言を指定したルールで検証する
+  - `"separateRequires": boolean`
+    `requres` の宣言を分割する
+  - `"initialized": string`
+    初期化する宣言を指定したルールで検証する
+  - `"uninitialized": string`
+    初期化しない宣言を指定したルールで検証する
+
+| extends      | value   |
+| -------------| ------- |
+| `eslint:all` | `error` |
 
 ## one-var-declaration-per-line
 
