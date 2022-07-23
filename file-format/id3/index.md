@@ -25,7 +25,7 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 
 https://id3.org/ID3v1
 
-![test svg](https://gist.githubusercontent.com/mikiymk/c3b257c213f0151f89f4a5be79cf2f27/raw/595afa5373ab6c4c05b9c8e3ad5563b3b6937997/2-id3v1-0.svg)
+![test svg](id3v1-0.svg)
 
 |start|end|length|name|value|info|
 |----:|----:|----:|:----|:----|:----|
