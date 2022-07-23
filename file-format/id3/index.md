@@ -25,7 +25,7 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 
 https://id3.org/ID3v1
 
-![test svg](id3v1-0.svg)
+![id3v1.0 format](id3v1-0.svg)
 
 |start|end|length|name|value|info|
 |----:|----:|----:|:----|:----|:----|
@@ -41,6 +41,8 @@ https://id3.org/ID3v1
 # ID3v1.1
 
 https://id3.org/ID3v1
+
+![id3v1.1 format](id3v1-1.svg)
 
 |start|end|length|name|value|info|
 |----:|----:|----:|:----|:----|:----|
