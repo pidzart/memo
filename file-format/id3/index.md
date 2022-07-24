@@ -61,6 +61,8 @@ https://id3.org/ID3v1
 
 https://www.birdcagesoft.com/ID3v12.txt
 
+![id3v1.2 format](id3v1-2.svg)
+
 |start|end|length|name|value|info|
 |----:|----:|----:|:----|:----|:----|
 |1|3|3|header|"EXT"||
@@ -85,6 +87,8 @@ https://www.birdcagesoft.com/ID3v12.txt
 
 https://en.wikipedia.org/wiki/ID3#Enhanced_TAG[10]
 https://web.archive.org/web/20120310015458/http://www.fortunecity.com/underworld/sonic/3/id3tag.html
+
+![id3v1 enhanced format](id3v1-enhanced.svg)
 
 |start|end|length|name|value|info|
 |----:|----:|----:|:----|:----|:----|
