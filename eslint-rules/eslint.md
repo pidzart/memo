@@ -663,7 +663,7 @@ version: 8.18.0
     クラス宣言を検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## arrow-body-style
@@ -688,7 +688,7 @@ version: 8.18.0
 ブロック文の中で `var` 宣言した変数を外側で使用を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## camelcase
@@ -714,13 +714,13 @@ version: 8.18.0
     パターンにマッチする変数名を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## capitalized-comments
 
 最初の文字が小文字で始まるコメントを禁止する
-設定コメントとURLは許可する
+設定コメントと URL は許可する
 
 - `"always" | "never"`
   - `"always"`: 小文字を禁止する
@@ -743,7 +743,7 @@ version: 8.18.0
     ブロックコメントのみのルールを設定する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## class-methods-use-this
@@ -759,7 +759,7 @@ version: 8.18.0
     クラスフィールドの関数式を検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## complexity
@@ -773,7 +773,7 @@ version: 8.18.0
     許可する最大の循環的複雑度
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## consistent-return
@@ -786,7 +786,7 @@ version: 8.18.0
     暗黙的な `return` と明示的な `return undefined` を同時に使用を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## consistent-this
@@ -798,7 +798,7 @@ version: 8.18.0
   指定されたエイリアス名を強制する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## curly
@@ -813,7 +813,7 @@ version: 8.18.0
   一つの `if-else` 文でブロック文を使う場合は統一する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## default-case
@@ -826,7 +826,7 @@ version: 8.18.0
     パターンにマッチするコメントは `default` 節が無いことを許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## default-case-last
@@ -834,7 +834,7 @@ version: 8.18.0
 `switch` 文の中で `default` 節は最後に強制する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## default-param-last
@@ -842,7 +842,7 @@ version: 8.18.0
 関数の引数リストでデフォルト引数は最後に書く
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## dot-notation
@@ -858,7 +858,7 @@ version: 8.18.0
     パターンにマッチしたプロパティ名を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## eqeqeq
@@ -877,7 +877,7 @@ version: 8.18.0
     - `"ignore"`: `null` との比較を検証しない
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## func-name-matching
@@ -897,7 +897,7 @@ version: 8.18.0
     `module.exports` で検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## func-names
@@ -917,7 +917,7 @@ version: 8.18.0
     - `"never"`: 常に禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## func-style
@@ -934,7 +934,7 @@ version: 8.18.0
     アロー関数を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## grouped-accessor-pairs
@@ -948,7 +948,7 @@ version: 8.18.0
   - `"setBeforeGet"`: セッター関数をゲッター関数の前に強制する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## guard-for-in
@@ -956,7 +956,7 @@ version: 8.18.0
 `for-in` ループの中で `Object.prototype.hasOwnProperty` を強制する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## id-denylist
@@ -967,7 +967,7 @@ version: 8.18.0
   指定した識別子名を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## id-length
@@ -993,7 +993,7 @@ version: 8.18.0
     パターンにマッチした識別子名を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## id-match
@@ -1017,7 +1017,7 @@ version: 8.18.0
     分割代入の変数名を検証しない
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## init-declarations
@@ -1033,7 +1033,7 @@ version: 8.18.0
     `for` 文の初期化式で検証しない
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## max-classes-per-file
@@ -1049,7 +1049,7 @@ version: 8.18.0
     クラス式を検証しない
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## max-depth
@@ -1062,7 +1062,7 @@ version: 8.18.0
     許可する最大のネスト数
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## max-lines
@@ -1081,7 +1081,7 @@ version: 8.18.0
     コメントのみの行を検証しない
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## max-lines-per-function
@@ -1104,7 +1104,7 @@ version: 8.18.0
     即時実行関数式を検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## max-nested-callbacks
@@ -1117,7 +1117,7 @@ version: 8.18.0
     許可する最大のネスト数
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## max-params
@@ -1130,7 +1130,7 @@ version: 8.18.0
     許可する最大の仮引数の数
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## max-statements
@@ -1146,7 +1146,7 @@ version: 8.18.0
     トップレベル関数を検証しない
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## multiline-comment-style
@@ -1160,7 +1160,7 @@ version: 8.18.0
   - `"separate-lines"`: 連続する行コメントを強制する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## new-cap
@@ -1191,7 +1191,7 @@ version: 8.18.0
     オブジェクトプロパティを検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-alert
@@ -1199,7 +1199,7 @@ version: 8.18.0
 `alert` `confirm` `prompt` 関数を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-array-constructor
@@ -1207,7 +1207,7 @@ version: 8.18.0
 組み込み `Array` オブジェクトで値のリストのコンストラクターを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-bitwise
@@ -1223,7 +1223,7 @@ version: 8.18.0
     整数にキャストする `| 0` を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-caller
@@ -1231,16 +1231,16 @@ version: 8.18.0
 `arguments.caller` `arguments.callee` を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-case-declarations
 
 `switch` 文の `case` 節で変数の宣言をしない
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-confusing-arrow
@@ -1253,10 +1253,10 @@ version: 8.18.0
     関数の本体を `()` で囲った場合に許可する
   - `"onlyOneSimpleParam": boolean`
     デフォルト: `false`
-    仮引数が1つの識別子のみの場合のみ検証する
+    仮引数が 1 つの識別子のみの場合のみ検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-console
@@ -1269,7 +1269,7 @@ version: 8.18.0
     指定したメソッド名を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-continue
@@ -1277,16 +1277,16 @@ version: 8.18.0
 `continue` 文を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-delete-var
 
 `delete` 文で変数の削除を禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-div-regex
@@ -1294,7 +1294,7 @@ version: 8.18.0
 除算演算子と間違われる正規表現リテラルを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-else-return
@@ -1307,7 +1307,7 @@ version: 8.18.0
     `else-if` 節を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-empty
@@ -1319,9 +1319,9 @@ version: 8.18.0
     デフォルト: `false`
     `catch` 節を許可する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-empty-function
@@ -1344,7 +1344,7 @@ version: 8.18.0
     - `"asyncMethods"`: 非同期メソッド
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-eq-null
@@ -1352,7 +1352,7 @@ version: 8.18.0
 `null` との比較 `== null` `!= null` を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-eval
@@ -1365,7 +1365,7 @@ version: 8.18.0
     間接的な呼び出しを許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-extend-native
@@ -1378,7 +1378,7 @@ version: 8.18.0
     指定したオブジェクトのプロトタイプ拡張を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-extra-bind
@@ -1386,7 +1386,7 @@ version: 8.18.0
 関数の不要な `.bind()` メソッドを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-extra-boolean-cast
@@ -1398,9 +1398,9 @@ version: 8.18.0
     デフォルト: `false`
     論理演算子の中の不要な型変換を禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-extra-label
@@ -1408,16 +1408,16 @@ version: 8.18.0
 不要なラベルを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-extra-semi
 
 不要なセミコロンを禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-floating-decimal
@@ -1425,7 +1425,7 @@ version: 8.18.0
 浮動小数点数リテラルは小数点の前後の数字の省略を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-global-assign
@@ -1437,9 +1437,9 @@ version: 8.18.0
     デフォルト: `[]`
     指定したオブジェクトの代入を許可する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-implicit-coercion
@@ -1464,7 +1464,7 @@ version: 8.18.0
     指定された演算子を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-implicit-globals
@@ -1477,7 +1477,7 @@ version: 8.18.0
     グローバルの `const` `let` `class` 宣言を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-implied-eval
@@ -1485,7 +1485,7 @@ version: 8.18.0
 `eval()` のような関数 `setTimeout()` `setInterval()` `execScript()` の文字列で呼び出しを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-inline-comments
@@ -1498,7 +1498,7 @@ version: 8.18.0
     パターンにマッチしたコメントを許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-invalid-this
@@ -1511,7 +1511,7 @@ version: 8.18.0
     大文字で始まる関数はコンストラクターとして検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-iterator
@@ -1519,7 +1519,7 @@ version: 8.18.0
 オブジェクトの `__iterator__` プロパティを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-label-var
@@ -1527,7 +1527,7 @@ version: 8.18.0
 スコープ内で変数とラベルの共有する名前を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-labels
@@ -1543,7 +1543,7 @@ version: 8.18.0
     `switch` 文のラベルを許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-lone-blocks
@@ -1551,7 +1551,7 @@ version: 8.18.0
 不要なブロック文を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-lonely-if
@@ -1559,7 +1559,7 @@ version: 8.18.0
 `else` 節のブロック文の中でただ一つの `if` 文を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-loop-func
@@ -1567,7 +1567,7 @@ version: 8.18.0
 ループの中で安全でない参照の関数を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-magic-numbers
@@ -1592,7 +1592,7 @@ version: 8.18.0
     オブジェクトリテラルを検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-mixed-operators
@@ -1601,20 +1601,14 @@ version: 8.18.0
 
 - `object`
   - `"groups": string[][]`
-    デフォルト: ```[
-      ["+", "-", "*", "/", "%", "**"],
-      ["&", "|", "^", "~", "<<", ">>", ">>>"],
-      ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-      ["&&", "||"],
-      ["in", "instanceof"],
-    ]```
+    デフォルト: `[ ["+", "-", "*", "/", "%", "**"], ["&", "|", "^", "~", "<<", ">>", ">>>"], ["==", "!=", "===", "!==", ">", ">=", "<", "<="], ["&&", "||"], ["in", "instanceof"], ]`
     同じグループの演算子を一つの式で混ぜることを禁止する
   - `"allowSamePrecedence": boolean`
     デフォルト: `true`
     同じ優先度の演算子を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-multi-assign
@@ -1627,7 +1621,7 @@ version: 8.18.0
     宣言式でない連鎖代入文を検証しない
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-multi-str
@@ -1635,7 +1629,7 @@ version: 8.18.0
 改行の前に `\` を使用した複数行の文字列を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-negated-condition
@@ -1643,7 +1637,7 @@ version: 8.18.0
 `if-else` 文や三項演算子で否定的な条件式を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-nested-ternary
@@ -1651,7 +1645,7 @@ version: 8.18.0
 ネストした三項演算子を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-new
@@ -1659,7 +1653,7 @@ version: 8.18.0
 副作用のために単独で `new` 演算子を使うことを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-new-func
@@ -1667,7 +1661,7 @@ version: 8.18.0
 `Function` コンストラクターを使って関数を作成することを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-new-object
@@ -1675,7 +1669,7 @@ version: 8.18.0
 `Object` コンストラクターを使ってオブジェクトを作成することを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-new-wrappers
@@ -1683,33 +1677,33 @@ version: 8.18.0
 `new` 演算子と `String` `Number` `Boolean` コンストラクターを使ってプリミティブ値のラッパーオブジェクトを作成することを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-nonoctal-decimal-escape
 
 文字列リテラルの `\8` `\9` エスケープを禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-octal
 
-数値リテラルの `0` で始まる8進数を禁止する
+数値リテラルの `0` で始まる 8 進数を禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-octal-escape
 
-文字列リテラルの8進数エスケープを禁止する
+文字列リテラルの 8 進数エスケープを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-param-reassign
@@ -1728,7 +1722,7 @@ version: 8.18.0
     パターンにマッチした仮引数のプロパティを許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-plusplus
@@ -1741,7 +1735,7 @@ version: 8.18.0
     `for` 文の更新式で許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-proto
@@ -1749,7 +1743,7 @@ version: 8.18.0
 オブジェクトの `__proto__` プロパティを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-redeclare
@@ -1761,18 +1755,18 @@ version: 8.18.0
     デフォルト: `true`
     組み込みグローバル変数の再宣言を禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-regex-spaces
 
 正規表現パターンで連続した空白文字を禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-restricted-exports
@@ -1785,7 +1779,7 @@ version: 8.18.0
     指定した識別子名のエクスポートを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-restricted-globals
@@ -1800,7 +1794,7 @@ version: 8.18.0
     指定した識別子名のグローバル変数を使用したときのカスタムメッセージ
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-restricted-imports
@@ -1830,7 +1824,7 @@ version: 8.18.0
       大文字と小文字を区別する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-restricted-properties
@@ -1846,7 +1840,7 @@ version: 8.18.0
     カスタムメッセージ
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-restricted-syntax
@@ -1861,7 +1855,7 @@ version: 8.18.0
     カスタムメッセージ
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-return-assign
@@ -1874,7 +1868,7 @@ version: 8.18.0
   - `"always"`: 常に禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-return-await
@@ -1882,7 +1876,7 @@ version: 8.18.0
 `return await` を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-script-url
@@ -1890,7 +1884,7 @@ version: 8.18.0
 `javascript:` で始まる文字列を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-sequences
@@ -1903,7 +1897,7 @@ version: 8.18.0
     `()` で囲まれている場合は許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-shadow
@@ -1925,19 +1919,19 @@ version: 8.18.0
     指定した識別子名を許可する
   - `"ignoreOnInitialization": boolean`
     デフォルト: `false`
-    変数の初期化式のIIFE関数やコールバックでシャドウイングを許可する
+    変数の初期化式の IIFE 関数やコールバックでシャドウイングを許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-shadow-restricted-names
 
 グローバルオブジェクト `undefined` `NaN` `Infinity` `arguments` `eval` をシャドウイングする宣言を禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-ternary
@@ -1945,7 +1939,7 @@ version: 8.18.0
 三項演算子を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-throw-literal
@@ -1953,15 +1947,15 @@ version: 8.18.0
 `throw` 文でリテラルを投げることを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-undef-init
 
-`lett `var` 宣言で `undefined` に初期化を禁止する
+`lett `var`宣言で`undefined` に初期化を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-undefined
@@ -1969,7 +1963,7 @@ version: 8.18.0
 識別子名 `undefined` の使用を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-underscore-dangle
@@ -2000,7 +1994,7 @@ version: 8.18.0
     関数宣言の仮引数名を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-unneeded-ternary
@@ -2013,7 +2007,7 @@ version: 8.18.0
     デフォルト値のための三項演算子を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-unused-expressions
@@ -2032,19 +2026,19 @@ version: 8.18.0
     副作用のための未使用のタグ付きテンプレートリテラルを許可する
   - `"enforceForJSX": boolean`
     デフォルト: `false`
-    JSX式を検証する
+    JSX 式を検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-unused-labels
 
 未使用のラベルを禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-useless-call
@@ -2052,16 +2046,16 @@ version: 8.18.0
 通常の関数呼び出しに置き換え可能な不必要な `.call()` `.apply()` 呼び出しを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-useless-catch
 
 エラーを再び投げるだけの不必要な `catch` 節を禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-useless-computed-key
@@ -2074,7 +2068,7 @@ version: 8.18.0
     クラス宣言とクラス式を検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-useless-concat
@@ -2082,7 +2076,7 @@ version: 8.18.0
 文字列リテラルやテンプレートリテラル同士の `+` 演算子による不必要な結合を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-useless-constructor
@@ -2090,16 +2084,16 @@ version: 8.18.0
 不必要なコンストラクターを禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-useless-escape
 
 意味のない文字エスケープを禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## no-useless-rename
@@ -2118,7 +2112,7 @@ version: 8.18.0
     分割代入を検証しない
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-useless-return
@@ -2126,7 +2120,7 @@ version: 8.18.0
 関数の最後で値のない `return` 文を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-var
@@ -2134,7 +2128,7 @@ version: 8.18.0
 `var` 宣言を禁止する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-void
@@ -2147,7 +2141,7 @@ version: 8.18.0
     文としての `void` 演算子を許可する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-warning-comments
@@ -2164,16 +2158,16 @@ version: 8.18.0
     - `"anywhere"`: いずれかに `terms` が含まれるコメントを報告する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## no-with
 
 `with` 文を禁止する
 
-| extends      | value   |
-| -------------| ------- |
-| `eslint:all` | `error` |
+| extends              | value   |
+| -------------------- | ------- |
+| `eslint:all`         | `error` |
 | `eslint:recommended` | `error` |
 
 ## object-shorthand
@@ -2201,7 +2195,7 @@ version: 8.18.0
     アロー関数の代わりにメソッドのショートハンドを強制する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## one-var
@@ -2228,7 +2222,7 @@ version: 8.18.0
     初期化しない宣言を指定したルールで検証する
 
 | extends      | value   |
-| -------------| ------- |
+| ------------ | ------- |
 | `eslint:all` | `error` |
 
 ## one-var-declaration-per-line
