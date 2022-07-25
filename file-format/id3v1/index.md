@@ -5,29 +5,11 @@
 - [Genres list](#genres-list)
   - [Winamp extention genres list](#winamp-extention-genres-list)
 
-# values
-
-Text = "XXXX"\
-Integers = 0xXX XX XX XX\
-Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
-(0xXX is hexa number, %xxxxxxxx is binary number)
-
 # ID3v1.0
 
 https://id3.org/ID3v1
 
 ![id3v1.0 format](id3v1-0.svg)
-
-| length | name    | value    | info                             |
-| -----: | :------ | :------- | :------------------------------- |
-|      3 | header  | "TAG"    |                                  |
-|     30 | title   | Text     |                                  |
-|     30 | artist  | Text     |                                  |
-|     30 | album   | Text     |                                  |
-|      4 | year    | Text     | "yyyy"                           |
-|     30 | comment | Text     |                                  |
-|      1 | genre   | Integers | 0x00 - 0x80 (winamp 0x00 - 0xBF) |
-|        |         |          | end of file                      |
 
 # ID3v1.1
 
@@ -35,44 +17,11 @@ https://id3.org/ID3v1
 
 ![id3v1.1 format](id3v1-1.svg)
 
-| length | name        | value    | info                             |
-| -----: | :---------- | :------- | :------------------------------- |
-|      3 | header      | "TAG"    |                                  |
-|     30 | title       | Text     |                                  |
-|     30 | artist      | Text     |                                  |
-|     30 | album       | Text     |                                  |
-|      4 | year        | Text     | "yyyy"                           |
-|     28 | comment     | Text     |                                  |
-|      1 | separator   | 0x00     |                                  |
-|      1 | album track | Integers |                                  |
-|      1 | genre       | Integers | 0x00 - 0x80 (winamp 0x00 - 0xBF) |
-|        |             |          | end of file                      |
-
 # ID3v1.2
 
 https://www.birdcagesoft.com/ID3v12.txt
 
 ![id3v1.2 format](id3v1-2.svg)
-
-| length | name                  | value    | info                             |
-| -----: | :-------------------- | :------- | :------------------------------- |
-|      3 | header                | "EXT"    |                                  |
-|     30 | last half of title    | Text     |                                  |
-|     30 | last half of artist   | Text     |                                  |
-|     30 | last half of album    | Text     |                                  |
-|     15 | last half of comment  | Text     |                                  |
-|     20 | sub genre             | Text     |                                  |
-|        |                       |          | ID3v1.1 tag                      |
-|      3 | header                | "TAG"    |                                  |
-|     30 | first half of title   | Text     |                                  |
-|     30 | first half of artist  | Text     |                                  |
-|     30 | first half of album   | Text     |                                  |
-|      4 | year                  | Text     | "yyyy"                           |
-|     28 | first half of comment | Text     |                                  |
-|      1 | separator             | 0x00     |                                  |
-|      1 | album track           | Integers |                                  |
-|      1 | genre                 | Integers | 0x00 - 0x80 (winamp 0x00 - 0xBF) |
-|        |                       |          | end of file                      |
 
 # ID3v1 Enhanced
 
@@ -80,28 +29,6 @@ https://en.wikipedia.org/wiki/ID3#Enhanced_TAG[10]
 https://web.archive.org/web/20120310015458/http://www.fortunecity.com/underworld/sonic/3/id3tag.html
 
 ![id3v1 enhanced format](id3v1-enhanced.svg)
-
-| length | name        | value    | info                                                                               |
-| -----: | :---------- | :------- | :--------------------------------------------------------------------------------- |
-|      4 | header      | "TAG+"   |                                                                                    |
-|     60 | title       | Text     |                                                                                    |
-|     60 | artist      | Text     |                                                                                    |
-|     60 | album       | Text     |                                                                                    |
-|      1 | speed       | Integers | 0x00 = unset<br/>0x01 = slow<br/>0x02 = medium<br/>0x03 = fast<br/>0x04 = hardcore |
-|     30 | genre       | Text     |                                                                                    |
-|      6 | start time  | Text     | "mmm:ss"                                                                           |
-|      6 | end time    | Text     | "mmm:ss"                                                                           |
-|        |             |          | ID3v1.1 tag                                                                        |
-|      3 | header      | "TAG"    |                                                                                    |
-|     30 | title       | Text     |                                                                                    |
-|     30 | artist      | Text     |                                                                                    |
-|     30 | album       | Text     |                                                                                    |
-|      4 | year        | Text     | "yyyy"                                                                             |
-|     28 | comment     | Text     |                                                                                    |
-|      1 | separator   | 0x00     |                                                                                    |
-|      1 | album track | Integers |                                                                                    |
-|      1 | genre       | Integers | 0x00 - 0x80 (winamp 0x00 - 0xBF)                                                   |
-|        |             |          | end of file                                                                        |
 
 # Genres list
 
