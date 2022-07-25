@@ -2,6 +2,8 @@
 - [ID3v1.1](#id3v11)
 - [ID3v1.2](#id3v12)
 - [ID3v1 Enhanced](#id3v1-enhanced)
+- [Genres list](#genres-list)
+  - [Winamp extention genres list](#winamp-extention-genres-list)
 
 # values
 
