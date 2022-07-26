@@ -15,7 +15,9 @@ Integers = $ xx xx xx xx\
 Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 ($ xx is hexa number, %xxxxxxxx is binary number)
 
-![tag header svg](id3v2-header.svg)
+![id3v2 header svg](id3v2-header.svg)
+
+![id3v2.3 extended header svg](id3v2-3-extended-header.svg)
 
 # ID3v2.2
 
