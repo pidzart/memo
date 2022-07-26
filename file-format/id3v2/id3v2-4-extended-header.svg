@@ -26,33 +26,39 @@
 
   <text x="50" y="10" class="ofs">0</text>
 
-  <rect x="60" y="10" height="40" width="100" class="con" />
-  <rect x="160" y="10" height="40" width="400" />
-  <text x="110" y="30">size</text>
+  <rect x="60" y="10" height="20" width="100" class="con" />
+  <rect x="160" y="10" height="20" width="400" />
+  <text x="110" y="20">size</text>
   <text x="170" y="20" class="ifo">extended header size</text>
-  <text x="170" y="40" class="ifo">exclude size 4 bytes</text>
 
-  <text x="50" y="50" class="ofs">4</text>
+  <text x="50" y="30" class="ofs">4</text>
+
+  <rect x="60" y="30" height="20" width="100" class="int" />
+  <rect x="160" y="30" height="20" width="400" />
+  <text x="110" y="40">flags size</text>
+  <text x="170" y="40" class="ifo">0x01</text>
+
+  <text x="50" y="50" class="ofs">5</text>
 
   <rect x="60" y="50" height="20" width="100" class="flg" />
   <rect x="160" y="50" height="20" width="400" />
   <text x="110" y="60">7 MSB</text>
-  <text x="170" y="60" class="ifo">CRC data present</text>
+  <text x="170" y="60" class="ifo"></text>
 
   <rect x="60" y="70" height="20" width="100" class="flg" />
   <rect x="160" y="70" height="20" width="400" />
   <text x="110" y="80">6</text>
-  <text x="170" y="80" class="ifo"></text>
+  <text x="170" y="80" class="ifo">Tag is an update</text>
 
   <rect x="60" y="90" height="20" width="100" class="flg" />
   <rect x="160" y="90" height="20" width="400" />
   <text x="110" y="100">5</text>
-  <text x="170" y="100" class="ifo"></text>
+  <text x="170" y="100" class="ifo">CRC data present</text>
 
   <rect x="60" y="110" height="20" width="100" class="flg" />
   <rect x="160" y="110" height="20" width="400" />
   <text x="110" y="120">4</text>
-  <text x="170" y="120" class="ifo"></text>
+  <text x="170" y="120" class="ifo">Tag restrictions</text>
 
   <rect x="60" y="130" height="20" width="100" class="flg" />
   <rect x="160" y="130" height="20" width="400" />
