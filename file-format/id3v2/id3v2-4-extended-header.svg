@@ -25,7 +25,7 @@
     .ifo { text-anchor: start }
   </style>
 
-  <rect x="60" y="10" height="40" width="100" class="con" />
+  <rect x="60" y="10" height="40" width="100" class="sin" />
   <rect x="160" y="10" height="40" width="400" />
   <text x="110" y="30">size</text>
   <text x="170" y="20" class="ifo">extended header size</text>
