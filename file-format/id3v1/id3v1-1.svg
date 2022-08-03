@@ -1,16 +1,17 @@
 <svg viewBox="0 0 570 450" xmlns="http://www.w3.org/2000/svg">
   <style>
     rect {
-      stroke: black;
-      fill: white;
+      stroke: #000;
+      fill: #fff;
     }
-    .con { fill: lightblue }
-    .ast { fill: yellowgreen }
-    .int { fill: orchid }
-    .pos { fill: gray }
+    .con { fill: #aff }
+    .ast { fill: #afa }
+    .int { fill: #f7e }
+    .pos { fill: #bbb }
+    .ref { fill: #fea }
     text {
       stroke: none;
-      fill: black;
+      fill: #000;
       font-size: 16px;
       text-anchor: middle;
       dominant-baseline: middle;
