@@ -30,28 +30,28 @@
   <rect x="160" y="30" height="80" width="400" />
   <text x="110" y="70">title 2</text>
   <text x="170" y="40" class="ifo">ISO/IEC 8859-1 (latin1) encoded string</text>
-  <text x="170" y="60" class="ifo">second half</text>
+  <text x="170" y="60" class="ifo">follows the title of the ID3v1.1 tag</text>
   <text x="50" y="70" class="siz">30B</text>
 
   <rect x="60" y="110" height="80" width="100" class="ast" />
   <rect x="160" y="110" height="80" width="400" />
   <text x="110" y="150">artist 2</text>
   <text x="170" y="120" class="ifo">latin1 string</text>
-  <text x="170" y="140" class="ifo">second half</text>
+  <text x="170" y="140" class="ifo">follows the artist of the ID3v1.1 tag</text>
   <text x="50" y="150" class="siz">30B</text>
 
   <rect x="60" y="190" height="80" width="100" class="ast" />
   <rect x="160" y="190" height="80" width="400" />
   <text x="110" y="230">album 2</text>
   <text x="170" y="200" class="ifo">latin1 string</text>
-  <text x="170" y="220" class="ifo">second half</text>
+  <text x="170" y="220" class="ifo">follows the album of the ID3v1.1 tag</text>
   <text x="50" y="230" class="siz">30B</text>
 
   <rect x="60" y="270" height="40" width="100" class="ast" />
   <rect x="160" y="270" height="40" width="400" />
   <text x="110" y="290">comment 2</text>
   <text x="170" y="280" class="ifo">latin1 string</text>
-  <text x="170" y="300" class="ifo">second half</text>
+  <text x="170" y="300" class="ifo">follows the comment of the ID3v1.1 tag</text>
   <text x="50" y="290" class="siz">15B</text>
 
   <rect x="60" y="310" height="40" width="100" class="ast" />
