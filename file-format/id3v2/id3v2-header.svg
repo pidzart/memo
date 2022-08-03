@@ -92,7 +92,7 @@
   <rect x="160" y="270" height="40" width="400" />
   <text x="110" y="290">size</text>
   <text x="170" y="280" class="ifo">syncsafe integer</text>
-  <text x="170" y="300" class="ifo">exclude header 10 bytes (size + 10 = ID3 tag total size)</text>
+  <text x="170" y="300" class="ifo">exclude header 10 bytes (size + 10 = ID3v2 total size)</text>
 
   <text x="50" y="290" class="siz">4B</text>
 </svg>
