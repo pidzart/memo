@@ -19,6 +19,8 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 
 ![id3v2.3 extended header svg](id3v2-3-extended-header.svg)
 
+![id3v2.4 extended header svg](id3v2-4-extended-header.svg)
+
 # ID3v2.2
 
 https://id3.org/id3v2-00
