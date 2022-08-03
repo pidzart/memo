@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg>
+<svg viewBox="0 0 570 260" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    rect {
+      stroke: #000;
+      fill: #fff;
+    }
+    .con { fill: #aff }
+    .ast { fill: #afa }
+    .int { fill: #f7e }
+    .pos { fill: #bbb }
+    .ref { fill: #fea }
+    .sin { fill: #f9c }
+    .flg { fill: #4f8 }
+    text {
+      stroke: none;
+      fill: #000;
+      font-size: 16px;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+    .siz { text-anchor: end }
+    .ifo { text-anchor: start }
+  </style>
+
+  <rect x="60" y="10" height="20" width="100" class="con" />
+  <rect x="160" y="10" height="20" width="400" />
+  <text x="110" y="20">"3DI"</text>
+  <text x="170" y="20" class="ifo">Header</text>
+
+  <text x="50" y="20" class="siz">3B</text>
+
+  <rect x="60" y="30" height="20" width="100" class="int" />
+  <rect x="160" y="30" height="20" width="400" />
+  <text x="110" y="40">version</text>
+  <text x="170" y="40" class="ifo">0x04_00 = ID3v2.4</text>
+
+  <text x="50" y="40" class="siz">2B</text>
+
+  <rect x="60" y="50" height="160" width="20" class="flg" />
+  <g transform="translate(70, 130)">
+    <text x="0" y="0" transform="rotate(270)">flags</text>
+  </g>
+
+  <rect x="80" y="50" height="20" width="80" class="flg" />
+  <rect x="160" y="50" height="20" width="400" />
+  <text x="120" y="60">7 MSB</text>
+  <text x="170" y="60" class="ifo">Unsynchronisation</text>
+
+  <rect x="80" y="70" height="20" width="80" class="flg" />
+  <rect x="160" y="70" height="20" width="400" />
+  <text x="120" y="80">6</text>
+  <text x="170" y="80" class="ifo">Extended header</text>
+
+  <rect x="80" y="90" height="20" width="80" class="flg" />
+  <rect x="160" y="90" height="20" width="400" />
+  <text x="120" y="100">5</text>
+  <text x="170" y="100" class="ifo">Experimental indicator</text>
+
+  <rect x="80" y="110" height="20" width="80" class="flg" />
+  <rect x="160" y="110" height="20" width="400" />
+  <text x="120" y="120">4</text>
+  <text x="170" y="120" class="ifo">Footer present</text>
+
+  <rect x="80" y="130" height="20" width="80" class="flg" />
+  <rect x="160" y="130" height="20" width="400" />
+  <text x="120" y="140">3</text>
+  <text x="170" y="140" class="ifo"></text>
+
+  <rect x="80" y="150" height="20" width="80" class="flg" />
+  <rect x="160" y="150" height="20" width="400" />
+  <text x="120" y="160">2</text>
+  <text x="170" y="160" class="ifo"></text>
+
+  <rect x="80" y="170" height="20" width="80" class="flg" />
+  <rect x="160" y="170" height="20" width="400" />
+  <text x="120" y="180">1</text>
+  <text x="170" y="180" class="ifo"></text>
+
+  <rect x="80" y="190" height="20" width="80" class="flg" />
+  <rect x="160" y="190" height="20" width="400" />
+  <text x="120" y="200">0 LSB</text>
+  <text x="170" y="200" class="ifo"></text>
+
+  <text x="50" y="130" class="siz">1B</text>
+
+  <rect x="60" y="210" height="40" width="100" class="sin" />
+  <rect x="160" y="210" height="40" width="400" />
+  <text x="110" y="230">size</text>
+  <text x="170" y="220" class="ifo">syncsafe integer</text>
+  <text x="170" y="240" class="ifo">exclude header 10 bytes (size + 10 = ID3v2 total size)</text>
+
+  <text x="50" y="230" class="siz">4B</text>
+</svg>
