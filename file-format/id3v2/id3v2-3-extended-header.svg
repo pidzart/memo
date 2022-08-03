@@ -25,11 +25,11 @@
     .ifo { text-anchor: start }
   </style>
 
-  <rect x="60" y="10" height="40" width="100" class="con" />
+  <rect x="60" y="10" height="40" width="100" class="int" />
   <rect x="160" y="10" height="40" width="400" />
   <text x="110" y="30">size</text>
   <text x="170" y="20" class="ifo">extended header size</text>
-  <text x="170" y="40" class="ifo">exclude size 4 bytes</text>
+  <text x="170" y="40" class="ifo">exclude size 4 bytes (size + 4 = extend header size)</text>
 
   <text x="50" y="30" class="siz">4B</text>
 
