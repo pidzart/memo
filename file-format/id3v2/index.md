@@ -25,6 +25,7 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
   - `0x03` = ID3v2.3
   - `0x04` = ID3v2.4
 - Can be read by applications that support larger revision versions of tags. (backward compatibility)
+- Size does not include common header and footer.
 
 # Extended Header
 
