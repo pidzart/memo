@@ -19,10 +19,12 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 
 ![id3v2 header svg](id3v2-header.svg)
 
-- version represents the version of the tag.
-  - `0x02 00` = ID3v2.2.0
-  - `0x03 00` = ID3v2.3.0
-  - `0x04 00` = ID3v2.4.0
+- Version represents the version of the tag.
+  Different versions are not compatible.
+  - `0x02` = ID3v2.2
+  - `0x03` = ID3v2.3
+  - `0x04` = ID3v2.4
+- Can be read by applications that support larger revision versions of tags. (backward compatibility)
 
 # Extended Header
 
