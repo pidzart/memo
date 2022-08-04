@@ -7,15 +7,26 @@
 
 # ID3v1.0
 
-https://id3.org/ID3v1
-
 ![id3v1.0 format](id3v1-0.svg)
+
+ID3v1.0 tag saves to an area 128-bytes from the end of the file.
+"TAG" string indicates the presence of an ID3v1 tag.
+Title is a 30-byte string, the title of the audio.
+Artist is a 30-byte string, the artist of the audio.
+Album is a 30-byte string, the album of the audio.
+Year is a 4-byte string of four numeric characters.
+Comment is a 30-byte string, additional information about the audio.
+If the 29th of the comment is `0x00`, it may be an [ID3v1.1 tag](#id3v11).
+Genre is specified by number from [genres list](#genres-list).
+Encoding is ISO/IEC 8859-1, remainder filled with `0x00`. 
 
 # ID3v1.1
 
-https://id3.org/ID3v1
-
 ![id3v1.1 format](id3v1-1.svg)
+
+ID3v1.1 tag is mostly the same as ID3v1.0 tag.
+Comment is a 28-byte string, 2 bytes less than ID3v1.0 tag.
+Album track is a 1-byte number from which track on the CD.
 
 # ID3v1.2
 
@@ -231,3 +242,7 @@ https://web.archive.org/web/20120310015458/http://www.fortunecity.com/underworld
 | 189 | Dubstep                |
 | 190 | Garage Rock            |
 | 191 | Psybient               |
+
+# References
+
+[https://id3.org/ID3v1]()
