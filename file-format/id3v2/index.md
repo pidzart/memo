@@ -15,11 +15,29 @@ Integers = $ xx xx xx xx\
 Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 ($ xx is hexa number, %xxxxxxxx is binary number)
 
+# Common Header
+
 ![id3v2 header svg](id3v2-header.svg)
+
+- version represents the version of the tag.
+  - `0x02 00` = ID3v2.2.0
+  - `0x03 00` = ID3v2.3.0
+  - `0x04 00` = ID3v2.4.0
+
+# Extended Header
+
+Extended header added in v2.3.
+It is present when the "Extended header" flag of the common header is set.
+
+## ID3v2.3 Extended Header
 
 ![id3v2.3 extended header svg](id3v2-3-extended-header.svg)
 
+## ID3v2.3 Extended Header
+
 ![id3v2.4 extended header svg](id3v2-4-extended-header.svg)
+
+# ID3v2.4 Footer
 
 ![id3v2.4 footer svg](id3v2-4-footer.svg)
 
