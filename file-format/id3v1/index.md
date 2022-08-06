@@ -25,14 +25,22 @@ Encoding is ISO/IEC 8859-1, remainder filled with `0x00`.
 ![id3v1.1 format](id3v1-1.svg)
 
 ID3v1.1 tag is mostly the same as ID3v1.0 tag.
+Difference is that comment is 28 bytes and album track is stored behind.
 Comment is a 28-byte string, 2 bytes less than ID3v1.0 tag.
 Album track is a 1-byte number from which track on the CD.
 
 # ID3v1.2
 
-https://www.birdcagesoft.com/ID3v12.txt
-
 ![id3v1.2 format](id3v1-2.svg)
+
+ID3v1.2 tag is stored in an area of 128 bytes in addition to ID3v1.1 tag.
+Location is just before ID3v1.1 tag.
+"EXT" string indicates the presence of an ID3v1.2 tag.
+Title 2 is a 30-byte string, following the title of ID3v1.1 tag.
+Artist 2 is a 30-byte string, following the artist of ID3v1.1 tag.
+Album 2 is a 30-byte string, following the album of ID3v1.1 tag.
+Comment 2 is a 15-byte string, following the comment of ID3v1.1 tag.
+Sub genre is a 20-byte string, describes the detailed genre.
 
 # ID3v1 Enhanced
 
@@ -245,4 +253,5 @@ https://web.archive.org/web/20120310015458/http://www.fortunecity.com/underworld
 
 # References
 
-[https://id3.org/ID3v1]()
+[https://id3.org/ID3v1](https://id3.org/ID3v1)
+[https://www.birdcagesoft.com/ID3v12.txt](https://www.birdcagesoft.com/ID3v12.txt)
