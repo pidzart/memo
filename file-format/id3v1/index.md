@@ -9,38 +9,38 @@
 
 ![id3v1.0 format](id3v1-0.svg)
 
-ID3v1.0 tag saves to an area 128-bytes from the end of the file.
-"TAG" string indicates the presence of an ID3v1 tag.
-Title is a 30-byte string, the title of the audio.
-Artist is a 30-byte string, the artist of the audio.
-Album is a 30-byte string, the album of the audio.
-Year is a 4-byte string of four numeric characters.
-Comment is a 30-byte string, additional information about the audio.
-If the 29th of the comment is `0x00`, it may be an [ID3v1.1 tag](#id3v11).
-Genre is specified by number from [genres list](#genres-list).
-Encoding is ISO/IEC 8859-1, remainder filled with `0x00`. 
+- ID3v1.0 tag saves to an area 128-bytes from the end of the file.
+- `"TAG"` string indicates the presence of an ID3v1 tag.
+- `title` is a 30-byte string, the title of the audio.
+- `artist` is a 30-byte string, the artist of the audio.
+- `album` is a 30-byte string, the album of the audio.
+- `year` is a 4-byte string of four numeric characters.
+- `comment` is a 30-byte string, additional information about the audio.
+- If the 29th of the `comment` is `0x00`, it may be an [ID3v1.1 tag](#id3v11).
+- `genre` is specified by number from [genres list](#genres-list).
+- Encoding is ISO/IEC 8859-1, remainder filled with `0x00`. 
 
 # ID3v1.1
 
 ![id3v1.1 format](id3v1-1.svg)
 
-ID3v1.1 tag is mostly the same as ID3v1.0 tag.
-Difference is that comment is 28 bytes and album track is stored behind.
-Comment is a 28-byte string, 2 bytes less than ID3v1.0 tag.
-Album track is a 1-byte number from which track on the CD.
+- ID3v1.1 tag is mostly the same as ID3v1.0 tag.
+- Difference is that `comment` is 28 bytes and `album track` is stored behind.
+- `comment` is a 28-byte string, 2 bytes less than ID3v1.0 tag.
+- `album track` is a 1-byte number from which track on the CD.
 
 # ID3v1.2
 
 ![id3v1.2 format](id3v1-2.svg)
 
-ID3v1.2 tag is stored in an area of 128 bytes in addition to ID3v1.1 tag.
-Location is just before ID3v1.1 tag.
-"EXT" string indicates the presence of an ID3v1.2 tag.
-Title 2 is a 30-byte string, following the title of ID3v1.1 tag.
-Artist 2 is a 30-byte string, following the artist of ID3v1.1 tag.
-Album 2 is a 30-byte string, following the album of ID3v1.1 tag.
-Comment 2 is a 15-byte string, following the comment of ID3v1.1 tag.
-Sub genre is a 20-byte string, describes the detailed genre.
+- ID3v1.2 tag is stored in an area of 128 bytes in addition to ID3v1.1 tag.
+- Location is just before ID3v1.1 tag.
+- `"EXT"` string indicates the presence of an ID3v1.2 tag.
+- `title 2` is a 30-byte string, following the title of ID3v1.1 tag.
+- `artist 2` is a 30-byte string, following the artist of ID3v1.1 tag.
+- `album 2` is a 30-byte string, following the album of ID3v1.1 tag.
+- `comment 2` is a 15-byte string, following the comment of ID3v1.1 tag.
+- `sub genre` is a 20-byte string, describes the detailed genre.
 
 # ID3v1 Enhanced
 
