@@ -89,20 +89,33 @@ https://www.npmjs.com/package/eslint-plugin-jsonc
 
 # configs
 
-https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb
-https://github.com/davidjbradshaw/eslint-config-airbnb-babel
-https://github.com/iamturns/eslint-config-airbnb-typescript
-https://github.com/AlloyTeam/eslint-config-alloy
+- [eslint-config-airbnb](./eslint-config-airbnb)
+  @19.0.4#2021-12-26
+  [npm](https://www.npmjs.com/package/eslint-config-airbnb)
+  [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+- [eslint-config-airbnb-base](./eslint-config-airbnb-base)
+  @15.0.0
+  [npm](https://www.npmjs.com/package/eslint-config-airbnb-base)
+  [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+- [eslint-config-alloy](./eslint-config-alloy)
+  @4.6.2
+  [npm](https://www.npmjs.com/package/eslint-config-alloy)
+  [github](https://github.com/AlloyTeam/eslint-config-alloy)
+  [web](https://alloyteam.github.io/eslint-config-alloy/)
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+
 https://github.com/eslint/eslint/tree/master/packages/eslint-config-eslint
 https://www.npmjs.com/package/eslint-config-fbjs
 https://github.com/google/eslint-config-google
-https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app
 https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/README.md
 https://github.com/wikimedia/eslint-config-wikimedia
 https://github.com/davidjbradshaw/eslint-config-auto
 https://github.com/gajus/eslint-config-canonical
 https://github.com/feross/eslint-config-standard
-https://www.npmjs.com/package/eslint-config-hardcore
 https://github.com/xojs/eslint-config-xo
 https://github.com/davidjbradshaw/eslint-config-adjunct
 https://github.com/brettz9/eslint-config-ash-nazg
