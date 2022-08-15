@@ -86,6 +86,7 @@ https://www.npmjs.com/package/eslint-plugin-sort-export-all
 https://www.npmjs.com/package/eslint-plugin-kentcdodds
 https://www.npmjs.com/package/eslint-plugin-jquery
 https://www.npmjs.com/package/eslint-plugin-jsonc
+https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/README.md
 
 # configs
 
@@ -118,83 +119,66 @@ https://www.npmjs.com/package/eslint-plugin-jsonc
   @0.14.0#2019-09-03
   [npm](https://www.npmjs.com/package/eslint-config-google)
   [github](https://github.com/google/eslint-config-google)
+- [eslint-config-wikimedia](./eslint-config-wikimedia)
+  @0.23.0
+  [npm](https://www.npmjs.com/package/eslint-config-wikimedia)
+  [github](https://github.com/wikimedia/eslint-config-wikimedia)
+- [eslint-config-auto](./eslint-config-auto)
+  @0.7.3
+  [npm](https://www.npmjs.com/package/eslint-config-auto)
+  [github](https://github.com/davidjbradshaw/eslint-config-auto)
+- [eslint-config-canonical](./eslint-config-canonical)
+  @36.0.0
+  [npm](https://www.npmjs.com/package/eslint-config-canonical)
+  [github](https://github.com/gajus/eslint-config-canonical)
+- [eslint-config-standard](./eslint-config-standard)
+  @17.0.0
+  [npm](https://www.npmjs.com/package/eslint-config-standard)
+  [github](https://github.com/standard/eslint-config-standard)
+- [eslint-config-xo](./eslint-config-xo)
+  @0.41.0
+  [npm](https://www.npmjs.com/package/eslint-config-xo)
+  [github](https://github.com/xojs/eslint-config-xo)
+- [eslint-config-adjunct](./eslint-config-adjunct)
+  @4.11.2
+  [npm](https://www.npmjs.com/package/eslint-config-adjunct)
+  [github](https://github.com/davidjbradshaw/eslint-config-adjunct)
 - [](./)
   @0.0.0
-  [npm]()
+  [npm](https://www.npmjs.com/package/eslint-config)
   [github]()
-  [web]()
 - [](./)
   @0.0.0
-  [npm]()
+  [npm](https://www.npmjs.com/package/eslint-config)
   [github]()
-  [web]()
 - [](./)
   @0.0.0
-  [npm]()
+  [npm](https://www.npmjs.com/package/eslint-config)
   [github]()
-  [web]()
 - [](./)
   @0.0.0
-  [npm]()
+  [npm](https://www.npmjs.com/package/eslint-config)
   [github]()
-  [web]()
 - [](./)
   @0.0.0
-  [npm]()
+  [npm](https://www.npmjs.com/package/eslint-config)
   [github]()
-  [web]()
 - [](./)
   @0.0.0
-  [npm]()
+  [npm](https://www.npmjs.com/package/eslint-config)
   [github]()
-  [web]()
 - [](./)
   @0.0.0
-  [npm]()
+  [npm](https://www.npmjs.com/package/eslint-config)
   [github]()
-  [web]()
 - [](./)
   @0.0.0
-  [npm]()
+  [npm](https://www.npmjs.com/package/eslint-config)
   [github]()
-  [web]()
-- [](./)
-  @0.0.0
-  [npm]()
-  [github]()
-  [web]()
-- [](./)
-  @0.0.0
-  [npm]()
-  [github]()
-  [web]()
-- [](./)
-  @0.0.0
-  [npm]()
-  [github]()
-  [web]()
-- [](./)
-  @0.0.0
-  [npm]()
-  [github]()
-  [web]()
-- [](./)
-  @0.0.0
-  [npm]()
-  [github]()
-  [web]()
-- [](./)
-  @0.0.0
-  [npm]()
-  [github]()
-  [web]()
 
-https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/README.md
-https://github.com/wikimedia/eslint-config-wikimedia
-https://github.com/davidjbradshaw/eslint-config-auto
-https://github.com/gajus/eslint-config-canonical
-https://github.com/feross/eslint-config-standard
-https://github.com/xojs/eslint-config-xo
+
+
+
 https://github.com/davidjbradshaw/eslint-config-adjunct
 https://github.com/brettz9/eslint-config-ash-nazg
 https://github.com/SandroMiguel/eslint-config-cecilia
