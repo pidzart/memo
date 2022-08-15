@@ -90,16 +90,11 @@ https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/READM
 
 # configs
 
-- [eslint-config-airbnb](./eslint-config-airbnb/index.md)
-  @19.0.4
-  #2021-12-26
-  [npm](https://www.npmjs.com/package/eslint-config-airbnb)
-  [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
-- [eslint-config-airbnb-base](./eslint-config-airbnb-base/index.md)
-  @15.0.0
-  #2021-11-09
-  [npm](https://www.npmjs.com/package/eslint-config-airbnb-base)
-  [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+|package|latest|published|npm|github|other|
+|---|---|---|---|---|---|
+|[eslint-config-airbnb](./eslint-config-airbnb/index.md)|19.0.4|2021-12-26|[npm](https://www.npmjs.com/package/eslint-config-airbnb)|[github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)||
+|[eslint-config-airbnb-base](./eslint-config-airbnb-base/index.md)|15.0.0|2021-11-09|[npm](https://www.npmjs.com/package/eslint-config-airbnb-base)|[github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)||
+
 - [eslint-config-alloy](./eslint-config-alloy/index.md)
   @4.6.2
   #2021-07-04
