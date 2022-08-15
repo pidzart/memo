@@ -94,23 +94,101 @@ https://www.npmjs.com/package/eslint-plugin-jsonc
   [npm](https://www.npmjs.com/package/eslint-config-airbnb)
   [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 - [eslint-config-airbnb-base](./eslint-config-airbnb-base)
-  @15.0.0
+  @15.0.0#2021-11-09
   [npm](https://www.npmjs.com/package/eslint-config-airbnb-base)
   [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
 - [eslint-config-alloy](./eslint-config-alloy)
-  @4.6.2
+  @4.6.2#2021-07-04
   [npm](https://www.npmjs.com/package/eslint-config-alloy)
   [github](https://github.com/AlloyTeam/eslint-config-alloy)
   [web](https://alloyteam.github.io/eslint-config-alloy/)
+- [eslint-config-eslint](./eslint-config-eslint)
+  @7.0.0#2021-02-06
+  [npm](https://www.npmjs.com/package/eslint-config-eslint)
+  [github](https://github.com/eslint/eslint/tree/main/packages/eslint-config-eslint)
+- [eslint-config-fbjs](./eslint-config-fbjs)
+  @4.0.0#2022-07-12
+  [npm](https://www.npmjs.com/package/eslint-config-fbjs)
+  [github](https://github.com/facebook/fbjs/tree/main/packages/eslint-config-fbjs)
+- [eslint-config-fbjs-opensource](./eslint-config-fbjs-opensource)
+  @3.0.0#2022-07-12
+  [npm](https://www.npmjs.com/package/eslint-config-fbjs-opensource)
+  [github](https://github.com/facebook/fbjs/tree/main/packages/eslint-config-fbjs-opensource)
+- [eslint-config-google](./eslint-config-google)
+  @0.14.0#2019-09-03
+  [npm](https://www.npmjs.com/package/eslint-config-google)
+  [github](https://github.com/google/eslint-config-google)
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
+- [](./)
+  @0.0.0
+  [npm]()
+  [github]()
+  [web]()
 - [](./)
   @0.0.0
   [npm]()
   [github]()
   [web]()
 
-https://github.com/eslint/eslint/tree/master/packages/eslint-config-eslint
-https://www.npmjs.com/package/eslint-config-fbjs
-https://github.com/google/eslint-config-google
 https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/README.md
 https://github.com/wikimedia/eslint-config-wikimedia
 https://github.com/davidjbradshaw/eslint-config-auto
