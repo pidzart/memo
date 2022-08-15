@@ -143,46 +143,27 @@ https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/READM
   @4.11.2
   [npm](https://www.npmjs.com/package/eslint-config-adjunct)
   [github](https://github.com/davidjbradshaw/eslint-config-adjunct)
-- [](./)
-  @0.0.0
-  [npm](https://www.npmjs.com/package/eslint-config)
-  [github]()
-- [](./)
-  @0.0.0
-  [npm](https://www.npmjs.com/package/eslint-config)
-  [github]()
-- [](./)
-  @0.0.0
-  [npm](https://www.npmjs.com/package/eslint-config)
-  [github]()
-- [](./)
-  @0.0.0
-  [npm](https://www.npmjs.com/package/eslint-config)
-  [github]()
-- [](./)
-  @0.0.0
-  [npm](https://www.npmjs.com/package/eslint-config)
-  [github]()
-- [](./)
-  @0.0.0
-  [npm](https://www.npmjs.com/package/eslint-config)
-  [github]()
-- [](./)
-  @0.0.0
-  [npm](https://www.npmjs.com/package/eslint-config)
-  [github]()
-- [](./)
-  @0.0.0
-  [npm](https://www.npmjs.com/package/eslint-config)
-  [github]()
-
-
-
-
-https://github.com/davidjbradshaw/eslint-config-adjunct
-https://github.com/brettz9/eslint-config-ash-nazg
-https://github.com/SandroMiguel/eslint-config-cecilia
-https://github.com/thenativeweb/eslint-config-es
-https://github.com/EvgenyOrekhov/eslint-config-hardcore
-https://github.com/RyanZim/eslint-config-problems
-https://github.com/supermind/eslint-config-supermind
+- [eslint-config-ash-nazg](./eslint-config-ash-nazg)
+  @34.0.0
+  [npm](https://www.npmjs.com/package/eslint-config-ash-nazg)
+  [github](https://github.com/brettz9/eslint-config-ash-nazg)
+- [eslint-config-cecilia](./eslint-config-cecilia)
+  @2.5.5
+  [npm](https://www.npmjs.com/package/eslint-config-cecilia)
+  [github](https://github.com/SandroMiguel/eslint-config-cecilia)
+- [eslint-config-es](./eslint-config-es)
+  @4.2.0
+  [npm](https://www.npmjs.com/package/eslint-config-es)
+  [github](https://github.com/thenativeweb/eslint-config-es)
+- [eslint-config-hardcore](./eslint-config-hardcore)
+  @24.13.1
+  [npm](https://www.npmjs.com/package/eslint-config-hardcore)
+  [github](https://github.com/EvgenyOrekhov/eslint-config-hardcore)
+- [eslint-config-problems](./eslint-config-problems)
+  @6.0.0
+  [npm](https://www.npmjs.com/package/eslint-config-problems)
+  [github](https://github.com/RyanZim/eslint-config-problems)
+- [eslint-config-supermind](./eslint-config-supermind)
+  @0.48.0
+  [npm](https://www.npmjs.com/package/eslint-config-supermind)
+  [github](https://github.com/supermind/eslint-config-supermind)
