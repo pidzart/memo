@@ -1,7 +1,9 @@
 # eslint-config-airbnb
 
+latest version 19.0.4 published at 2021-12-26
+
 [npm](https://www.npmjs.com/package/eslint-config-airbnb)
-[github](https://www.npmjs.com/package/eslint-config-supermind)
+[github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
 
 ## dependent plugins
 
