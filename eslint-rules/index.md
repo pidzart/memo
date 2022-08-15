@@ -90,80 +90,87 @@ https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/READM
 
 # configs
 
-- [eslint-config-airbnb](./eslint-config-airbnb)
-  @19.0.4#2021-12-26
+- [eslint-config-airbnb](./eslint-config-airbnb/index.md)
+  @19.0.4
+  #2021-12-26
   [npm](https://www.npmjs.com/package/eslint-config-airbnb)
   [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
-- [eslint-config-airbnb-base](./eslint-config-airbnb-base)
-  @15.0.0#2021-11-09
+- [eslint-config-airbnb-base](./eslint-config-airbnb-base/index.md)
+  @15.0.0
+  #2021-11-09
   [npm](https://www.npmjs.com/package/eslint-config-airbnb-base)
   [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-- [eslint-config-alloy](./eslint-config-alloy)
-  @4.6.2#2021-07-04
+- [eslint-config-alloy](./eslint-config-alloy/index.md)
+  @4.6.2
+  #2021-07-04
   [npm](https://www.npmjs.com/package/eslint-config-alloy)
   [github](https://github.com/AlloyTeam/eslint-config-alloy)
   [web](https://alloyteam.github.io/eslint-config-alloy/)
-- [eslint-config-eslint](./eslint-config-eslint)
-  @7.0.0#2021-02-06
+- [eslint-config-eslint](./eslint-config-eslint/index.md)
+  @7.0.0
+  #2021-02-06
   [npm](https://www.npmjs.com/package/eslint-config-eslint)
   [github](https://github.com/eslint/eslint/tree/main/packages/eslint-config-eslint)
-- [eslint-config-fbjs](./eslint-config-fbjs)
-  @4.0.0#2022-07-12
+- [eslint-config-fbjs](./eslint-config-fbjs/index.md)
+  @4.0.0
+  #2022-07-12
   [npm](https://www.npmjs.com/package/eslint-config-fbjs)
   [github](https://github.com/facebook/fbjs/tree/main/packages/eslint-config-fbjs)
-- [eslint-config-fbjs-opensource](./eslint-config-fbjs-opensource)
-  @3.0.0#2022-07-12
+- [eslint-config-fbjs-opensource](./eslint-config-fbjs-opensource/index.md)
+  @3.0.0
+  #2022-07-12
   [npm](https://www.npmjs.com/package/eslint-config-fbjs-opensource)
   [github](https://github.com/facebook/fbjs/tree/main/packages/eslint-config-fbjs-opensource)
-- [eslint-config-google](./eslint-config-google)
-  @0.14.0#2019-09-03
+- [eslint-config-google](./eslint-config-google/index.md)
+  @0.14.0
+  #2019-09-03
   [npm](https://www.npmjs.com/package/eslint-config-google)
   [github](https://github.com/google/eslint-config-google)
-- [eslint-config-wikimedia](./eslint-config-wikimedia)
+- [eslint-config-wikimedia](./eslint-config-wikimedia/index.md)
   @0.23.0
   [npm](https://www.npmjs.com/package/eslint-config-wikimedia)
   [github](https://github.com/wikimedia/eslint-config-wikimedia)
-- [eslint-config-auto](./eslint-config-auto)
+- [eslint-config-auto](./eslint-config-auto/index.md)
   @0.7.3
   [npm](https://www.npmjs.com/package/eslint-config-auto)
   [github](https://github.com/davidjbradshaw/eslint-config-auto)
-- [eslint-config-canonical](./eslint-config-canonical)
+- [eslint-config-canonical](./eslint-config-canonical/index.md)
   @36.0.0
   [npm](https://www.npmjs.com/package/eslint-config-canonical)
   [github](https://github.com/gajus/eslint-config-canonical)
-- [eslint-config-standard](./eslint-config-standard)
+- [eslint-config-standard](./eslint-config-standard/index.md)
   @17.0.0
   [npm](https://www.npmjs.com/package/eslint-config-standard)
   [github](https://github.com/standard/eslint-config-standard)
-- [eslint-config-xo](./eslint-config-xo)
+- [eslint-config-xo](./eslint-config-xo/index.md)
   @0.41.0
   [npm](https://www.npmjs.com/package/eslint-config-xo)
   [github](https://github.com/xojs/eslint-config-xo)
-- [eslint-config-adjunct](./eslint-config-adjunct)
+- [eslint-config-adjunct](./eslint-config-adjunct/index.md)
   @4.11.2
   [npm](https://www.npmjs.com/package/eslint-config-adjunct)
   [github](https://github.com/davidjbradshaw/eslint-config-adjunct)
-- [eslint-config-ash-nazg](./eslint-config-ash-nazg)
+- [eslint-config-ash-nazg](./eslint-config-ash-nazg/index.md)
   @34.0.0
   [npm](https://www.npmjs.com/package/eslint-config-ash-nazg)
   [github](https://github.com/brettz9/eslint-config-ash-nazg)
-- [eslint-config-cecilia](./eslint-config-cecilia)
+- [eslint-config-cecilia](./eslint-config-cecilia/index.md)
   @2.5.5
   [npm](https://www.npmjs.com/package/eslint-config-cecilia)
   [github](https://github.com/SandroMiguel/eslint-config-cecilia)
-- [eslint-config-es](./eslint-config-es)
+- [eslint-config-es](./eslint-config-es/index.md)
   @4.2.0
   [npm](https://www.npmjs.com/package/eslint-config-es)
   [github](https://github.com/thenativeweb/eslint-config-es)
-- [eslint-config-hardcore](./eslint-config-hardcore)
+- [eslint-config-hardcore](./eslint-config-hardcore/index.md)
   @24.13.1
   [npm](https://www.npmjs.com/package/eslint-config-hardcore)
   [github](https://github.com/EvgenyOrekhov/eslint-config-hardcore)
-- [eslint-config-problems](./eslint-config-problems)
+- [eslint-config-problems](./eslint-config-problems/index.md)
   @6.0.0
   [npm](https://www.npmjs.com/package/eslint-config-problems)
   [github](https://github.com/RyanZim/eslint-config-problems)
-- [eslint-config-supermind](./eslint-config-supermind)
+- [eslint-config-supermind](./eslint-config-supermind/index.md)
   @0.48.0
   [npm](https://www.npmjs.com/package/eslint-config-supermind)
   [github](https://github.com/supermind/eslint-config-supermind)
