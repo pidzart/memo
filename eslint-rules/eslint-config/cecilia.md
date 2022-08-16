@@ -1,6 +1,6 @@
 # eslint-config-cecilia
 
-latest version 2.5.5 published at
+latest version 2.5.5 published at 2021-09-22
 
 [npm](https://www.npmjs.com/package/eslint-config-cecilia)
 [github](https://github.com/SandroMiguel/eslint-config-cecilia)

@@ -1,6 +1,6 @@
 # eslint-config-ash-nazg
 
-latest version 34.0.0 published at
+latest version 34.0.0 published at 2022-07-05
 
 [npm](https://www.npmjs.com/package/eslint-config-ash-nazg)
 [github](https://github.com/brettz9/eslint-config-ash-nazg)

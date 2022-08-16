@@ -1,6 +1,6 @@
 # eslint-config-wikimedia
 
-latest version 0.23.0 published at
+latest version 0.23.0 published at 2022-08-02
 
 [npm](https://www.npmjs.com/package/eslint-config-wikimedia)
 [github](https://github.com/wikimedia/eslint-config-wikimedia)

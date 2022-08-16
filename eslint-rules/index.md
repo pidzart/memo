@@ -1,175 +1,116 @@
-- [eslint](./eslint.md)
-  @ 8.18.0
-  [npm](https://www.npmjs.com/package/eslint)
-  [github](https://github.com/eslint/eslint)
-  [web](https://eslint.org/)
+| package               | version | publish | npm                                         | github                                     | other                      |
+| --------------------- | ------- | ------- | ------------------------------------------- | ------------------------------------------ | -------------------------- |
+| [eslint](./eslint.md) | 8.18.0  |         | [npm](https://www.npmjs.com/package/eslint) | [github](https://github.com/eslint/eslint) | [web](https://eslint.org/) |
 
 # plugins
 
-eslint-plugin-import
-2.26.0
-https://www.npmjs.com/package/eslint-plugin-import
-https://github.com/import-js/eslint-plugin-import
-
-https://www.npmjs.com/package/eslint-plugin-unicorn
-43.0.2
-https://github.com/sindresorhus/eslint-plugin-unicorn
-
-https://www.npmjs.com/package/eslint-plugin-promise
-https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
-https://www.npmjs.com/package/eslint-plugin-regexp
-https://www.npmjs.com/package/eslint-plugin-jsx-a11y
-https://www.npmjs.com/package/eslint-plugin-jest
-https://www.npmjs.com/package/eslint-plugin-react
-https://www.npmjs.com/package/eslint-plugin-mocha
-https://www.npmjs.com/package/eslint-plugin-prettier
-https://www.npmjs.com/package/eslint-plugin-react-hooks
-https://www.npmjs.com/package/eslint-plugin-cypress
-https://www.npmjs.com/package/eslint-plugin-babel
-https://www.npmjs.com/package/eslint-plugin-node
-https://www.npmjs.com/package/eslint-plugin-ember
-https://www.npmjs.com/package/eslint-plugin-unused-imports
-https://www.npmjs.com/package/eslint-plugin-jasmine
-https://www.npmjs.com/package/eslint-plugin-html
-https://www.npmjs.com/package/eslint-plugin-ava
-https://www.npmjs.com/package/eslint-plugin-qunit
-https://www.npmjs.com/package/eslint-plugin-jest-formatting
-https://www.npmjs.com/package/eslint-plugin-only-warn
-https://www.npmjs.com/package/eslint-plugin-chai-friendly
-https://www.npmjs.com/package/eslint-plugin-testing-library
-https://www.npmjs.com/package/eslint-plugin-react-native
-https://www.npmjs.com/package/eslint-plugin-you-dont-need-lodash-underscore
-https://www.npmjs.com/package/eslint-plugin-eslint-plugin
-https://www.npmjs.com/package/eslint-plugin-disable
-https://www.npmjs.com/package/eslint-plugin-editorconfig
-https://www.npmjs.com/package/eslint-plugin-ban
-https://www.npmjs.com/package/eslint-plugin-header
-https://www.npmjs.com/package/eslint-plugin-mozilla
-https://www.npmjs.com/package/eslint-plugin-optimize-regex
-https://www.npmjs.com/package/eslint-plugin-lodash
-https://www.npmjs.com/package/eslint-plugin-markdown
-https://www.npmjs.com/package/eslint-plugin-nuxt
-https://www.npmjs.com/package/@emotion/eslint-plugin
-https://www.npmjs.com/package/eslint-plugin-cucumber
-https://www.npmjs.com/package/eslint-plugin-json
-https://www.npmjs.com/package/eslint-plugin-jest-dom
-https://www.npmjs.com/package/eslint-plugin-n
-https://www.npmjs.com/package/eslint-plugin-sort-imports-requires
-https://www.npmjs.com/package/eslint-plugin-neverthrow
-https://www.npmjs.com/package/eslint-plugin-no-only-tests
-https://www.npmjs.com/package/eslint-plugin-ftgp
-https://www.npmjs.com/package/eslint-plugin-test-selectors
-https://www.npmjs.com/package/eslint-plugin-local-rules
-https://www.npmjs.com/package/eslint-plugin-sort-keys-fix
-https://www.npmjs.com/package/eslint-plugin-ft-flow
-https://www.npmjs.com/package/eslint-plugin-i18next
-https://www.npmjs.com/package/eslint-plugin-filenames
-https://www.npmjs.com/package/eslint-plugin-react-perf
-https://www.npmjs.com/package/eslint-plugin-react-redux
-https://www.npmjs.com/package/eslint-plugin-eslint-comments
-https://www.npmjs.com/package/eslint-plugin-primer-react
-https://www.npmjs.com/package/eslint-plugin-no-constructor-bind
-https://www.npmjs.com/package/eslint-plugin-yml
-https://www.npmjs.com/package/eslint-plugin-sort-class-members
-https://www.npmjs.com/package/eslint-plugin-xss
-https://www.npmjs.com/package/eslint-plugin-es
-https://www.npmjs.com/package/eslint-plugin-check-file
-https://www.npmjs.com/package/eslint-plugin-sort-requires
-https://www.npmjs.com/package/eslint-plugin-tree-shaking
-https://www.npmjs.com/package/eslint-plugin-ternary
-https://www.npmjs.com/package/eslint-plugin-base-style-config
-https://www.npmjs.com/package/eslint-plugin-mocha-cleanup
-https://www.npmjs.com/package/eslint-plugin-angular
-https://www.npmjs.com/package/eslint-plugin-ecmascript-compat
-https://www.npmjs.com/package/eslint-plugin-security-node
-https://www.npmjs.com/package/eslint-plugin-sort-export-all
-https://www.npmjs.com/package/eslint-plugin-kentcdodds
-https://www.npmjs.com/package/eslint-plugin-jquery
-https://www.npmjs.com/package/eslint-plugin-jsonc
-https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/README.md
+| package                                                                               | version  | publish    | npm                                                                         | github                                                                                            | other |
+| ------------------------------------------------------------------------------------- | -------- | ---------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ----- |
+| [@babel/eslint-plugin](./eslint-plugin/@babel.md)                                     | 7.18.10  | 2022-08-02 | [npm](https://www.npmjs.com/package/@babel/eslint-plugin)                   | [github](https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin)                     |       |
+| [@brettz9/eslint-plugin](./eslint-plugin/@brettz9.md)                                 | 1.0.4    | 2021-11-03 | [npm](https://www.npmjs.com/package/@brettz9/eslint-plugin)                 | [github](https://github.com/brettz9/eslint-plugin)                                                |       |
+| [@graphql-eslint/eslint-plugin](./eslint-plugin/@graphql-eslint.md)                   | 3.10.7   | 2022-07-30 | [npm](https://www.npmjs.com/package/@graphql-eslint/eslint-plugin)          | [github](https://github.com/B2o5T/graphql-eslint)                                                 |       |
+| [@html-eslint/eslint-plugin](./eslint-plugin/@html-eslint.md)                         | 0.13.2   | 2022-06-06 | [npm](https://www.npmjs.com/package/@html-eslint/eslint-plugin)             | [github](https://github.com/yeonjuan/html-eslint)                                                 |       |
+| [@next/eslint-plugin-next](./eslint-plugin/@next.md)                                  | 12.2.5   | 2022-08-12 | [npm](https://www.npmjs.com/package/@next/eslint-plugin-next)               | [github](https://github.com/vercel/next.js/tree/canary/packages/eslint-plugin-next)               |       |
+| [@shopify/eslint-plugin](./eslint-plugin/@shopify.md)                                 | 42.0.1   | 2022-06-30 | [npm](https://www.npmjs.com/package/@shopify/eslint-plugin)                 | [github](https://github.com/Shopify/web-configs/tree/main/packages/eslint-plugin)                 |       |
+| [@typescript-eslint/eslint-plugin](./eslint-plugin/@typescript-eslint.md)             | 5.33.1   | 2022-08-16 | [npm](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)       | [github](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin) |       |
+| [eslint-plugin-anti-trojan-source](./eslint-plugin/anti-trojan-source.md)             | 1.1.0    | 2021-12-31 | [npm](https://www.npmjs.com/package/eslint-plugin-anti-trojan-source)       | [github](https://github.com/lirantal/eslint-plugin-anti-trojan-source)                            |       |
+| [eslint-plugin-array-func](./eslint-plugin/array-func.md)                             | 3.1.7    | 2020-07-18 | [npm](https://www.npmjs.com/package/eslint-plugin-array-func)               | [github](https://github.com/freaktechnik/eslint-plugin-array-func)                                |       |
+| [eslint-plugin-ava](./eslint-plugin/ava.md)                                           | 13.2.0   | 2022-01-08 | [npm](https://www.npmjs.com/package/eslint-plugin-ava)                      | [github](https://github.com/avajs/eslint-plugin-ava)                                              |       |
+| [eslint-plugin-babel](./eslint-plugin/babel.md)                                       | 5.3.1    | 2020-06-30 | [npm](https://www.npmjs.com/package/eslint-plugin-babel)                    | [github](https://github.com/babel/eslint-plugin-babel)                                            |       |
+| [eslint-plugin-canonical](./eslint-plugin/canonical.md)                               | 3.1.0    | 2022-05-20 | [npm](https://www.npmjs.com/package/eslint-plugin-canonical)                | [github](https://github.com/gajus/eslint-plugin-canonical)                                        |       |
+| [eslint-plugin-chai-expect](./eslint-plugin/chai-expect.md)                           | 3.0.0    | 2021-10-20 | [npm](https://www.npmjs.com/package/eslint-plugin-chai-expect)              | [github](https://github.com/turbo87/eslint-plugin-chai-expect)                                    |       |
+| [eslint-plugin-chai-friendly](./eslint-plugin/chai-friendly.md)                       | 0.7.2    | 2021-08-02 | [npm](https://www.npmjs.com/package/eslint-plugin-chai-friendly)            | [github](https://github.com/ihordiachenko/eslint-plugin-chai-friendly)                            |       |
+| [eslint-plugin-compat](./eslint-plugin/compat.md)                                     | 4.0.2    | 2022-02-01 | [npm](https://www.npmjs.com/package/eslint-plugin-compat)                   | [github](https://github.com/amilajack/eslint-plugin-compat)                                       |       |
+| [eslint-plugin-cypress](./eslint-plugin/cypress.md)                                   | 2.12.1   | 2021-09-15 | [npm](https://www.npmjs.com/package/eslint-plugin-cypress)                  | [github](https://github.com/cypress-io/eslint-plugin-cypress)                                     |       |
+| [eslint-plugin-decorator-position](./eslint-plugin/decorator-position.md)             | 5.0.1    | 2022-07-20 | [npm](https://www.npmjs.com/package/eslint-plugin-decorator-position)       | [github](https://github.com/NullVoxPopuli/eslint-plugin-decorator-position)                       |       |
+| [eslint-plugin-es-x](./eslint-plugin/es-x.md)                                         | 5.2.1    | 2022-05-20 | [npm](https://www.npmjs.com/package/eslint-plugin-es-x)                     | [github](https://github.com/ota-meshi/eslint-plugin-es-x)                                         |       |
+| [eslint-plugin-eslint-comments](./eslint-plugin/eslint-comments.md)                   | 3.2.0    | 2020-05-25 | [npm](https://www.npmjs.com/package/eslint-plugin-eslint-comments)          | [github](https://github.com/mysticatea/eslint-plugin-eslint-comments)                             |       |
+| [eslint-plugin-etc](./eslint-plugin/etc.md)                                           | 2.0.2    | 2022-01-22 | [npm](https://www.npmjs.com/package/eslint-plugin-etc)                      | [github](https://github.com/cartant/eslint-plugin-etc)                                            |       |
+| [eslint-plugin-ext](./eslint-plugin/ext.md)                                           | 0.1.0    | 2020-04-16 | [npm](https://www.npmjs.com/package/eslint-plugin-ext)                      | [github](https://github.com/jiangfengming/eslint-plugin-ext)                                      |       |
+| [eslint-plugin-extended](./eslint-plugin/extended.md)                                 | 0.2.0    | 2016-05-20 | [npm](https://www.npmjs.com/package/eslint-plugin-extended)                 | [github](https://github.com/thenativeweb/eslint-plugin-extended)                                  |       |
+| [eslint-plugin-flowtype](./eslint-plugin/flowtype.md)                                 | 8.0.3    | 2021-10-29 | [npm](https://www.npmjs.com/package/eslint-plugin-flowtype)                 | [github](https://github.com/gajus/eslint-plugin-flowtype)                                         |       |
+| [eslint-plugin-fp](./eslint-plugin/fp.md)                                             | 2.3.0    | 2017-01-02 | [npm](https://www.npmjs.com/package/eslint-plugin-fp)                       | [github](https://github.com/jfmengels/eslint-plugin-fp)                                           |       |
+| [eslint-plugin-fsa](./eslint-plugin/fsa.md)                                           | 1.0.12   | 2018-05-16 | [npm](https://www.npmjs.com/package/eslint-plugin-fsa)                      | [github](https://github.com/joseph-galindo/eslint-plugin-fsa)                                     |       |
+| [eslint-plugin-ft-flow](./eslint-plugin/ft-flow.md)                                   | 2.0.1    | 2022-01-08 | [npm](https://www.npmjs.com/package/eslint-plugin-ft-flow)                  | [github](https://github.com/flow-typed/eslint-plugin-ft-flow)                                     |       |
+| [eslint-plugin-html](./eslint-plugin/html.md)                                         | 7.1.0    | 2022-07-26 | [npm](https://www.npmjs.com/package/eslint-plugin-html)                     | [github](https://github.com/BenoitZugmeyer/eslint-plugin-html)                                    |       |
+| [eslint-plugin-import](./eslint-plugin/import.md)                                     | 2.26.0   | 2022-04-06 | [npm](https://www.npmjs.com/package/eslint-plugin-import)                   | [github](https://github.com/import-js/eslint-plugin-import)                                       |       |
+| [eslint-plugin-inferno](./eslint-plugin/inferno.md)                                   | 7.30.1   | 2022-07-26 | [npm](https://www.npmjs.com/package/eslint-plugin-inferno)                  | [github](https://github.com/infernojs/eslint-plugin-inferno)                                      |       |
+| [eslint-plugin-jasmine](./eslint-plugin/jasmine.md)                                   | 4.1.3    | 2021-11-24 | [npm](https://www.npmjs.com/package/eslint-plugin-jasmine)                  | [github](https://github.com/tlvince/eslint-plugin-jasmine)                                        |       |
+| [eslint-plugin-jest](./eslint-plugin/jest.md)                                         | 26.8.3   | 2022-08-15 | [npm](https://www.npmjs.com/package/eslint-plugin-jest)                     | [github](https://github.com/jest-community/eslint-plugin-jest)                                    |       |
+| [eslint-plugin-jest-async](./eslint-plugin/jest-async.md)                             | 1.0.3    | 2017-02-22 | [npm](https://www.npmjs.com/package/eslint-plugin-jest-async)               | [github](https://github.com/mangs/eslint-plugin-jest-async)                                       |       |
+| [eslint-plugin-jest-dom](./eslint-plugin/jest-dom.md)                                 | 4.0.2    | 2022-05-22 | [npm](https://www.npmjs.com/package/eslint-plugin-jest-dom)                 | [github](https://github.com/testing-library/eslint-plugin-jest-dom)                               |       |
+| [eslint-plugin-jest-formatting](./eslint-plugin/jest-formatting.md)                   | 3.1.0    | 2021-11-18 | [npm](https://www.npmjs.com/package/eslint-plugin-jest-formatting)          | [github](https://github.com/dangreenisrael/eslint-plugin-jest-formatting)                         |       |
+| [eslint-plugin-jsdoc](./eslint-plugin/jsdoc.md)                                       | 39.3.6   | 2022-08-09 | [npm](https://www.npmjs.com/package/eslint-plugin-jsdoc)                    | [github](https://github.com/gajus/eslint-plugin-jsdoc)                                            |       |
+| [eslint-plugin-json](./eslint-plugin/json.md)                                         | 3.1.0    | 2021-08-06 | [npm](https://www.npmjs.com/package/eslint-plugin-json)                     | [github](https://github.com/azeemba/eslint-plugin-json)                                           |       |
+| [eslint-plugin-json-es](./eslint-plugin/json-es.md)                                   | 1.5.7    | 2022-03-29 | [npm](https://www.npmjs.com/package/eslint-plugin-json-es)                  | [github](https://github.com/zeitport/eslint-plugin-json-es)                                       |       |
+| [eslint-plugin-jsonc](./eslint-plugin/jsonc.md)                                       | 2.4.0    | 2022-08-16 | [npm](https://www.npmjs.com/package/eslint-plugin-jsonc)                    | [github](https://github.com/ota-meshi/eslint-plugin-jsonc)                                        |       |
+| [eslint-plugin-jsx-a11y](./eslint-plugin/jsx-a11y.md)                                 | 6.6.1    | 2022-07-22 | [npm](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)                 | [github](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)                                    |       |
+| [eslint-plugin-lodash](./eslint-plugin/lodash.md)                                     | 7.4.0    | 2022-02-15 | [npm](https://www.npmjs.com/package/eslint-plugin-lodash)                   | [github](https://github.com/wix/eslint-plugin-lodash)                                             |       |
+| [eslint-plugin-lodash-fp](./eslint-plugin/lodash-fp.md)                               | 2.2.0-a1 | 2018-07-10 | [npm](https://www.npmjs.com/package/eslint-plugin-lodash-fp)                | [github](https://github.com/jfmengels/eslint-plugin-lodash-fp)                                    |       |
+| [eslint-plugin-markdown](./eslint-plugin/markdown.md)                                 | 3.0.0    | 2022-07-17 | [npm](https://www.npmjs.com/package/eslint-plugin-markdown)                 | [github](https://github.com/eslint/eslint-plugin-markdown)                                        |       |
+| [eslint-plugin-mediawiki](./eslint-plugin/mediawiki.md)                               | 0.4.0    | 2022-05-21 | [npm](https://www.npmjs.com/package/eslint-plugin-mediawiki)                | [github](https://github.com/wikimedia/eslint-plugin-mediawiki)                                    |       |
+| [eslint-plugin-mocha](./eslint-plugin/mocha.md)                                       | 10.1.0   | 2022-07-20 | [npm](https://www.npmjs.com/package/eslint-plugin-mocha)                    | [github](https://github.com/lo1tuma/eslint-plugin-mocha)                                          |       |
+| [eslint-plugin-mocha-cleanup](./eslint-plugin/mocha-cleanup.md)                       | 1.11.3   | 2022-03-17 | [npm](https://www.npmjs.com/package/eslint-plugin-mocha-cleanup)            | [github](https://github.com/onechiporenko/eslint-plugin-mocha-cleanup)                            |       |
+| [eslint-plugin-modules-newline](./eslint-plugin/modules-newline.md)                   | 0.0.6    | 2021-01-13 | [npm](https://www.npmjs.com/package/eslint-plugin-modules-newline)          | [github](https://github.com/gmsorrow/eslint-plugin-modules-newline)                               |       |
+| [eslint-plugin-n](./eslint-plugin/n.md)                                               | 15.2.4   | 2022-07-04 | [npm](https://www.npmjs.com/package/eslint-plugin-n)                        | [github](https://github.com/weiran-zsd/eslint-plugin-node)                                        |       |
+| [eslint-plugin-no-constructor-bind](./eslint-plugin/no-constructor-bind.md)           | 2.0.4    | 2020-10-27 | [npm](https://www.npmjs.com/package/eslint-plugin-no-constructor-bind)      | [github](https://github.com/markalfred/eslint-plugin-no-constructor-bind)                         |       |
+| [eslint-plugin-no-explicit-type-exports](./eslint-plugin/no-explicit-type-exports.md) | 0.12.1   | 2021-10-05 | [npm](https://www.npmjs.com/package/eslint-plugin-no-explicit-type-exports) | [github](https://github.com/intuit/eslint-plugin-no-explicit-type-exports)                        |       |
+| [eslint-plugin-no-jquery](./eslint-plugin/no-jquery.md)                               | 2.7.0    | 2021-10-27 | [npm](https://www.npmjs.com/package/eslint-plugin-no-jquery)                | [github](https://github.com/wikimedia/eslint-plugin-no-jquery)                                    |       |
+| [eslint-plugin-no-secrets](./eslint-plugin/no-secrets.md)                             | 0.8.9    | 2021-02-28 | [npm](https://www.npmjs.com/package/eslint-plugin-no-secrets)               | [github](https://github.com/nickdeis/eslint-plugin-no-secrets)                                    |       |
+| [eslint-plugin-no-unsanitized](./eslint-plugin/no-unsanitized.md)                     | 4.0.1    | 2021-12-10 | [npm](https://www.npmjs.com/package/eslint-plugin-no-unsanitized)           | [github](https://github.com/mozilla/eslint-plugin-no-unsanitized)                                 |       |
+| [eslint-plugin-no-use-extend-native](./eslint-plugin/no-use-extend-native.md)         | 0.5.0    | 2020-04-11 | [npm](https://www.npmjs.com/package/eslint-plugin-no-use-extend-native)     | [github](https://github.com/dustinspecker/eslint-plugin-no-use-extend-native)                     |       |
+| [eslint-plugin-node](./eslint-plugin/node.md)                                         | 11.1.0   | 2020-03-28 | [npm](https://www.npmjs.com/package/eslint-plugin-node)                     | [github](https://github.com/mysticatea/eslint-plugin-node)                                        |       |
+| [eslint-plugin-optimize-regex](./eslint-plugin/optimize-regex.md)                     | 1.2.1    | 2021-07-26 | [npm](https://www.npmjs.com/package/eslint-plugin-optimize-regex)           | [github](https://github.com/BrainMaestro/eslint-plugin-optimize-regex)                            |       |
+| [eslint-plugin-prefer-object-spread](./eslint-plugin/prefer-object-spread.md)         | 1.2.1    | 2017-04-19 | [npm](https://www.npmjs.com/package/eslint-plugin-prefer-object-spread)     | [github](https://github.com/bryanrsmith/eslint-plugin-prefer-object-spread)                       |       |
+| [eslint-plugin-prettier](./eslint-plugin/prettier.md)                                 | 4.2.1    | 2022-06-30 | [npm](https://www.npmjs.com/package/eslint-plugin-prettier)                 | [github](https://github.com/prettier/eslint-plugin-prettier)                                      |       |
+| [eslint-plugin-promise](./eslint-plugin/promise.md)                                   | 6.0.0    | 2021-12-18 | [npm](https://www.npmjs.com/package/eslint-plugin-promise)                  | [github](https://github.com/xjamundx/eslint-plugin-promise)                                       |       |
+| [eslint-plugin-putout](./eslint-plugin/putout.md)                                     | 16.0.1   | 2022-08-04 | [npm](https://www.npmjs.com/package/eslint-plugin-putout)                   | [github](https://github.com/coderaiser/putout/tree/master/packages/eslint-plugin-putout)          |       |
+| [eslint-plugin-qunit](./eslint-plugin/qunit.md)                                       | 7.3.1    | 2022-07-09 | [npm](https://www.npmjs.com/package/eslint-plugin-qunit)                    | [github](https://github.com/platinumazure/eslint-plugin-qunit)                                    |       |
+| [eslint-plugin-ramda](./eslint-plugin/ramda.md)                                       | 2.5.1    | 2018-03-24 | [npm](https://www.npmjs.com/package/eslint-plugin-ramda)                    | [github](https://github.com/ramda/eslint-plugin-ramda)                                            |       |
+| [eslint-plugin-react](./eslint-plugin/react.md)                                       | 7.30.1   | 2022-06-24 | [npm](https://www.npmjs.com/package/eslint-plugin-react)                    | [github](https://github.com/jsx-eslint/eslint-plugin-react)                                       |       |
+| [eslint-plugin-react-form-fields](./eslint-plugin/react-form-fields.md)               | 1.2.22   | 2022-05-31 | [npm](https://www.npmjs.com/package/eslint-plugin-react-form-fields)        | [github](https://github.com/kotarella1110/eslint-plugin-react-form-fields)                        |       |
+| [eslint-plugin-react-hook-form](./eslint-plugin/react-hook-form.md)                   | 0.2.4    | 2022-03-26 | [npm](https://www.npmjs.com/package/eslint-plugin-react-hook-form)          | [github](https://github.com/andykao1213/eslint-plugin-react-hook-form)                            |       |
+| [eslint-plugin-react-hooks](./eslint-plugin/react-hooks.md)                           | 4.6.0    | 2022-06-15 | [npm](https://www.npmjs.com/package/eslint-plugin-react-hooks)              | [github](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)          |       |
+| [eslint-plugin-react-native](./eslint-plugin/react-native.md)                         | 4.0.0    | 2021-12-12 | [npm](https://www.npmjs.com/package/eslint-plugin-react-native)             | [github](https://github.com/intellicode/eslint-plugin-react-native)                               |       |
+| [eslint-plugin-react-perf](./eslint-plugin/react-perf.md)                             | 3.3.1    | 2021-12-14 | [npm](https://www.npmjs.com/package/eslint-plugin-react-perf)               | [github](https://github.com/cvazac/eslint-plugin-react-perf)                                      |       |
+| [eslint-plugin-react-redux](./eslint-plugin/react-redux.md)                           | 4.0.0    | 2022-02-08 | [npm](https://www.npmjs.com/package/eslint-plugin-react-redux)              | [github](https://github.com/DianaSuvorova/eslint-plugin-react-redux)                              |       |
+| [eslint-plugin-redux-saga](./eslint-plugin/redux-saga.md)                             | 1.3.2    | 2021-12-09 | [npm](https://www.npmjs.com/package/eslint-plugin-redux-saga)               | [github](https://github.com/pke/eslint-plugin-redux-saga)                                         |       |
+| [eslint-plugin-regexp](./eslint-plugin/regexp.md)                                     | 1.8.0    | 2022-07-27 | [npm](https://www.npmjs.com/package/eslint-plugin-regexp)                   | [github](https://github.com/ota-meshi/eslint-plugin-regexp)                                       |       |
+| [eslint-plugin-scanjs-rules](./eslint-plugin/scanjs-rules.md)                         | 0.2.1    | 2017-08-03 | [npm](https://www.npmjs.com/package/eslint-plugin-scanjs-rules)             | [github](https://github.com/mozfreddyb/eslint-plugin-scanjs-rules)                                |       |
+| [eslint-plugin-security](./eslint-plugin/security.md)                                 | 1.5.0    | 2022-04-19 | [npm](https://www.npmjs.com/package/eslint-plugin-security)                 | [github](https://github.com/nodesecurity/eslint-plugin-security)                                  |       |
+| [eslint-plugin-simple-import-sort](./eslint-plugin/simple-import-sort.md)             | 7.0.0    | 2020-12-09 | [npm](https://www.npmjs.com/package/eslint-plugin-simple-import-sort)       | [github](https://github.com/lydell/eslint-plugin-simple-import-sort)                              |       |
+| [eslint-plugin-sonarjs](./eslint-plugin/sonarjs.md)                                   | 0.15.0   | 2022-08-08 | [npm](https://www.npmjs.com/package/eslint-plugin-sonarjs)                  | [github](https://github.com/SonarSource/eslint-plugin-sonarjs)                                    |       |
+| [eslint-plugin-sort-class-members](./eslint-plugin/sort-class-members.md)             | 1.14.1   | 2021-12-03 | [npm](https://www.npmjs.com/package/eslint-plugin-sort-class-members)       | [github](https://github.com/bryanrsmith/eslint-plugin-sort-class-members)                         |       |
+| [eslint-plugin-standard](./eslint-plugin/standard.md)                                 | 4.1.0    | 2020-11-10 | [npm](https://www.npmjs.com/package/eslint-plugin-standard)                 | [github](https://github.com/standard/eslint-plugin-standard)                                      |       |
+| [eslint-plugin-switch-case](./eslint-plugin/switch-case.md)                           | 1.1.2    | 2016-08-01 | [npm](https://www.npmjs.com/package/eslint-plugin-switch-case)              | [github](https://github.com/lukeapage/eslint-plugin-switch-case)                                  |       |
+| [eslint-plugin-testing-library](./eslint-plugin/testing-library.md)                   | 5.6.0    | 2022-07-31 | [npm](https://www.npmjs.com/package/eslint-plugin-testing-library)          | [github](https://github.com/testing-library/eslint-plugin-testing-library)                        |       |
+| [eslint-plugin-typescript-sort-keys](./eslint-plugin/typescript-sort-keys.md)         | 2.1.0    | 2021-11-24 | [npm](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys)     | [github](https://github.com/infctr/eslint-plugin-typescript-sort-keys)                            |       |
+| [eslint-plugin-unicorn](./eslint-plugin/unicorn.md)                                   | 43.0.2   | 2022-07-18 | [npm](https://www.npmjs.com/package/eslint-plugin-unicorn)                  | [github](https://github.com/sindresorhus/eslint-plugin-unicorn)                                   |       |
+| [eslint-plugin-vue](./eslint-plugin/vue.md)                                           | 9.3.0    | 2022-07-25 | [npm](https://www.npmjs.com/package/eslint-plugin-vue)                      | [github](https://github.com/vuejs/eslint-plugin-vue)                                              |       |
+| [eslint-plugin-wdio](./eslint-plugin/wdio.md)                                         | 7.21.0   | 2022-08-16 | [npm](https://www.npmjs.com/package/eslint-plugin-wdio)                     | [github](https://github.com/webdriverio/webdriverio/tree/main/packages/eslint-plugin-wdio)        |       |
+| [eslint-plugin-yml](./eslint-plugin/yml.md)                                           | 1.1.0    | 2022-07-28 | [npm](https://www.npmjs.com/package/eslint-plugin-yml)                      | [github](https://github.com/ota-meshi/eslint-plugin-yml)                                          |       |
 
 # configs
 
-|package|latest|published|npm|github|other|
-|---|---|---|---|---|---|
-|[eslint-config-airbnb](./eslint-config/airbnb.md)|19.0.4|2021-12-26|[npm](https://www.npmjs.com/package/eslint-config-airbnb)|[github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)||
-|[eslint-config-airbnb-base](./eslint-config/airbnb-base.md)|15.0.0|2021-11-09|[npm](https://www.npmjs.com/package/eslint-config-airbnb-base)|[github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)||
-
-- [eslint-config-alloy](./eslint-config/alloy.md)
-  @4.6.2
-  #2021-07-04
-  [npm](https://www.npmjs.com/package/eslint-config-alloy)
-  [github](https://github.com/AlloyTeam/eslint-config-alloy)
-  [web](https://alloyteam.github.io/eslint-config-alloy/)
-- [eslint-config-eslint](./eslint-config/eslint.md)
-  @7.0.0
-  #2021-02-06
-  [npm](https://www.npmjs.com/package/eslint-config-eslint)
-  [github](https://github.com/eslint/eslint/tree/main/packages/eslint-config-eslint)
-- [eslint-config-fbjs](./eslint-config/fbjs.md)
-  @4.0.0
-  #2022-07-12
-  [npm](https://www.npmjs.com/package/eslint-config-fbjs)
-  [github](https://github.com/facebook/fbjs/tree/main/packages/eslint-config-fbjs)
-- [eslint-config-fbjs-opensource](./eslint-config/fbjs-opensource.md)
-  @3.0.0
-  #2022-07-12
-  [npm](https://www.npmjs.com/package/eslint-config-fbjs-opensource)
-  [github](https://github.com/facebook/fbjs/tree/main/packages/eslint-config-fbjs-opensource)
-- [eslint-config-google](./eslint-config/google.md)
-  @0.14.0
-  #2019-09-03
-  [npm](https://www.npmjs.com/package/eslint-config-google)
-  [github](https://github.com/google/eslint-config-google)
-- [eslint-config-wikimedia](./eslint-config/wikimedia.md)
-  @0.23.0
-  [npm](https://www.npmjs.com/package/eslint-config-wikimedia)
-  [github](https://github.com/wikimedia/eslint-config-wikimedia)
-- [eslint-config-auto](./eslint-config/auto.md)
-  @0.7.3
-  [npm](https://www.npmjs.com/package/eslint-config-auto)
-  [github](https://github.com/davidjbradshaw/eslint-config-auto)
-- [eslint-config-canonical](./eslint-config/canonical.md)
-  @36.0.0
-  [npm](https://www.npmjs.com/package/eslint-config-canonical)
-  [github](https://github.com/gajus/eslint-config-canonical)
-- [eslint-config-standard](./eslint-config/standard.md)
-  @17.0.0
-  [npm](https://www.npmjs.com/package/eslint-config-standard)
-  [github](https://github.com/standard/eslint-config-standard)
-- [eslint-config-xo](./eslint-config/xo.md)
-  @0.41.0
-  [npm](https://www.npmjs.com/package/eslint-config-xo)
-  [github](https://github.com/xojs/eslint-config-xo)
-- [eslint-config-adjunct](./eslint-config/adjunct.md)
-  @4.11.2
-  [npm](https://www.npmjs.com/package/eslint-config-adjunct)
-  [github](https://github.com/davidjbradshaw/eslint-config-adjunct)
-- [eslint-config-ash-nazg](./eslint-config/ash-nazg.md)
-  @34.0.0
-  [npm](https://www.npmjs.com/package/eslint-config-ash-nazg)
-  [github](https://github.com/brettz9/eslint-config-ash-nazg)
-- [eslint-config-cecilia](./eslint-config/cecilia.md)
-  @2.5.5
-  [npm](https://www.npmjs.com/package/eslint-config-cecilia)
-  [github](https://github.com/SandroMiguel/eslint-config-cecilia)
-- [eslint-config-es](./eslint-config/es.md)
-  @4.2.0
-  [npm](https://www.npmjs.com/package/eslint-config-es)
-  [github](https://github.com/thenativeweb/eslint-config-es)
-- [eslint-config-hardcore](./eslint-config/hardcore.md)
-  @24.13.1
-  [npm](https://www.npmjs.com/package/eslint-config-hardcore)
-  [github](https://github.com/EvgenyOrekhov/eslint-config-hardcore)
-- [eslint-config-problems](./eslint-config/problems.md)
-  @6.0.0
-  [npm](https://www.npmjs.com/package/eslint-config-problems)
-  [github](https://github.com/RyanZim/eslint-config-problems)
-- [eslint-config-supermind](./eslint-config/supermind.md)
-  @0.48.0
-  [npm](https://www.npmjs.com/package/eslint-config-supermind)
-  [github](https://github.com/supermind/eslint-config-supermind)
-- [eslint-config-prettier](./eslint-config/prettier.md)
-  @8.5.0
-  [npm](https://www.npmjs.com/package/eslint-config-prettier)
-  [github](https://github.com/prettier/eslint-config-prettier)
+| package                                                             | version | publish    | npm                                                                | github                                                                                        | other                                                   |
+| ------------------------------------------------------------------- | ------- | ---------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| [eslint-config-adjunct](./eslint-config/adjunct.md)                 | 4.11.2  | 2022-07-09 | [npm](https://www.npmjs.com/package/eslint-config-adjunct)         | [github](https://github.com/davidjbradshaw/eslint-config-adjunct)                             |                                                         |
+| [eslint-config-airbnb-base](./eslint-config/airbnb-base.md)         | 15.0.0  | 2021-11-09 | [npm](https://www.npmjs.com/package/eslint-config-airbnb-base)     | [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) |                                                         |
+| [eslint-config-airbnb](./eslint-config/airbnb.md)                   | 19.0.4  | 2021-12-26 | [npm](https://www.npmjs.com/package/eslint-config-airbnb)          | [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)      |                                                         |
+| [eslint-config-alloy](./eslint-config/alloy.md)                     | 4.6.2   | 2021-07-04 | [npm](https://www.npmjs.com/package/eslint-config-alloy)           | [github](https://github.com/AlloyTeam/eslint-config-alloy)                                    | [web](https://alloyteam.github.io/eslint-config-alloy/) |
+| [eslint-config-ash-nazg](./eslint-config/ash-nazg.md)               | 34.0.0  | 2022-07-05 | [npm](https://www.npmjs.com/package/eslint-config-ash-nazg)        | [github](https://github.com/brettz9/eslint-config-ash-nazg)                                   |                                                         |
+| [eslint-config-auto](./eslint-config/auto.md)                       | 0.7.3   | 2022-07-09 | [npm](https://www.npmjs.com/package/eslint-config-auto)            | [github](https://github.com/davidjbradshaw/eslint-config-auto)                                |                                                         |
+| [eslint-config-canonical](./eslint-config/canonical.md)             | 36.0.0  | 2022-07-30 | [npm](https://www.npmjs.com/package/eslint-config-canonical)       | [github](https://github.com/gajus/eslint-config-canonical)                                    |                                                         |
+| [eslint-config-cecilia](./eslint-config/cecilia.md)                 | 2.5.5   | 2021-09-22 | [npm](https://www.npmjs.com/package/eslint-config-cecilia)         | [github](https://github.com/SandroMiguel/eslint-config-cecilia)                               |                                                         |
+| [eslint-config-es](./eslint-config/es.md)                           | 4.2.0   | 2022-03-03 | [npm](https://www.npmjs.com/package/eslint-config-es)              | [github](https://github.com/thenativeweb/eslint-config-es)                                    |                                                         |
+| [eslint-config-eslint](./eslint-config/eslint.md)                   | 7.0.0   | 2021-02-06 | [npm](https://www.npmjs.com/package/eslint-config-eslint)          | [github](https://github.com/eslint/eslint/tree/main/packages/eslint-config-eslint)            |                                                         |
+| [eslint-config-fbjs-opensource](./eslint-config/fbjs-opensource.md) | 3.0.0   | 2022-07-12 | [npm](https://www.npmjs.com/package/eslint-config-fbjs-opensource) | [github](https://github.com/facebook/fbjs/tree/main/packages/eslint-config-fbjs-opensource)   |                                                         |
+| [eslint-config-fbjs](./eslint-config/fbjs.md)                       | 4.0.0   | 2022-07-12 | [npm](https://www.npmjs.com/package/eslint-config-fbjs)            | [github](https://github.com/facebook/fbjs/tree/main/packages/eslint-config-fbjs)              |                                                         |
+| [eslint-config-google](./eslint-config/google.md)                   | 0.14.0  | 2019-09-03 | [npm](https://www.npmjs.com/package/eslint-config-google)          | [github](https://github.com/google/eslint-config-google)                                      |                                                         |
+| [eslint-config-hardcore](./eslint-config/hardcore.md)               | 24.13.1 | 2022-08-01 | [npm](https://www.npmjs.com/package/eslint-config-hardcore)        | [github](https://github.com/EvgenyOrekhov/eslint-config-hardcore)                             |                                                         |
+| [eslint-config-prettier](./eslint-config/prettier.md)               | 8.5.0   | 2022-03-03 | [npm](https://www.npmjs.com/package/eslint-config-prettier)        | [github](https://github.com/prettier/eslint-config-prettier)                                  |                                                         |
+| [eslint-config-problems](./eslint-config/problems.md)               | 6.0.0   | 2021-11-17 | [npm](https://www.npmjs.com/package/eslint-config-problems)        | [github](https://github.com/RyanZim/eslint-config-problems)                                   |                                                         |
+| [eslint-config-standard](./eslint-config/standard.md)               | 17.0.0  | 2022-04-20 | [npm](https://www.npmjs.com/package/eslint-config-standard)        | [github](https://github.com/standard/eslint-config-standard)                                  |                                                         |
+| [eslint-config-supermind](./eslint-config/supermind.md)             | 0.48.0  | 2018-02-05 | [npm](https://www.npmjs.com/package/eslint-config-supermind)       | [github](https://github.com/supermind/eslint-config-supermind)                                |                                                         |
+| [eslint-config-wikimedia](./eslint-config/wikimedia.md)             | 0.23.0  | 2022-08-02 | [npm](https://www.npmjs.com/package/eslint-config-wikimedia)       | [github](https://github.com/wikimedia/eslint-config-wikimedia)                                |                                                         |
+| [eslint-config-xo](./eslint-config/xo.md)                           | 0.41.0  | 2022-05-17 | [npm](https://www.npmjs.com/package/eslint-config-xo)              | [github](https://github.com/xojs/eslint-config-xo)                                            |                                                         |

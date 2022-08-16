@@ -1,6 +1,6 @@
 # eslint-config-hardcore
 
-latest version 24.13.1 published at
+latest version 24.13.1 published at 2022-08-01
 
 [npm](https://www.npmjs.com/package/eslint-config-hardcore)
 [github](https://github.com/EvgenyOrekhov/eslint-config-hardcore)

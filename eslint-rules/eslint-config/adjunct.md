@@ -1,6 +1,6 @@
 # eslint-config-adjunct
 
-latest version 4.11.2 published at
+latest version 4.11.2 published at 2022-07-09
 
 [npm](https://www.npmjs.com/package/eslint-config-adjunct)
 [github](https://github.com/davidjbradshaw/eslint-config-adjunct)

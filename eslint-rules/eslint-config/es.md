@@ -1,15 +1,11 @@
 # eslint-config-es
 
-latest version 4.2.0 published at
+latest version 4.2.0 published at 2022-03-03
 
 [npm](https://www.npmjs.com/package/eslint-config-es)
 [github](https://github.com/thenativeweb/eslint-config-es)
 
 ## plugins used
-
-- eslint-plugin-import
-- eslint-plugin-n
-- eslint-plugin-promise
 
 - @typescript-eslint/eslint-plugin
 - eslint-plugin-eslint-comments

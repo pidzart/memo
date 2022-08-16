@@ -1,6 +1,6 @@
 # eslint-config-canonical
 
-latest version 36.0.0 published at
+latest version 36.0.0 published at 2022-07-30
 
 [npm](https://www.npmjs.com/package/eslint-config-canonical)
 [github](https://github.com/gajus/eslint-config-canonical)

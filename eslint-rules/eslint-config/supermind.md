@@ -1,6 +1,6 @@
 # eslint-config-supermind
 
-latest version 0.48.0 published at
+latest version 0.48.0 published at 2018-02-05
 
 [npm](https://www.npmjs.com/package/eslint-config-supermind)
 [github](https://github.com/supermind/eslint-config-supermind)
