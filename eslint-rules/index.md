@@ -169,3 +169,7 @@ https://github.com/Shopify/web-foundation/blob/main/packages/eslint-plugin/READM
   @0.48.0
   [npm](https://www.npmjs.com/package/eslint-config-supermind)
   [github](https://github.com/supermind/eslint-config-supermind)
+- [eslint-config-prettier](./eslint-config/prettier.md)
+  @8.5.0
+  [npm](https://www.npmjs.com/package/eslint-config-prettier)
+  [github](https://github.com/prettier/eslint-config-prettier)
