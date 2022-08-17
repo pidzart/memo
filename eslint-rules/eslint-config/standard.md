@@ -7,9 +7,9 @@ latest version 17.0.0 published at 2022-04-20
 
 ## plugins used
 
-- eslint-plugin-import
-- eslint-plugin-n
-- eslint-plugin-promise
+- [eslint-plugin-import](../eslint-plugin/import.md)
+- [eslint-plugin-n](../eslint-plugin/n.md)
+- [eslint-plugin-promise](../eslint-plugin/promise.md)
 
 ## rule configs
 

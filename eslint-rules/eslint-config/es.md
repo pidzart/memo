@@ -7,14 +7,14 @@ latest version 4.2.0 published at 2022-03-03
 
 ## plugins used
 
-- @typescript-eslint/eslint-plugin
-- eslint-plugin-eslint-comments
-- eslint-plugin-extended
-- eslint-plugin-import
-- eslint-plugin-mocha
-- eslint-plugin-react
-- eslint-plugin-react-hooks
-- eslint-plugin-unicorn
+- [@typescript-eslint/eslint-plugin](../eslint-plugin/@typescript-eslint.md)
+- [eslint-plugin-eslint-comments](../eslint-plugin/eslint-comments.md)
+- [eslint-plugin-extended](../eslint-plugin/extended.md)
+- [eslint-plugin-import](../eslint-plugin/import.md)
+- [eslint-plugin-mocha](../eslint-plugin/mocha.md)
+- [eslint-plugin-react](../eslint-plugin/react.md)
+- [eslint-plugin-react-hooks](../eslint-plugin/react-hooks.md)
+- [eslint-plugin-unicorn](../eslint-plugin/unicorn.md)
 
 ## rule configs
 

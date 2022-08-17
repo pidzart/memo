@@ -7,7 +7,7 @@ latest version 15.0.0 published at 2021-11-09
 
 ## plugins used
 
-- eslint-plugin-import
+- [eslint-plugin-import](../eslint-plugin/import.md)
 
 ## rule configs
 

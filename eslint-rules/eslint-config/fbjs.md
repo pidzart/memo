@@ -7,10 +7,10 @@ latest version 4.0.0 published at 2022-07-12
 
 ## plugins used
 
-- eslint-plugin-babel
-- eslint-plugin-ft-flow
-- eslint-plugin-jsx-a11y
-- eslint-plugin-react
+- [eslint-plugin-babel](../eslint-plugin/babel.md)
+- [eslint-plugin-ft-flow](../eslint-plugin/ft-flow.md)
+- [eslint-plugin-jsx-a11y](../eslint-plugin/jsx-a11y.md)
+- [eslint-plugin-react](../eslint-plugin/react.md)
 
 ## rule configs
 

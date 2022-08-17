@@ -7,22 +7,22 @@ latest version 0.23.0 published at 2022-08-02
 
 ## plugins used
 
-- eslint-plugin-compat
-- eslint-plugin-es-x
-- eslint-plugin-jsdoc
-- eslint-plugin-json-es
-- eslint-plugin-mediawiki
-- eslint-plugin-mocha
-- eslint-plugin-no-jquery
-- eslint-plugin-node
-- eslint-plugin-qunit
-- eslint-plugin-unicorn
-- eslint-plugin-vue
-- eslint-plugin-wdio
-- eslint-plugin-yml
-- eslint-plugin-jsx-a11y
-- eslint-plugin-react
-- eslint-plugin-react-hooks
+- [eslint-plugin-compat](../eslint-plugin/compat.md)
+- [eslint-plugin-es-x](../eslint-plugin/es-x.md)
+- [eslint-plugin-jsdoc](../eslint-plugin/jsdoc.md)
+- [eslint-plugin-json-es](../eslint-plugin/json-es.md)
+- [eslint-plugin-mediawiki](../eslint-plugin/mediawiki.md)
+- [eslint-plugin-mocha](../eslint-plugin/mocha.md)
+- [eslint-plugin-no-jquery](../eslint-plugin/no-jquery.md)
+- [eslint-plugin-node](../eslint-plugin/node.md)
+- [eslint-plugin-qunit](../eslint-plugin/qunit.md)
+- [eslint-plugin-unicorn](../eslint-plugin/unicorn.md)
+- [eslint-plugin-vue](../eslint-plugin/vue.md)
+- [eslint-plugin-wdio](../eslint-plugin/wdio.md)
+- [eslint-plugin-yml](../eslint-plugin/yml.md)
+- [eslint-plugin-jsx-a11y](../eslint-plugin/jsx-a11y.md)
+- [eslint-plugin-react](../eslint-plugin/react.md)
+- [eslint-plugin-react-hooks](../eslint-plugin/react-hooks.md)
 
 ## rule configs
 

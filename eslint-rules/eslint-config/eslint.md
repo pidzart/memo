@@ -7,10 +7,10 @@ latest version 7.0.0 published at 2021-02-06
 
 ## plugins used
 
-- eslint-plugin-eslint-comments
-- eslint-plugin-jsdoc
-- eslint-plugin-n
-- eslint-plugin-unicorn
+- [eslint-plugin-eslint-comments](../eslint-plugin/eslint-comments.md)
+- [eslint-plugin-jsdoc](../eslint-plugin/jsdoc.md)
+- [eslint-plugin-n](../eslint-plugin/n.md)
+- [eslint-plugin-unicorn](../eslint-plugin/unicorn.md)
 
 ## rule configs
 

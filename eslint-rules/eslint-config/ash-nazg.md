@@ -7,20 +7,20 @@ latest version 34.0.0 published at 2022-07-05
 
 ## plugins used
 
-- @brettz9/eslint-plugin
-- eslint-plugin-array-func
-- eslint-plugin-compat
-- eslint-plugin-eslint-comments
-- eslint-plugin-html
-- eslint-plugin-import
-- eslint-plugin-jsdoc
-- eslint-plugin-markdown
-- eslint-plugin-n
-- eslint-plugin-no-unsanitized
-- eslint-plugin-no-use-extend-native
-- eslint-plugin-promise
-- eslint-plugin-sonarjs
-- eslint-plugin-unicorn
+- [@brettz9/eslint-plugin](../eslint-plugin/@brettz9.md)
+- [eslint-plugin-array-func](../eslint-plugin/array-func.md)
+- [eslint-plugin-compat](../eslint-plugin/compat.md)
+- [eslint-plugin-eslint-comments](../eslint-plugin/eslint-comments.md)
+- [eslint-plugin-html](../eslint-plugin/html.md)
+- [eslint-plugin-import](../eslint-plugin/import.md)
+- [eslint-plugin-jsdoc](../eslint-plugin/jsdoc.md)
+- [eslint-plugin-markdown](../eslint-plugin/markdown.md)
+- [eslint-plugin-n](../eslint-plugin/n.md)
+- [eslint-plugin-no-unsanitized](../eslint-plugin/no-unsanitized.md)
+- [eslint-plugin-no-use-extend-native](../eslint-plugin/no-use-extend-native.md)
+- [eslint-plugin-promise](../eslint-plugin/promise.md)
+- [eslint-plugin-sonarjs](../eslint-plugin/sonarjs.md)
+- [eslint-plugin-unicorn](../eslint-plugin/unicorn.md)
 
 ## rule configs
 

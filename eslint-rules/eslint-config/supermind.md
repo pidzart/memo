@@ -7,12 +7,12 @@ latest version 0.48.0 published at 2018-02-05
 
 ## plugins used
 
-- eslint-plugin-flowtype
-- eslint-plugin-html
-- eslint-plugin-import
-- eslint-plugin-inferno
-- eslint-plugin-jsx-a11y
-- eslint-plugin-react
+- [eslint-plugin-flowtype](../eslint-plugin/flowtype.md)
+- [eslint-plugin-html](../eslint-plugin/html.md)
+- [eslint-plugin-import](../eslint-plugin/import.md)
+- [eslint-plugin-inferno](../eslint-plugin/inferno.md)
+- [eslint-plugin-jsx-a11y](../eslint-plugin/jsx-a11y.md)
+- [eslint-plugin-react](../eslint-plugin/react.md)
 
 ## rule configs
 

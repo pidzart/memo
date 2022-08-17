@@ -7,9 +7,9 @@ latest version 4.6.2 published at 2021-07-04
 
 ## plugins used
 
-- @typescript-eslint/eslint-plugin
-- eslint-plugin-react
-- eslint-plugin-vue
+- [@typescript-eslint/eslint-plugin](../eslint-plugin/@typescript-eslint.md)
+- [eslint-plugin-react](../eslint-plugin/react.md)
+- [eslint-plugin-vue](../eslint-plugin/vue.md)
 
 ## rule configs
 

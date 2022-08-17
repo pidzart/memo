@@ -1,11 +1,20 @@
 # eslint
 
-[npm] [github] [web]
-version: 8.18.0
+latest version 8.18.0 published at 2022-06-18
 
-[npm]: https://www.npmjs.com/package/eslint
-[github]: https://github.com/eslint/eslint
-[web]: https://eslint.org/
+[npm](https://www.npmjs.com/package/eslint)
+[github](https://github.com/eslint/eslint)
+[web](https://eslint.org/)
+
+## rule configs
+
+- eslint:all
+- eslint:recommended
+
+## rules
+
+- [array-callback-return](./eslint/array-callback-return.md)
+
 
 ## array-callback-return
 

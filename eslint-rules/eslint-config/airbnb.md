@@ -7,10 +7,10 @@ latest version 19.0.4 published at 2021-12-26
 
 ## plugins used
 
-- eslint-plugin-import
-- eslint-plugin-jsx-a11y
-- eslint-plugin-react
-- eslint-plugin-react-hooks
+- [eslint-plugin-import](../eslint-plugin/import.md)
+- [eslint-plugin-jsx-a11y](../eslint-plugin/jsx-a11y.md)
+- [eslint-plugin-react](../eslint-plugin/react.md)
+- [eslint-plugin-react-hooks](../eslint-plugin/react-hooks.md)
 
 ## rule configs
 
