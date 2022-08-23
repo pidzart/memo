@@ -15,7 +15,7 @@
     "@html-eslint/eslint-plugin": "^0.13.2",
     "@next/eslint-plugin-next": "^12.2.5",
     "@shopify/eslint-plugin": "^42.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
     "eslint": "^8.22.0",
     "eslint-config-adjunct": "^4.11.2",
     "eslint-config-airbnb": "^19.0.4",
