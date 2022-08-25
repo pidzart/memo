@@ -2,23 +2,23 @@
 
 ```javascript
 var foo;
-var bar = 42;
-var baz = 42, bam;
+var foo = 42;
+var foo = 42, bar;
 ```
 
 # `let` 宣言
 
 ```javascript
 let foo;
-let bar = 42;
-let baz = 42, bam;
+let foo = 42;
+let foo = 42, bar;
 ```
 
 # `const` 宣言
 
 ```javascript
-const bar = 42;
-const baz = 42, bam = 84;
+const foo = 42;
+const foo = 42, bar = 84;
 ```
 
 # 関数宣言
