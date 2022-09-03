@@ -1,17 +1,19 @@
 # eslint
 
+memo > [eslint ルール](./index.md) > eslint
+
 latest version 8.18.0 published at 2022-06-18
 
 [npm](https://www.npmjs.com/package/eslint)
 [github](https://github.com/eslint/eslint)
 [web](https://eslint.org/)
 
-## rule configs
+## 設定
 
 - eslint:all
 - eslint:recommended
 
-## rules
+## ルール
 
 - [accessor-pairs](./eslint/accessor-pairs.md)
 - [array-bracket-newline](./eslint/array-bracket-newline.md)

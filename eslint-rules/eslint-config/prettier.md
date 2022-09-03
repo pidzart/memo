@@ -1,5 +1,7 @@
 # eslint-config-prettier
 
+memo > [eslint ルール](../index.md) > eslint-config-prettier
+
 latest version 8.5.0 published at 2022-03-03
 
 [npm](https://www.npmjs.com/package/eslint-config-prettier)

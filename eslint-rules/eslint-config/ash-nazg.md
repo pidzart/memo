@@ -1,5 +1,7 @@
 # eslint-config-ash-nazg
 
+memo > [eslint ルール](../index.md) > eslint-config-ash-nazg
+
 latest version 34.0.0 published at 2022-07-05
 
 [npm](https://www.npmjs.com/package/eslint-config-ash-nazg)

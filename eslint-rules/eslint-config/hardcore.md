@@ -1,5 +1,7 @@
 # eslint-config-hardcore
 
+memo > [eslint ルール](../index.md) > eslint-config-hardcore
+
 latest version 24.13.1 published at 2022-08-01
 
 [npm](https://www.npmjs.com/package/eslint-config-hardcore)

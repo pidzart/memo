@@ -1,5 +1,7 @@
 # eslint-config-problems
 
+memo > [eslint ルール](../index.md) > eslint-config-problems
+
 latest version 6.0.0 published at 2021-11-17
 
 [npm](https://www.npmjs.com/package/eslint-config-problems)

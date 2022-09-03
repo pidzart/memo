@@ -1,5 +1,7 @@
 # eslint-config-supermind
 
+memo > [eslint ルール](../index.md) > eslint-config-supermind
+
 latest version 0.48.0 published at 2018-02-05
 
 [npm](https://www.npmjs.com/package/eslint-config-supermind)

@@ -1,5 +1,7 @@
 # accessor-pairs
 
+memo > [eslint ルール](../index.md) > [eslint](../eslint.md) > accessor-pairs
+
 ゲッター関数とセッター関数が対になるように強制する
 
 ## options

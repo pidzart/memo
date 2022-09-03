@@ -1,5 +1,7 @@
 # eslint-config-auto
 
+memo > [eslint ルール](../index.md) > eslint-config-auto
+
 latest version 0.7.3 published at 2022-07-09
 
 [npm](https://www.npmjs.com/package/eslint-config-auto)

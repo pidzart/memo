@@ -1,5 +1,7 @@
 # array-callback-return
 
+memo > [eslint ルール](../index.md) > [eslint](../eslint.md) > accessor-pairs
+
 配列の `map` 系メソッドのコールバックで `return` を強制する
 
 ## options

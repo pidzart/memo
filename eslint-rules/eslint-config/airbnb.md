@@ -1,5 +1,7 @@
 # eslint-config-airbnb
 
+memo > [eslint ルール](../index.md) > eslint-config-airbnb
+
 latest version 19.0.4 published at 2021-12-26
 
 [npm](https://www.npmjs.com/package/eslint-config-airbnb)

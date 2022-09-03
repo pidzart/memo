@@ -1,5 +1,7 @@
 # eslint-config-alloy
 
+memo > [eslint ルール](../index.md) > eslint-config-alloy
+
 latest version 4.6.2 published at 2021-07-04
 
 [npm](https://www.npmjs.com/package/eslint-config-alloy)

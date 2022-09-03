@@ -1,5 +1,7 @@
 # eslint-config-fbjs-opensource
 
+memo > [eslint ルール](../index.md) > eslint-config-opensource
+
 latest version 3.0.0 published at 2022-07-12
 
 [npm](https://www.npmjs.com/package/eslint-config-fbjs-opensource)

@@ -1,5 +1,7 @@
 # eslint-config-wikimedia
 
+memo > [eslint ルール](../index.md) > eslint-config-wikimedia
+
 latest version 0.23.0 published at 2022-08-02
 
 [npm](https://www.npmjs.com/package/eslint-config-wikimedia)

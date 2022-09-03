@@ -1,5 +1,7 @@
 # eslint-config-fbjs
 
+memo > [eslint ルール](../index.md) > eslint-config-fbjs
+
 latest version 4.0.0 published at 2022-07-12
 
 [npm](https://www.npmjs.com/package/eslint-config-fbjs)

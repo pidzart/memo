@@ -1,5 +1,7 @@
 # eslint-config-eslint
 
+memo > [eslint ルール](../index.md) > eslint-config-eslint
+
 latest version 7.0.0 published at 2021-02-06
 
 [npm](https://www.npmjs.com/package/eslint-config-eslint)

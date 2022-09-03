@@ -1,5 +1,7 @@
 # eslint-config-canonical
 
+memo > [eslint ルール](../index.md) > eslint-config-canonical
+
 latest version 36.0.0 published at 2022-07-30
 
 [npm](https://www.npmjs.com/package/eslint-config-canonical)

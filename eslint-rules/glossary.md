@@ -1,3 +1,7 @@
+# 用語集
+
+memo > [eslint ルール](./index.md) > 用語集
+
 # `var` 宣言
 
 ```javascript
@@ -198,6 +202,21 @@ false;
 
 ```javascript
 /abc/g;
+```
+
+# オブジェクトリテラル
+
+```javascript
+var obj = { a: "foo" };
+var obj = { 0: "bar" };
+var obj = { [key]: "baz" };
+```
+
+# 配列リテラル
+
+```javascript
+var arr = [1, 2, 3];
+var arr = [1, , 3];
 ```
 
 # 代入演算子
