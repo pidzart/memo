@@ -1,126 +1,121 @@
 # array-callback-return
 
-memo > [eslint ルール](../index.md) > [eslint](../eslint.md) > accessor-pairs
+[Home](../../index.md) >
+[eslint ルール](../index.md) >
+[eslint](../eslint.md) >
+accessor-pairs
 
-配列の `map` 系メソッドのコールバックで `return` を強制する
+オブジェクトリテラル、プロパティ記述子、クラス宣言、クラス式で一つの識別子にセッターとゲッターをどちらも定義することを要求します。
 
-## options
+# オプション
+
+一つのオブジェクトオプションがあります
 
 - `object`
-  - `"allowImplicit" : boolean`
+  - `"setWithoutGet": boolean`
+    デフォルト: `true`
+    ゲッターのないセッターを禁止します。
+  - `"getWithoutSet": boolean`
     デフォルト: `false`
-    暗黙の `return undefined` を許可する
-  - `"checkForEach" : boolean`
-    デフォルト: `false`
-    `forEach` メソッドのコールバックで `return` を禁止する
+    セッターのないゲッターを禁止します。
+  - `"enforceForClassMembers": boolean`
+    デフォルト: `true`
+    クラス宣言、クラス式にこのルールを適用します。
 
-## correct example
+# 正しい例
 
 ```javascript
-/* eslint array-callback-return: "error" */
+/* eslint accessor-pairs: "error" */
 
-// Callback function with return
-array.map(function (item) {
-  return item + 3;
+// セッターとゲッターのあるオブジェクトリテラル
+var foo = {
+  set value(newValue) {
+    this._value = newValue;
+  },
+  get value() {
+    return this._value;
+  },
+};
+
+// ゲッターだけがあるアクセサー記述子
+Object.defineProperty(obj, "value", {
+  get() {
+    return 42;
+  },
 });
+```
 
-// Callback function with return on multiple paths
-array.filter(function (item) {
-  if (item < 5) {
-    return item === 3;
-  } else {
-    return item > 8;
+```javascript
+/* eslint accessor-pairs: ["error", { "setWithoutGet": false, "getWithoutSet": true }] */
+
+// セッターとゲッターのあるクラス宣言
+class FooClass {
+  set value(newValue) {
+    console.log(newValue);
   }
-});
-
-// Callback arrow function with return
-array.reduce((prev, item) => {
-  return prev + item;
-});
-
-// Callback function with return in the forEach function
-array.forEach(function (item) {
-  return item + 3;
-});
-
-// Callback function without return in the forEach function
-array.forEach(function (item) {
-  console.log(item + 3);
-});
-```
-
-```javascript
-/* eslint array-callback-return: ["error", { "allowImplicit": true }] */
-
-// Callback function with implicit undefined return
-array.filter(function (item) {
-  if (item < 5) {
-    return item === 3;
-  } else {
-    return;
+  get value() {
+    return 42;
   }
-});
-```
+}
 
-```javascript
-/* eslint array-callback-return: ["error", { "checkForEach": true }] */
-
-// Callback function without return in the forEach function
-array.forEach(function (item) {
-  console.log(item + 3);
-});
-```
-
-## incorrect example
-
-```javascript
-/* eslint array-callback-return: "error" */
-
-// Callback function without return
-array.map(function (item) {
-  console.log(item + 3);
-});
-
-// Callback function without return on one of multiple paths
-array.filter(function (item) {
-  if (item < 5) {
-    return item === 3;
-  } else {
-    console.log(item - 3);
+// セッターだけがあるクラス式
+var BarClass = class {
+  set value(newValue) {
+    console.log(newValue);
   }
-});
+};
 ```
 
 ```javascript
-/* eslint array-callback-return: ["error", { "allowImplicit": true }] */
+/* eslint accessor-pairs: ["error", { "enforceForClassMembers": false }] */
 
-// Callback function without return on one of multiple paths
-array.map(function (item) {
-  if (item < 5) {
-    return;
-  } else {
-    console.log(item - 3);
+// ゲッターだけがあるクラス宣言
+class FooClass {
+  get value() {
+    return 42;
   }
-});
+}
+
+// セッターだけがあるクラス式
+var BarClass = class {
+  set value(newValue) {
+    console.log(newValue);
+  }
+};
+```
+
+# 間違った例
+
+```javascript
+/* eslint accessor-pairs: "error" */
+
+// セッターだけがあるオブジェクトリテラル
+var foo = {
+  set value(newValue) {
+    this._value = newValue;
+  },
+};
 ```
 
 ```javascript
-/* eslint array-callback-return: ["error", { "checkForEach": true }] */
+/* eslint accessor-pairs: ["error", { "setWithoutGet": false, "getWithoutSet": true }] */
 
-// Callback function with return in the forEach function
-array.forEach(function (item) {
-  return item + 3;
+// ゲッターだけがあるアクセサー記述子
+Object.defineProperty(obj, "value", {
+  get() {
+    return 42;
+  },
 });
 ```
 
-## config settings
+# コンフィグ
 
-| extends      | value   |
-| ------------ | ------- |
-| `eslint:all` | `error` |
+| extends        | value     |
+| -------------- | --------- |
+| `"eslint:all"` | `"error"` |
 
-## references
+# 参照リンク
 
-- [official document](https://eslint.org/docs/latest/rules/array-callback-return)
-- [rule source](https://github.com/eslint/eslint/blob/main/lib/rules/array-callback-return.js)
-- [test source](https://github.com/eslint/eslint/blob/main/tests/lib/rules/array-callback-return.js)
+- [official document](https://eslint.org/docs/latest/rules/accessor-pairs)
+- [rule source](https://github.com/eslint/eslint/blob/main/lib/rules/accessor-pairs.js)
+- [test source](https://github.com/eslint/eslint/blob/main/tests/lib/rules/accessor-pairs.js)
