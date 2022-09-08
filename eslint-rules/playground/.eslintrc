@@ -4,6 +4,13 @@
     "ecmaVersion": "latest"
   },
   "plugins": [
+    "@babel",
+    "@brettz9",
+    "@graphql-eslint",
+    "@html-eslint",
+    "@next/next",
+    "@shopify",
+    "@typescript-eslint",
     "anti-trojan-source",
     "array-func",
     "ava",

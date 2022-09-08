@@ -1,6 +1,7 @@
-/* eslint array-callback-return: ["error", {  "allowImplicit": true ,"checkForEach": true }] */
+/* eslint @brettz9/no-this-in-static: "error" */
 
-// 値を返す
-array.forEach(() => {
-  return;
-});
+class Foo {
+  static foo() {
+    this.foo;
+  }
+}

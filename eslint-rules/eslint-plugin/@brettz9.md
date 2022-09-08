@@ -1,17 +1,21 @@
 # @brettz9/eslint-plugin
 
+[Home](../index.md) >
+[eslint ルール](./index.md) >
+@brettz9/eslint-plugin
+
 latest version 1.0.4 published at 2021-11-03
 
 [npm](https://www.npmjs.com/package/@brettz9/eslint-plugin)
 [github](https://github.com/brettz9/eslint-plugin)
 
-## rule configs
+## 設定
 
 - plugin:@brettz9/es5
 - plugin:@brettz9/es6
 - plugin:@brettz9/es2015
 
-## rules
+## ルール
 
 - [@brettz9/arrow-parens](./@brettz9/arrow-parens.md)
 - [@brettz9/block-scoped-var](./@brettz9/block-scoped-var.md)
