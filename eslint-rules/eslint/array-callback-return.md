@@ -3,108 +3,95 @@
 [Home](../../index.md) >
 [eslint ルール](../index.md) >
 [eslint](../eslint.md) >
-accessor-pairs
+array-callback-return
 
-オブジェクトリテラル、プロパティ記述子、クラス宣言、クラス式で一つの識別子にセッターとゲッターをどちらも定義することを要求します。
+配列オブジェクトのコールバック関数を使うメソッドで「不要な `return` がある」「必要な `return` がない」場合に警告します。
 
 # オプション
 
 一つのオブジェクトオプションがあります
 
 - `object`
-  - `"setWithoutGet": boolean`
-    デフォルト: `true`
-    ゲッターのないセッターを禁止します。
-  - `"getWithoutSet": boolean`
+  - `"allowImplicit": boolean`
     デフォルト: `false`
-    セッターのないゲッターを禁止します。
-  - `"enforceForClassMembers": boolean`
-    デフォルト: `true`
-    クラス宣言、クラス式にこのルールを適用します。
+    値を返す必要がある場合に暗黙の `undefined` を返すことを許可します。
+  - `"checkForEach": boolean`
+    デフォルト: `false`
+    `Array.prototype.forEach` のコールバック関数で値を返す場合に警告します。
 
 # 正しい例
 
 ```javascript
-/* eslint accessor-pairs: "error" */
+/* eslint array-callback-return: "error" */
 
-// セッターとゲッターのあるオブジェクトリテラル
-var foo = {
-  set value(newValue) {
-    this._value = newValue;
-  },
-  get value() {
-    return this._value;
-  },
-};
+// 無名関数式
+array.map(function () {
+  return 1 + 2;
+});
 
-// ゲッターだけがあるアクセサー記述子
-Object.defineProperty(obj, "value", {
-  get() {
-    return 42;
-  },
+// アロー関数式
+array.filter(() => {
+  return true;
+});
+
+// ブロックが省略されたアロー関数式
+array.reduce(() => 1 + 2);
+```
+
+```javascript
+/* eslint array-callback-return: ["error", { "allowImplicit": true }] */
+
+// 値のない `return` 文で暗黙の `undefined` を返す
+array.every(function () {
+  return;
 });
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", { "setWithoutGet": false, "getWithoutSet": true }] */
+/* eslint array-callback-return: ["error", { "checkForEach": true }] */
 
-// セッターとゲッターのあるクラス宣言
-class FooClass {
-  set value(newValue) {
-    console.log(newValue);
-  }
-  get value() {
-    return 42;
-  }
-}
+// 値を返さない
+array.forEach(() => {
+  1 + 2;
+});
 
-// セッターだけがあるクラス式
-var BarClass = class {
-  set value(newValue) {
-    console.log(newValue);
-  }
-};
-```
-
-```javascript
-/* eslint accessor-pairs: ["error", { "enforceForClassMembers": false }] */
-
-// ゲッターだけがあるクラス宣言
-class FooClass {
-  get value() {
-    return 42;
-  }
-}
-
-// セッターだけがあるクラス式
-var BarClass = class {
-  set value(newValue) {
-    console.log(newValue);
-  }
-};
+// 値のない `return` 文
+array.forEach(() => {
+  return;
+});
 ```
 
 # 間違った例
 
 ```javascript
-/* eslint accessor-pairs: "error" */
+/* eslint array-callback-return: "error" */
 
-// セッターだけがあるオブジェクトリテラル
-var foo = {
-  set value(newValue) {
-    this._value = newValue;
-  },
-};
+// 無名関数式
+array.map(function () {
+  1 + 2;
+});
+
+// アロー関数式
+array.filter(() => {
+  true;
+});
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", { "setWithoutGet": false, "getWithoutSet": true }] */
+/* eslint array-callback-return: ["error", { "allowImplicit": true }] */
 
-// ゲッターだけがあるアクセサー記述子
-Object.defineProperty(obj, "value", {
-  get() {
-    return 42;
-  },
+// `return` 文を書かずに暗黙の `undefined` を返す
+array.every(function () {
+  1 + 2;
+});
+```
+
+```javascript
+/* eslint array-callback-return: ["error", { "checkForEach": true }] */
+
+// 値を返す
+array.forEach(() => {
+  return 1 + 2;
 });
 ```
 
@@ -116,6 +103,6 @@ Object.defineProperty(obj, "value", {
 
 # 参照リンク
 
-- [official document](https://eslint.org/docs/latest/rules/accessor-pairs)
-- [rule source](https://github.com/eslint/eslint/blob/main/lib/rules/accessor-pairs.js)
-- [test source](https://github.com/eslint/eslint/blob/main/tests/lib/rules/accessor-pairs.js)
+- [official document](https://eslint.org/docs/latest/rules/array-callback-return)
+- [rule source](https://github.com/eslint/eslint/blob/main/lib/rules/array-callback-return.js)
+- [test source](https://github.com/eslint/eslint/blob/main/tests/lib/rules/array-callback-return.js)
