@@ -5,107 +5,154 @@
 [eslint](../eslint.md) >
 array-bracket-newline
 
-オブジェクトリテラル、プロパティ記述子、クラス宣言、クラス式で一つの識別子にセッターとゲッターをどちらも定義することを要求します。
+配列リテラルで始め括弧の後ろと終わり括弧の前に改行を入れることを要求します。
 
 # オプション
 
-一つのオブジェクトオプションがあります
+一つのオブジェクトまたは文字列オプションがあります。
 
-- `object`
-  - `"setWithoutGet": boolean`
+- `object | string`
+  - `"multiline": boolean`
     デフォルト: `true`
-    ゲッターのないセッターを禁止します。
-  - `"getWithoutSet": boolean`
-    デフォルト: `false`
-    セッターのないゲッターを禁止します。
-  - `"enforceForClassMembers": boolean`
-    デフォルト: `true`
-    クラス宣言、クラス式にこのルールを適用します。
+    配列の要素内や要素間に改行を含む場合に改行します。
+  - `"minItems": number | null`
+    デフォルト: `null`
+    配列の要素数が指定の数以上の場合に改行します。
+  - `"always"`: 常に改行します。
+  - `"never"`: 常に改行しません。
+  - `"consistent"`: 一つの括弧の組で改行を統一します。
 
 # 正しい例
 
 ```javascript
-/* eslint accessor-pairs: "error" */
+/* eslint array-bracket-newline: "error" */
 
-// セッターとゲッターのあるオブジェクトリテラル
-var foo = {
-  set value(newValue) {
-    this._value = newValue;
-  },
-  get value() {
-    return this._value;
-  },
-};
+// 一行の配列リテラル
+var foo = [1, 2, 3];
 
-// ゲッターだけがあるアクセサー記述子
-Object.defineProperty(obj, "value", {
-  get() {
-    return 42;
-  },
-});
+// 要素間に改行のある配列リテラル
+var foo = [
+  1, 2,
+  3,
+];
+
+// 要素内に改行のある配列リテラル
+var foo = [
+  `aaa
+   bbb`,
+];
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", { "setWithoutGet": false, "getWithoutSet": true }] */
+/* eslint accessor-pairs: ["error", { "multiline": false, "minItems": 3 }] */
 
-// セッターとゲッターのあるクラス宣言
-class FooClass {
-  set value(newValue) {
-    console.log(newValue);
-  }
-  get value() {
-    return 42;
-  }
-}
+// 要素数が指定した数より少ない配列リテラル
+var foo = [1, 2];
 
-// セッターだけがあるクラス式
-var BarClass = class {
-  set value(newValue) {
-    console.log(newValue);
-  }
-};
+// 要素数が指定した数と同じ配列リテラル
+var foo = [
+  1, 2, 3
+];
+
+// 要素数が指定した数より多い配列リテラル
+var foo = [
+  1, 2, 3, 4
+];
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", { "enforceForClassMembers": false }] */
+/* eslint accessor-pairs: ["error", "always"] */
 
-// ゲッターだけがあるクラス宣言
-class FooClass {
-  get value() {
-    return 42;
-  }
-}
+// 配列リテラル
+var foo = [
+  1,
+];
+```
 
-// セッターだけがあるクラス式
-var BarClass = class {
-  set value(newValue) {
-    console.log(newValue);
-  }
-};
+```javascript
+/* eslint accessor-pairs: ["error", "never"] */
+
+// 配列リテラル
+var foo = [1, 2, 3, 4, 5,
+  6, 7, 8, 9, 10];
+```
+
+```javascript
+/* eslint accessor-pairs: ["error", "consistent"] */
+
+// 始め括弧の後で改行する配列リテラル
+var foo = [
+  1, 2, 3,
+];
+
+// 始め括弧の後で改行しない配列リテラル
+var foo = [1, 2, 3];
 ```
 
 # 間違った例
 
 ```javascript
-/* eslint accessor-pairs: "error" */
+/* eslint array-bracket-newline: "error" */
 
-// セッターだけがあるオブジェクトリテラル
-var foo = {
-  set value(newValue) {
-    this._value = newValue;
-  },
-};
+// 改行のない配列リテラル
+var foo = [
+  1, 2, 3];
+var foo = [1, 2, 3,
+];
+
+// 要素間に改行のある配列リテラル
+var foo = [
+  1, 2,
+  3];
+
+// 要素内に改行のある配列リテラル
+var foo = [`aaa
+   bbb`,
+];
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", { "setWithoutGet": false, "getWithoutSet": true }] */
+/* eslint accessor-pairs: ["error", { "multiline": false, "minItems": 3 }] */
 
-// ゲッターだけがあるアクセサー記述子
-Object.defineProperty(obj, "value", {
-  get() {
-    return 42;
-  },
-});
+// 要素数が指定した数より少ない配列リテラル
+var foo = [
+  1, 2
+];
+
+// 要素数が指定した数と同じ配列リテラル
+var foo = [1, 2, 3];
+
+// 要素数が指定した数より多い配列リテラル
+var foo = [1, 2, 3, 4];
+```
+
+```javascript
+/* eslint accessor-pairs: ["error", "always"] */
+
+// 配列リテラル
+var foo = [1];
+```
+
+```javascript
+/* eslint accessor-pairs: ["error", "never"] */
+
+// 配列リテラル
+var foo = [
+  1, 2, 3, 4, 5,
+  6, 7, 8, 9, 10,
+];
+```
+
+```javascript
+/* eslint accessor-pairs: ["error", "consistent"] */
+
+// 始め括弧の後で改行する配列リテラル
+var foo = [
+  1, 2, 3,];
+
+// 始め括弧の後で改行しない配列リテラル
+var foo = [1, 2, 3
+];
 ```
 
 # コンフィグ
