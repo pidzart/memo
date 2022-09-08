@@ -44,7 +44,7 @@ var foo = [
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", { "multiline": false, "minItems": 3 }] */
+/* eslint array-bracket-newline: ["error", { "multiline": false, "minItems": 3 }] */
 
 // 要素数が指定した数より少ない配列リテラル
 var foo = [1, 2];
@@ -61,7 +61,7 @@ var foo = [
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", "always"] */
+/* eslint array-bracket-newline: ["error", "always"] */
 
 // 配列リテラル
 var foo = [
@@ -70,7 +70,7 @@ var foo = [
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", "never"] */
+/* eslint array-bracket-newline: ["error", "never"] */
 
 // 配列リテラル
 var foo = [1, 2, 3, 4, 5,
@@ -78,7 +78,7 @@ var foo = [1, 2, 3, 4, 5,
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", "consistent"] */
+/* eslint array-bracket-newline: ["error", "consistent"] */
 
 // 始め括弧の後で改行する配列リテラル
 var foo = [
@@ -112,7 +112,7 @@ var foo = [`aaa
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", { "multiline": false, "minItems": 3 }] */
+/* eslint array-bracket-newline: ["error", { "multiline": false, "minItems": 3 }] */
 
 // 要素数が指定した数より少ない配列リテラル
 var foo = [
@@ -127,14 +127,14 @@ var foo = [1, 2, 3, 4];
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", "always"] */
+/* eslint array-bracket-newline: ["error", "always"] */
 
 // 配列リテラル
 var foo = [1];
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", "never"] */
+/* eslint array-bracket-newline: ["error", "never"] */
 
 // 配列リテラル
 var foo = [
@@ -144,7 +144,7 @@ var foo = [
 ```
 
 ```javascript
-/* eslint accessor-pairs: ["error", "consistent"] */
+/* eslint array-bracket-newline: ["error", "consistent"] */
 
 // 始め括弧の後で改行する配列リテラル
 var foo = [
