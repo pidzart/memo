@@ -1,7 +1,7 @@
 # @brettz9/block-scoped-var
 
-[Home](../../index.md) >
-[eslint ルール](../index.md) >
+[Home](../../../index.md) >
+[eslint ルール](../../index.md) >
 [@brettz9/eslint-plugin](../@brettz9.md) >
 @brettz9/block-scoped-var
 

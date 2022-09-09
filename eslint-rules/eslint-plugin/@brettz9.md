@@ -1,7 +1,7 @@
 # @brettz9/eslint-plugin
 
-[Home](../index.md) >
-[eslint ルール](./index.md) >
+[Home](../../index.md) >
+[eslint ルール](../index.md) >
 @brettz9/eslint-plugin
 
 latest version 1.0.4 published at 2021-11-03

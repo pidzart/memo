@@ -31,6 +31,7 @@ array-bracket-spacing
 
 # 正しい例
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: "error" */
 
@@ -47,6 +48,7 @@ var foo = [{ a: "foo", b: "bar" }];
 var foo = [[1, 2, 3]];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "always"] */
 
@@ -63,6 +65,7 @@ var foo = [ { a: "foo", b: "bar" } ];
 var foo = [ [ 1, 2, 3 ] ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "never", { "singleValue": true }] */
 
@@ -70,6 +73,7 @@ var foo = [ [ 1, 2, 3 ] ];
 var foo = [ 1 ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "never", { "objectsInArrays": true }] */
 
@@ -77,6 +81,7 @@ var foo = [ 1 ];
 var foo = [ { a: "foo", b: "bar" } ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "never", { "arraysInArrays": true }] */
 
@@ -84,6 +89,7 @@ var foo = [ { a: "foo", b: "bar" } ];
 var foo = [ [1, 2, 3] ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "always", { "singleValue": false }] */
 
@@ -91,6 +97,7 @@ var foo = [ [1, 2, 3] ];
 var foo = [1];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "always", { "objectsInArrays": false }] */
 
@@ -98,6 +105,7 @@ var foo = [1];
 var foo = [{ a: "foo", b: "bar" }];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "always", { "arraysInArrays": false }] */
 
@@ -107,6 +115,7 @@ var foo = [[ 1, 2, 3 ]];
 
 # 間違った例
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: "error" */
 
@@ -123,6 +132,7 @@ var foo = [ { a: "foo", b: "bar" } ];
 var foo = [ [ 1, 2, 3 ] ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "always"] */
 
@@ -139,6 +149,7 @@ var foo = [{ a: "foo", b: "bar" }];
 var foo = [[1, 2, 3]];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "never", { "singleValue": true }] */
 
@@ -146,6 +157,7 @@ var foo = [[1, 2, 3]];
 var foo = [1];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "never", { "objectsInArrays": true }] */
 
@@ -153,6 +165,7 @@ var foo = [1];
 var foo = [{ a: "foo", b: "bar" }];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "never", { "arraysInArrays": true }] */
 
@@ -160,6 +173,7 @@ var foo = [{ a: "foo", b: "bar" }];
 var foo = [[ 1, 2, 3 ]];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "always", { "singleValue": false }] */
 
@@ -167,6 +181,7 @@ var foo = [[ 1, 2, 3 ]];
 var foo = [ 1 ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "always", { "objectsInArrays": false }] */
 
@@ -174,6 +189,7 @@ var foo = [ 1 ];
 var foo = [ { a: "foo", b: "bar" } ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-spacing: ["error", "always", { "arraysInArrays": false }] */
 

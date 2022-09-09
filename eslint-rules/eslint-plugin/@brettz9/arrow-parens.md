@@ -1,7 +1,7 @@
 # @brettz9/arrow-parens
 
-[Home](../../index.md) >
-[eslint ルール](../index.md) >
+[Home](../../../index.md) >
+[eslint ルール](../../index.md) >
 [@brettz9/eslint-plugin](../@brettz9.md) >
 @brettz9/arrow-parens
 
@@ -14,6 +14,7 @@
 
 # 正しい例
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint @brettz9/arrow-parens: "error" */
 
@@ -24,6 +25,7 @@ array.reduce(x => x, 0);
 
 # 間違った例
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint @brettz9/arrow-parens: "error" */
 

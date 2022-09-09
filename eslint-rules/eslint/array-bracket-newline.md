@@ -24,6 +24,7 @@ array-bracket-newline
 
 # 正しい例
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: "error" */
 
@@ -43,6 +44,7 @@ var foo = [
 ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: ["error", { "multiline": false, "minItems": 3 }] */
 
@@ -60,6 +62,7 @@ var foo = [
 ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: ["error", "always"] */
 
@@ -69,6 +72,7 @@ var foo = [
 ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: ["error", "never"] */
 
@@ -77,6 +81,7 @@ var foo = [1, 2, 3, 4, 5,
   6, 7, 8, 9, 10];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: ["error", "consistent"] */
 
@@ -91,6 +96,7 @@ var foo = [1, 2, 3];
 
 # 間違った例
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: "error" */
 
@@ -111,6 +117,7 @@ var foo = [`aaa
 ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: ["error", { "multiline": false, "minItems": 3 }] */
 
@@ -126,6 +133,7 @@ var foo = [1, 2, 3];
 var foo = [1, 2, 3, 4];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: ["error", "always"] */
 
@@ -133,6 +141,7 @@ var foo = [1, 2, 3, 4];
 var foo = [1];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: ["error", "never"] */
 
@@ -143,6 +152,7 @@ var foo = [
 ];
 ```
 
+<!-- prettier-ignore -->
 ```javascript
 /* eslint array-bracket-newline: ["error", "consistent"] */
 

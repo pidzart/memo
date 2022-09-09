@@ -18,7 +18,7 @@
 - `comment` is a 30-byte string, additional information about the audio.
 - If the 29th of the `comment` is `0x00`, it may be an [ID3v1.1 tag](#id3v11).
 - `genre` is specified by number from [genres list](#genres-list).
-- Encoding is ISO/IEC 8859-1, remainder filled with `0x00`. 
+- Encoding is ISO/IEC 8859-1, remainder filled with `0x00`.
 
 # ID3v1.1
 
