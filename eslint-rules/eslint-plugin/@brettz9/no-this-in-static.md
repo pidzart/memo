@@ -37,8 +37,11 @@ class Foo {
 
 # コンフィグ
 
-| extends | value |
-| ------- | ----- |
+| extends                    | value     |
+| -------------------------- | --------- |
+| `"plugin:@brettz9/es5"`    | `"off"`   |
+| `"plugin:@brettz9/es6"`    | `"error"` |
+| `"plugin:@brettz9/es2015"` | `"error"` |
 
 # 参照リンク
 

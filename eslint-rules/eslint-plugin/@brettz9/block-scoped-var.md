@@ -5,8 +5,7 @@
 [@brettz9/eslint-plugin](../@brettz9.md) >
 @brettz9/block-scoped-var
 
-アロー関数式の引数リストを括弧で囲むように要求します。
-ただし、引数が始め括弧の直後にある場合を除きます。
+`var` 宣言を `let` 宣言のように扱い、ブロックスコープの外での参照・再宣言・シャドウイングを警告します。
 
 # オプション
 
@@ -15,30 +14,51 @@
 # 正しい例
 
 ```javascript
-/* eslint @brettz9/arrow-parens: "error" */
+/* eslint @brettz9/block-scoped-var: "error" */
 
-var foo = (x) => x;
-var foo = (x => x);
-array.reduce(x => x, 0);
+var foo = 42;
+{
+  console.log(foo);
+}
+
+for (var i = 0; i < 10; i++) {
+  console.log(i);
+}
 ```
 
 # 間違った例
 
 ```javascript
-/* eslint @brettz9/arrow-parens: "error" */
+/* eslint @brettz9/block-scoped-var: "error" */
 
-var foo = x => x;
-var foo = ((x) => x);
-var foo = (
-  x => x
-);
-array.replace(/./g, x => x);
+// スコープの外で参照
+{
+  var a = 42;
+}
+console.log(a);
+
+// スコープの外で参照
+for (var b = 0; b < 10; b++) {}
+console.log(b);
+
+// 同じ名前の宣言
+var c = 0;
+var c = 1;
+
+// 外のスコープと同じ名前の宣言
+var d = 0;
+{
+  var d = 1;
+}
 ```
 
 # コンフィグ
 
-| extends | value |
-| ------- | ----- |
+| extends                    | value   |
+| -------------------------- | ------- |
+| `"plugin:@brettz9/es5"`    | `"off"` |
+| `"plugin:@brettz9/es6"`    | `"off"` |
+| `"plugin:@brettz9/es2015"` | `"off"` |
 
 # 参照リンク
 
