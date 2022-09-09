@@ -39,11 +39,11 @@ array.replace(/./g, x => x);
 
 # コンフィグ
 
-| extends                    | value   |
-| -------------------------- | ------- |
-| `"plugin:@brettz9/es5"`    | `"off"` |
-| `"plugin:@brettz9/es6"`    | `"off"` |
-| `"plugin:@brettz9/es2015"` | `"off"` |
+| extends                | value   |
+| ---------------------- | ------- |
+| plugin:@brettz9/es5    | `"off"` |
+| plugin:@brettz9/es6    | `"off"` |
+| plugin:@brettz9/es2015 | `"off"` |
 
 # 参照リンク
 

@@ -1,7 +1,9 @@
 {
     "svg.preview.background": "transparent",
     "cSpell.words": [
+        "bidi",
         "brettz",
+        "concat",
         "instanceof",
         "parens",
         "typeof"
