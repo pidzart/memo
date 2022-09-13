@@ -1,13 +1,17 @@
 # @babel/eslint-plugin
 
+[Home](../../index.md) >
+[eslint ルール](../index.md) >
+@babel/eslint-plugin
+
 latest version 7.18.10 published at 2022-08-02
 
 [npm](https://www.npmjs.com/package/@babel/eslint-plugin)
 [github](https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin)
 
-## rule configs
+## 設定
 
-## rules
+## ルール
 
 - [@babel/new-cap](./@babel/new-cap.md)
 - [@babel/no-invalid-this](./@babel/no-invalid-this.md)
