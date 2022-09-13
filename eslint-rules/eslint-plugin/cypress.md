@@ -7,7 +7,7 @@ eslint-plugin-cypress
 latest version 2.12.1 published at 2021-09-15
 
 [npm](https://www.npmjs.com/package/eslint-plugin-cypress)
-[github](friendly)
+[github](https://github.com/cypress-io/eslint-plugin-cypress)
 
 ## 設定
 
