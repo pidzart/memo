@@ -5,7 +5,7 @@ eslint ルール
 
 | package               | version  | publish    | npm                                          | repo                                     | other                      |     rules |
 | --------------------- | ---- | ------- | --------------------------------------- | ------------------------------------------ | -------------------------- | --------: |
-| [eslint](./eslint.md) | 8.23.1 | 2022-09-13 | [npm](https://www.npmjs.com/package/eslint)) | [github](https://github.com/eslint/eslint) | [web](https://eslint.org/) | 264 rules |
+| [eslint](./eslint.md) | 8.23.1 | 2022-09-13 | [npm](https://www.npmjs.com/package/eslint) | [github](https://github.com/eslint/eslint) | [web](https://eslint.org/) | 264 rules |
 
 # plugins
 
