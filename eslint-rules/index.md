@@ -3,13 +3,13 @@
 [Home](../index.md) >
 eslint ルール
 
-| package               | latest                                          | github                                     | other                      |     rules |
+| package               | latest                                          | repo                                     | other                      |     rules |
 | --------------------- | -------------------------------------------------- | ------------------------------------------ | -------------------------- | --------: |
 | [eslint](./eslint.md) | 8.23.1 ([2022-09-13](https://www.npmjs.com/package/eslint/v/8.23.1)) | [github](https://github.com/eslint/eslint) | [web](https://eslint.org/) | 264 rules |
 
 # plugins
 
-| package                                                                               | version  | publish    | npm                                                                         | github                                                                                            | other                                          |     rules |
+| package                                                                               | version  | publish    | npm                                                                         | repo                                                                                            | other                                          |     rules |
 | ------------------------------------------------------------------------------------- | -------- | ---------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------- | --------: |
 | [@babel/eslint-plugin](./eslint-plugin/@babel.md)                                     | 7.18.10  | 2022-08-02 | [npm](https://www.npmjs.com/package/@babel/eslint-plugin)                   | [github](https://github.com/babel/babel/tree/main/eslint/babel-eslint-plugin)                     |                                                |   5 rules |
 | [@brettz9/eslint-plugin](./eslint-plugin/@brettz9.md)                                 | 1.0.4    | 2021-11-03 | [npm](https://www.npmjs.com/package/@brettz9/eslint-plugin)                 | [github](https://github.com/brettz9/eslint-plugin)                                                |                                                |   9 rules |
@@ -99,7 +99,7 @@ eslint ルール
 
 # configs
 
-| package                                                             | version | publish    | npm                                                                | github                                                                                        | other                                                   |
+| package                                                             | version | publish    | npm                                                                | repo                                                                                        | other                                                   |
 | ------------------------------------------------------------------- | ------- | ---------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | [eslint-config-adjunct](./eslint-config/adjunct.md)                 | 4.11.2  | 2022-07-09 | [npm](https://www.npmjs.com/package/eslint-config-adjunct)         | [github](https://github.com/davidjbradshaw/eslint-config-adjunct)                             |                                                         |
 | [eslint-config-airbnb-base](./eslint-config/airbnb-base.md)         | 15.0.0  | 2021-11-09 | [npm](https://www.npmjs.com/package/eslint-config-airbnb-base)     | [github](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) |                                                         |
