@@ -3,9 +3,9 @@
 [Home](../index.md) >
 eslint ルール
 
-| package               | version | publish | npm                                         | github                                     | other                      |     rules |
-| --------------------- | ------- | ------- | ------------------------------------------- | ------------------------------------------ | -------------------------- | --------: |
-| [eslint](./eslint.md) | 8.18.0  |         | [npm](https://www.npmjs.com/package/eslint) | [github](https://github.com/eslint/eslint) | [web](https://eslint.org/) | 264 rules |
+| package               | latest                                          | github                                     | other                      |     rules |
+| --------------------- | -------------------------------------------------- | ------------------------------------------ | -------------------------- | --------: |
+| [eslint](./eslint.md) | 8.23.1 ([2022-09-13](https://www.npmjs.com/package/eslint/v/8.23.1)) | [github](https://github.com/eslint/eslint) | [web](https://eslint.org/) | 264 rules |
 
 # plugins
 
