@@ -2,7 +2,7 @@
 
 [Home](../../index.md) >
 [eslint ルール](../index.md) >
-eslint-plugin-lodash
+eslint-plugin-lodash-fp
 
 latest version 2.2.0-a1 published at 2018-07-10
 
