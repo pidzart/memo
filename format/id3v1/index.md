@@ -25,7 +25,7 @@
 - `year` は音楽の発表年です。 数字4文字で表します。
 - `comment` はコメントです。
 - `genre` は音楽のジャンルです。 [ジャンルリスト](#genres-list)からジャンル番号を保存します。
-- 文字列が30文字より短い場合は残りをNULLバイト (`0x00`) で埋めます。
+- 文字列が短い場合は残りをNULLバイト (`0x00`) で埋めます。
 
 # ID3v1.1
 
@@ -52,7 +52,7 @@
 - `separator` は必ずNULLバイトで、コメントとアルバムトラックの境界を表します。
 - `album track` は音楽のアルバムトラックです。
 - `genre` は音楽のジャンルです。 [ジャンルリスト](#genres-list)からジャンル番号を保存します。
-- 文字列が30文字より短い場合は残りをNULLバイト (`0x00`) で埋めます。
+- 文字列が短い場合は残りをNULLバイト (`0x00`) で埋めます。
 
 # ID3v1.2
 
@@ -69,7 +69,40 @@
 
 # ID3v1 Enhanced
 
-![id3v1 enhanced format](id3v1-enhanced.svg)
+| size | name | type |
+| ---: | --- | --- |
+| 4 | enhanced header | string |
+| 60 | enhanced title | string |
+| 60 | enhanced artist | string |
+| 60 | enhanced album | string |
+| 1 | speed | byte |
+| 30 | genre | string |
+| 6 | start time | string |
+| 6 | end time | string |
+| 3 | header | string |
+| 30 | title | string |
+| 30 | artist | string |
+| 30 | album | string |
+| 4 | year | string |
+| 30 | comment | string |
+| 1 | genre | byte |
+
+- `ID3v1 Enhanced` タグはMP3ファイルの最後355バイトに保存されます。
+- `enhanced header` は必ず `"TAG+"` (`0x54 0x41 0x47 0x2B`)で、 `ID3v1 Enhanced` タグが存在することを表します。
+- `enhanced title` `enhanced artist ` `enhanced album` はそれぞれ `title` `artist` `album` に入りきらなかった情報を保存します。
+- `speed` は音楽の速さを表す数字です。 1 = 遅い、2 = 普通、3 = 速い、4 = ハードコアを表します。
+- `genre` は音楽のジャンルです。
+- `start time` は音楽ファイルの音楽が始まる時間です。 `"mmm:ss"` という文字列で表します。`"001:23"` の場合は1分23秒から音楽が始まります。
+- `end time` は音楽ファイルの音楽が終わる時間です。 `"mmm:ss"` という文字列で表します。`"003:21"` の場合は3分21秒で音楽が終わります。
+- `ID3v1 Enhanced` タグの後半128バイトは `ID3v1.0` タグと同じです。
+- `header` は必ず `"TAG"` (`0x54 0x41 0x47`)で、 `ID3v1.0` タグが存在することを表します。
+- `title` は音楽のタイトルです。
+- `artist` は音楽のアーティスト名です。
+- `album` は音楽のアルバム名です。
+- `year` は音楽の発表年です。 数字4文字で表します。
+- `comment` はコメントです。
+- `genre` は音楽のジャンルです。 [ジャンルリスト](#genres-list)からジャンル番号を保存します。
+- 文字列が短い場合は残りをNULLバイト (`0x00`) で埋めます。
 
 # Genres list
 
