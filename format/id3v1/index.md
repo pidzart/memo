@@ -17,8 +17,6 @@
 | 30 | comment | string |
 | 1 | genre | byte |
 
-![id3v1.0 format](id3v1-0.svg)
-
 - `ID3v1.0` タグはMP3ファイルの最後128バイトに保存されます。
 - `header` は必ず `"TAG"` (`0x54 0x41 0x47`)で、 `ID3v1.0` タグが存在することを表します。
 - `title` は音楽のタイトルです。
@@ -31,12 +29,30 @@
 
 # ID3v1.1
 
-![id3v1.1 format](id3v1-1.svg)
+| size | name | type |
+| ---: | --- | --- |
+| 3 | header | string |
+| 30 | title | string |
+| 30 | artist | string |
+| 30 | album | string |
+| 4 | year | string |
+| 28 | comment | string |
+| 1 | separator | byte |
+| 1 | album track | number |
+| 1 | genre | byte |
 
-- ID3v1.1 tag is mostly the same as ID3v1.0 tag.
-- Difference is that `comment` is 28 bytes and `album track` is stored behind.
-- `comment` is a 28-byte string, 2 bytes less than ID3v1.0 tag.
-- `album track` is a 1-byte number from which track on the CD.
+- `ID3v1.1` タグはほとんどが `ID3v1.0` タグと同じです。
+- `ID3v1.1` タグはMP3ファイルの最後128バイトに保存されます。
+- `header` は必ず `"TAG"` (`0x54 0x41 0x47`)で、 `ID3v1.1` タグが存在することを表します。
+- `title` は音楽のタイトルです。
+- `artist` は音楽のアーティスト名です。
+- `album` は音楽のアルバム名です。
+- `year` は音楽の発表年です。 数字4文字で表します。
+- `comment` はコメントです。 `ID3v1.0` タグのコメントより2バイト短いです。
+- `separator` は必ずNULLバイトで、コメントとアルバムトラックの境界を表します。
+- `album track` は音楽のアルバムトラックです。
+- `genre` は音楽のジャンルです。 [ジャンルリスト](#genres-list)からジャンル番号を保存します。
+- 文字列が30文字より短い場合は残りをNULLバイト (`0x00`) で埋めます。
 
 # ID3v1.2
 
