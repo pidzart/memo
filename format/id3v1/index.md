@@ -7,18 +7,27 @@
 
 # ID3v1.0
 
+| size | name | type |
+| ---: | --- | --- |
+| 3 | header | string |
+| 30 | title | string |
+| 30 | artist | string |
+| 30 | album | string |
+| 4 | year | string |
+| 30 | comment | string |
+| 1 | genre | byte |
+
 ![id3v1.0 format](id3v1-0.svg)
 
-- ID3v1.0 tag saves to an area 128-bytes from the end of the file.
-- `"TAG"` string indicates the presence of an ID3v1 tag.
-- `title` is a 30-byte string, the title of the audio.
-- `artist` is a 30-byte string, the artist of the audio.
-- `album` is a 30-byte string, the album of the audio.
-- `year` is a 4-byte string of four numeric characters.
-- `comment` is a 30-byte string, additional information about the audio.
-- If the 29th of the `comment` is `0x00`, it may be an [ID3v1.1 tag](#id3v11).
-- `genre` is specified by number from [genres list](#genres-list).
-- Encoding is ISO/IEC 8859-1, remainder filled with `0x00`.
+- `ID3v1.0` タグはMP3ファイルの最後128バイトに保存されます。
+- `header` は必ず `"TAG"` (`0x54 0x41 0x47`)で、 `ID3v1.0` タグが存在することを表します。
+- `title` は音楽のタイトルです。
+- `artist` は音楽のアーティスト名です。
+- `album` は音楽のアルバム名です。
+- `year` は音楽の発表年です。 数字4文字で表します。
+- `comment` はコメントです。
+- `genre` は音楽のジャンルです。 [ジャンルリスト](#genres-list)からジャンル番号を保存します。
+- 文字列が30文字より短い場合は残りをNULLバイト (`0x00`) で埋めます。
 
 # ID3v1.1
 
