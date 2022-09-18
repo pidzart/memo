@@ -278,5 +278,6 @@ https://web.archive.org/web/20120310015458/http://www.fortunecity.com/underworld
 
 # References
 
+[ID3v1.0 definision](https://www.ne.jp/asahi/techno/ostra/id3doc/ID3.html)
 [https://id3.org/ID3v1](https://id3.org/ID3v1)
-[https://www.birdcagesoft.com/ID3v12.txt](https://www.birdcagesoft.com/ID3v12.txt)
+[ID3v1.2 format](https://www.birdcagesoft.com/ID3v12.txt)
