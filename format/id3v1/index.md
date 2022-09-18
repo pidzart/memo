@@ -69,9 +69,6 @@
 
 # ID3v1 Enhanced
 
-https://en.wikipedia.org/wiki/ID3#Enhanced_TAG[10]
-https://web.archive.org/web/20120310015458/http://www.fortunecity.com/underworld/sonic/3/id3tag.html
-
 ![id3v1 enhanced format](id3v1-enhanced.svg)
 
 # Genres list
@@ -278,6 +275,9 @@ https://web.archive.org/web/20120310015458/http://www.fortunecity.com/underworld
 
 # References
 
-[ID3v1.0 definision](https://www.ne.jp/asahi/techno/ostra/id3doc/ID3.html)
-[https://id3.org/ID3v1](https://id3.org/ID3v1)
-[ID3v1.2 format](https://www.birdcagesoft.com/ID3v12.txt)
+- [ID3v1](https://id3.org/ID3v1)
+- [ID3v1.0 definision](https://www.ne.jp/asahi/techno/ostra/id3doc/ID3.html)
+- [ID3v1.2 format](https://www.birdcagesoft.com/ID3v12.txt)
+- [ID3v1 Enhanced specification](http://www.fortunecity.com/underworld/sonic/3/id3tag.html)
+- [ID3v1 Enhanced specification (web archive)](https://web.archive.org/web/20120310015458/http://www.fortunecity.com/underworld/sonic/3/id3tag.html)
+- [wikipedia ID3](https://en.wikipedia.org/wiki/ID3)
