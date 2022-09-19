@@ -8,6 +8,9 @@
   - [frame](#frame-2)
   - [footer](#footer)
 
+`ID3v2` タグはおもに `MP3` 音楽ファイルのメタ情報を保存するために使われます。
+`MP3` ファイルの最初に保存され、`"ID3"` で始まります。
+
 # values
 
 Text = "XXXX"\
@@ -15,7 +18,24 @@ Integers = $ xx xx xx xx\
 Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 ($ xx is hexa number, %xxxxxxxx is binary number)
 
-# Common Header
+# Common header
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | tag header | string |
+| 1 | major version | number |
+| 1 | revision version | number |
+| 1 | flags | flag |
+| 4 | size | number |
+
+- `ID3v2` タグはMP3ファイルの最初に保存されます。
+- `tag header` は必ず `"ID3"` (`0x49 0x44 0x33`)で、 `ID3v2` タグが存在することを表します。
+- `major version` はタグのバージョンです。
+- `revision version` はタグのリビジョンバージョンです。
+- `flags` はタグのフラグです。
+- `size` はヘッダーを除いたタグのサイズです。同期安全整数を使用します。
+
+
 
 ![id3v2 header svg](id3v2-header.svg)
 
@@ -144,3 +164,10 @@ https://id3.org/id3v2.4.0-frames
 |      2 | version | $ 04 00            |
 |      1 | flags   | %abcd0000          | a = Unsynchronisation<br/>b = Extended header<br/>c = Experimental indicator<br/>d = Footer present |
 |      4 | size    | Synchsafe integers | exclude header (10 Bytes)                                                                           |
+
+# 参照リンク
+
+- [ID3v2.2 standard](https://id3.org/id3v2-00)
+- [ID3v2.3 stamdard](https://id3.org/d3v2.3.0)
+- [ID3v2.4 structure](https://id3.org/id3v2.4.0-structure)
+- [ID3v2.4 frames](https://id3.org/id3v2.4.0-frames)
