@@ -40,7 +40,7 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
     - `ID3v2.3` `ID3v2.4` タグでは拡張ヘッダーを使用します。
   - フラグ `c` がセットされた場合、を使用します。
   - フラグ `d` がセットされた場合、を使用します。
-- `size` はヘッダーを除いたタグのサイズです。同期安全整数を使用します。
+- `size` はヘッダー (10バイト) を除いたタグのサイズです。同期安全整数を使用します。
 
 
 
@@ -67,9 +67,23 @@ It is present when the "Extended header" flag of the common header is set.
 
 ![id3v2.4 extended header svg](id3v2-4-extended-header.svg)
 
-# ID3v2.4 Footer
+# Footer
+
+## ID3v2.4 Footer
 
 ![id3v2.4 footer svg](id3v2-4-footer.svg)
+
+# Frame
+
+## ID3v2.2 Frame
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | string |
+| 3 | frame size [n] | number |
+
+- `frame id` は大文字 `A-Z` または数字 `0-9` の文字列です。
+- `frame size` はヘッダー (6バイト) を除いたフレームのサイズです。
 
 # ID3v2.2
 
