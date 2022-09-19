@@ -56,16 +56,39 @@
 
 # ID3v1.2
 
-![id3v1.2 format](id3v1-2.svg)
+| size | name | type |
+| ---: | --- | --- |
+| 3 | extend header | string |
+| 30 | extend title | string |
+| 30 | extend artist | string |
+| 30 | extend album | string |
+| 15 | extend comment | string |
+| 20 | subgenre | string |
+| 3 | header | string |
+| 30 | title | string |
+| 30 | artist | string |
+| 30 | album | string |
+| 4 | year | string |
+| 28 | comment | string |
+| 1 | separator | byte |
+| 1 | album track | number |
+| 1 | genre | byte |
 
-- ID3v1.2 tag is stored in an area of 128 bytes in addition to ID3v1.1 tag.
-- Location is just before ID3v1.1 tag.
-- `"EXT"` string indicates the presence of an ID3v1.2 tag.
-- `title 2` is a 30-byte string, following the title of ID3v1.1 tag.
-- `artist 2` is a 30-byte string, following the artist of ID3v1.1 tag.
-- `album 2` is a 30-byte string, following the album of ID3v1.1 tag.
-- `comment 2` is a 15-byte string, following the comment of ID3v1.1 tag.
-- `sub genre` is a 20-byte string, describes the detailed genre.
+- `ID3v1.2` タグはMP3ファイルの最後256バイトに保存されます。
+- `extend header` は必ず `"EXT"` (`0x45 0x58 0x54`)で、 `ID3v1.2` タグが存在することを表します。
+- `extend title` `extend artist ` `extend album` `extend comment` はそれぞれ `title` `artist` `album` `comment` に入りきらなかった情報を保存します。
+- `subgenre` は音楽のサブジャンルです。
+- `ID3v1.2` タグの後半128バイトは `ID3v1.1` タグと同じです。
+- `header` は必ず `"TAG"` (`0x54 0x41 0x47`)で、 `ID3v1.1` タグが存在することを表します。
+- `title` は音楽のタイトルです。
+- `artist` は音楽のアーティスト名です。
+- `album` は音楽のアルバム名です。
+- `year` は音楽の発表年です。 数字4文字で表します。
+- `comment` はコメントです。 `ID3v1.0` タグのコメントより2バイト短いです。
+- `separator` は必ずNULLバイトで、コメントとアルバムトラックの境界を表します。
+- `album track` は音楽のアルバムトラックです。
+- `genre` は音楽のジャンルです。 [ジャンルリスト](#genres-list)からジャンル番号を保存します。
+- 文字列が短い場合は残りをNULLバイト (`0x00`) で埋めます。
 
 # ID3v1 Enhanced
 
