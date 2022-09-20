@@ -97,7 +97,7 @@ It is present when the "Extended header" flag of the common header is set.
 
 # Unique file identifier フレーム
 
-### ID3v2.2 `"UFI"`
+## ID3v2.2 `"UFI"`
 
 | size | name | type |
 | ---: | --- | --- |
@@ -115,6 +115,8 @@ It is present when the "Extended header" flag of the common header is set.
 
 # Text information フレーム
 
+## ID3v2.2 `"T00" - "TZZ"` 
+
 | size | name | type |
 | ---: | --- | --- |
 | 3 | frame id | string |
@@ -129,20 +131,12 @@ It is present when the "Extended header" flag of the common header is set.
   - `0x01` の場合は `ucs-2` です。
 - `information` はテキスト情報です。
 
-TT1
-   The 'Content group description' frame is used if the sound belongs to
-   a larger category of sounds/music. For example, classical music is
-   often sorted in different musical sections (e.g. "Piano Concerto",
-   "Weather - Hurricane").
+### 詳細
 
-  TT2
-   The 'Title/Songname/Content description' frame is the actual name of
-   the piece (e.g. "Adagio", "Hurricane Donna").
+- `"TT1"` - コンテンツグループ
+- `"TT2"` - タイトル/曲名/コンテンツ
+- `"TT3"` - サブタイトル/説明
 
-  TT3
-   The 'Subtitle/Description refinement' frame is used for information
-   directly related to the contents title (e.g. "Op. 16" or "Performed
-   live at wembley").
 
   TP1
    The 'Lead artist(s)/Lead performer(s)/Soloist(s)/Performing group' is
