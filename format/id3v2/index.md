@@ -16,15 +16,18 @@
 - **`int`**: 整数、ビッグエンディアン
 - **`syncsafe int`**: 同期安全整数、ビッグエンディアン
   各バイトの最上位ビットが必ず0になります。
-- **`string`**: 文字列、ISO-8859-1 (latin-1) エンコード
-- **`unicode string`**: 文字列、ISO/IEC 10646-1:1993 (ucs-2) エンコード
+- **`string`**: 文字列、`ISO-8859-1` (`latin-1`) エンコード
+- **`unicode string`**: 文字列、`ISO/IEC 10646-1:1993` (`ucs-2`) エンコード
+- **`string/0`**: ヌル終端文字列、`latin-1` エンコードの場合は `0x00` 、 `ucs-2` エンコードの場合は `0x00 0x00`
+- **`language`**: 文字列、ISO-639-2
+- **`url`**: 文字列
 
 Text = "XXXX"\
 Integers = $ xx xx xx xx\
 Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 ($ xx is hexa number, %xxxxxxxx is binary number)
 
-# Common header
+# Header
 
 | size | name | type |
 | ---: | --- | --- |
@@ -81,15 +84,36 @@ It is present when the "Extended header" flag of the common header is set.
 
 # Frame
 
-## ID3v2.2 Frame
+## ID3v2.2 frame header
 
 | size | name | type |
 | ---: | --- | --- |
 | 3 | frame id | string |
-| 3 | frame size [n] | int |
+| 3 | frame size | int |
 
 - `frame id` は大文字 `A-Z` または数字 `0-9` の文字列です。
 - `frame size` はヘッダー (6バイト) を除いたフレームのサイズです。
+  フレームのサイズは1バイトより大きい必要があります。
+
+# Unique file identifier フレーム
+
+### ID3v2.2 `"UFI"`
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | string |
+| 3 | frame size | int |
+|   | owner id | string/0 |
+| < 64 | id | bytes |
+
+- Unique file identifier フレームはデータベース内でオーディオファイルの情報を識別する識別子です。
+- `frame id` は `"UFI"` です。
+- `owner id` はデータベースの識別子です。
+  長さが0の場合はこのフレームは無視されます。
+  同じ `owner id` を持つ UFI フレームはファイルに一つだけです。
+- `id` はデータベース内のオーディオファイルの識別子です。
+
+# Text information フレーム
 
 # ID3v2.2
 
