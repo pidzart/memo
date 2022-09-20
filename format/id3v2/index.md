@@ -18,7 +18,7 @@
   各バイトの最上位ビットが必ず0になります。
 - **`string`**: 文字列、`ISO-8859-1` (`latin-1`) エンコード
 - **`unicode string`**: 文字列、`ISO/IEC 10646-1:1993` (`ucs-2`) エンコード
-- **`string/0`**: ヌル終端文字列、`latin-1` エンコードの場合は `0x00` 、 `ucs-2` エンコードの場合は `0x00 0x00`
+- **`string0`**: ヌル終端文字列、`latin-1` エンコードの場合は `0x00` 、 `ucs-2` エンコードの場合は `0x00 0x00`
 - **`language`**: 文字列、ISO-639-2
 - **`url`**: 文字列
 
@@ -106,7 +106,7 @@ It is present when the "Extended header" flag of the common header is set.
 |   | owner id | string/0 |
 | < 64 | id | bytes |
 
-- Unique file identifier フレームはデータベース内でオーディオファイルの情報を識別する識別子です。
+- Unique file identifier フレームはデータベース内でオーディオファイルの情報の識別子を保存します。
 - `frame id` は `"UFI"` です。
 - `owner id` はデータベースの識別子です。
   長さが0の場合はこのフレームは無視されます。
@@ -114,6 +114,20 @@ It is present when the "Extended header" flag of the common header is set.
 - `id` はデータベース内のオーディオファイルの識別子です。
 
 # Text information フレーム
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | string |
+| 3 | frame size | int |
+| 1 | encoding | byte |
+|   | information | string/0 |
+
+- Text information フレームはテキスト情報を保存します。
+- `frame id` は `"T00" - "TZZ"` から `"TXX"` を除くいずれかです。
+- `encoding` は文字列のエンコードです。
+  - `0x00` の場合は `latin-1` です。
+  - `0x01` の場合は `ucs-2` です。
+- `information` はテキスト情報です。
 
 # ID3v2.2
 
