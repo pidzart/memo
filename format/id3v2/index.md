@@ -13,13 +13,18 @@
 
 # type
 
-- **`int`**: 整数、ビッグエンディアン
-- **`syncsafe int`**: 同期安全整数、ビッグエンディアン
+- **`int`**: 整数 (Integer)、ビッグエンディアン
+- **`syncsafe int`**: 同期安全整数 (SuncSafe Integer)、ビッグエンディアン
   各バイトの最上位ビットが必ず0になります。
-- **`string`**: 文字列、`ISO-8859-1` (`latin-1`) エンコード
-- **`unicode string`**: 文字列、`ISO/IEC 10646-1:1993` (`ucs-2`) エンコード
-- **`string0`**: ヌル終端文字列、`latin-1` エンコードの場合は `0x00` 、 `ucs-2` エンコードの場合は `0x00 0x00`
-- **`language`**: 文字列、ISO-639-2
+- **`str`**: 文字列、`ISO-8859-1` (`latin-1`) エンコード
+- **`encode str`**: エンコード指定文字列
+  - `0x00` の場合は `ISO-8859-1` (`latin-1`) エンコード
+  - `0x01` の場合は `ISO/IEC 10646-1:1993` (`ucs-2`) エンコード
+- **`str null`**: ヌル終端文字列
+- **`encode str null`**: エンコード指定ヌル終端文字列
+  - `latin-1` エンコードの場合は `0x00`
+  - `ucs-2` エンコードの場合は `0x00 0x00`
+- **`lang`**: 文字列、ISO-639-2
 - **`url`**: 文字列
 
 Text = "XXXX"\
@@ -31,7 +36,7 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 
 | size | name | type |
 | ---: | --- | --- |
-| 3 | tag header | string |
+| 3 | tag header | str |
 | 1 | major version | int |
 | 1 | revision version | int |
 | 1 | flags | flag |
@@ -88,7 +93,7 @@ It is present when the "Extended header" flag of the common header is set.
 
 | size | name | type |
 | ---: | --- | --- |
-| 3 | frame id | string |
+| 3 | frame id | str |
 | 3 | frame size | int |
 
 - `frame id` は大文字 `A-Z` または数字 `0-9` の文字列です。
@@ -101,9 +106,9 @@ It is present when the "Extended header" flag of the common header is set.
 
 | size | name | type |
 | ---: | --- | --- |
-| 3 | frame id | string |
+| 3 | frame id | str |
 | 3 | frame size | int |
-|   | owner id | string/0 |
+|   | owner id | str null |
 | < 64 | id | bytes |
 
 - Unique file identifier フレームはデータベース内でオーディオファイルの情報の識別子を保存します。
@@ -119,10 +124,10 @@ It is present when the "Extended header" flag of the common header is set.
 
 | size | name | type |
 | ---: | --- | --- |
-| 3 | frame id | string |
+| 3 | frame id | str |
 | 3 | frame size | int |
 | 1 | encoding | byte |
-|   | information | string/0 |
+|   | information | encode str null |
 
 - Text information フレームはテキスト情報を保存します。
 - `frame id` は `"T00" - "TZZ"` から `"TXX"` を除くいずれかです。
@@ -136,78 +141,36 @@ It is present when the "Extended header" flag of the common header is set.
 - `"TT1"` - コンテンツグループ
 - `"TT2"` - タイトル/曲名/コンテンツ
 - `"TT3"` - サブタイトル/説明
-
-
-  TP1
-   The 'Lead artist(s)/Lead performer(s)/Soloist(s)/Performing group' is
-   used for the main artist(s). They are seperated with the "/"
-   character.
-
-  TP2
-   The 'Band/Orchestra/Accompaniment' frame is used for additional
-   information about the performers in the recording.
-
-  TP3
-   The 'Conductor' frame is used for the name of the conductor.
-   
-  TP4
-   The 'Interpreted, remixed, or otherwise modified by' frame contains
-   more information about the people behind a remix and similar
-   interpretations of another existing piece.
-
-  TCM
-   The 'Composer(s)' frame is intended for the name of the composer(s).
-   They are seperated with the "/" character.
-
-  TXT
-   The 'Lyricist(s)/text writer(s)' frame is intended for the writer(s)
-   of the text or lyrics in the recording. They are seperated with the
-   "/" character.
-
-  TLA
-   The 'Language(s)' frame should contain the languages of the text or
-   lyrics in the audio file. The language is represented with three
-   characters according to ISO-639-2. If more than one language is used
-   in the text their language codes should follow according to their
-   usage.
-
-  TCO
-   The content type, which previously (in ID3v1.1, see appendix A) was
-   stored as a one byte numeric value only, is now a numeric string. You
-   may use one or several of the types as ID3v1.1 did or, since the
-   category list would be impossible to maintain with accurate and up to
-   date categories, define your own.
-   References to the ID3v1 genres can be made by, as first byte, enter
-   "(" followed by a number from the genres list (section A.3.) and
-   ended with a ")" character. This is optionally followed by a
-   refinement, e.g. "(21)" or "(4)Eurodisco". Several references can be
-   made in the same frame, e.g. "(51)(39)". If the refinement should
-   begin with a "(" character it should be replaced with "((", e.g. "((I
-   can figure out any genre)" or "(55)((I think...)". The following new
-   content types is defined in ID3v2 and is implemented in the same way
-   as the numerig content types, e.g. "(RX)".
-   
-     RX  Remix
-     CR  Cover
-
-  TAL
-   The 'Album/Movie/Show title' frame is intended for the title of the
-   recording(/source of sound) which the audio in the file is taken from.
-   
-  TPA
-   The 'Part of a set' frame is a numeric string that describes which
-   part of a set the audio came from. This frame is used if the source
-   described in the "TAL" frame is divided into several mediums, e.g. a
-   double CD. The value may be extended with a "/" character and a
-   numeric string containing the total number of parts in the set. E.g.
-   "1/2".
-
-  TRK
-   The 'Track number/Position in set' frame is a numeric string
-   containing the order number of the audio-file on its original
-   recording. This may be extended with a "/" character and a numeric
-   string containing the total numer of tracks/elements on the original
-   recording. E.g. "4/9".
+- `"TP1"` - リードアーティスト/リードパフォーマー/ソリスト/パフォーミンググループ
+  `"/"` の文字で区切られます。
+- `"TP2"` - バンド/オーケストラ/伴奏
+- `"TP3"` - 指揮者
+- `"TP4"` - 解釈/リミックス
+- `"TCM"` - 作曲者
+  `"/"` の文字で区切られます。
+- `"TXT"` - 作詞家/テキストライター
+  `"/"` の文字で区切られます。
+- `"TLA"` - 言語
+- `"TCO"` - コンテンツタイプ
+  `"("` と `")"` で囲ってID3v1.1のジャンルやID3v2のコンテンツタイプを参照できます。
+  `"("` で開始する場合は `"(("` で開始します。
+  - `"(RX)"` Remix
+  - `"(CR)"` Cover
+- `"TAL"` - アルバム/映画/番組タイトル
+- `"TPA"` - セットの部分
+  `"TAL"` フレームのどの部分から来たのかを説明します。
+  `"/" 総数` で拡張できます。
+- `"TRK"` - トラック番号/セット内の位置
+  `"/" 総数` で拡張できます。
+- `"TT3"` - サブタイトル/説明
+- `"TT3"` - サブタイトル/説明
+- `"TT3"` - サブタイトル/説明
+- `"TT3"` - サブタイトル/説明
+- `"TT3"` - サブタイトル/説明
+- `"TT3"` - サブタイトル/説明
+- `"TT3"` - サブタイトル/説明
+- `"TT3"` - サブタイトル/説明
+- `"TT3"` - サブタイトル/説明
 
   TRC
    The 'ISRC' frame should contian the International Standard Recording
