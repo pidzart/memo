@@ -16,8 +16,8 @@
 - **`int`**: 整数、ビッグエンディアン
 - **`syncsafe int`**: 同期安全整数、ビッグエンディアン
   各バイトの最上位ビットが必ず0になります。
-- **`string`**: 文字列、ISO-8859-1 エンコード
-- **`unicode string`**: 文字列、ISO/IEC 10646-1:1993 エンコード
+- **`string`**: 文字列、ISO-8859-1 (latin-1) エンコード
+- **`unicode string`**: 文字列、ISO/IEC 10646-1:1993 (ucs-2) エンコード
 
 Text = "XXXX"\
 Integers = $ xx xx xx xx\
@@ -29,10 +29,10 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 | size | name | type |
 | ---: | --- | --- |
 | 3 | tag header | string |
-| 1 | major version | number |
-| 1 | revision version | number |
+| 1 | major version | int |
+| 1 | revision version | int |
 | 1 | flags | flag |
-| 4 | size | number |
+| 4 | size | syncsafe int |
 
 - `ID3v2` タグはMP3ファイルの最初に保存されます。
 - `tag header` は必ず `"ID3"` (`0x49 0x44 0x33`)で、 `ID3v2` タグが存在することを表します。
@@ -86,7 +86,7 @@ It is present when the "Extended header" flag of the common header is set.
 | size | name | type |
 | ---: | --- | --- |
 | 3 | frame id | string |
-| 3 | frame size [n] | number |
+| 3 | frame size [n] | int |
 
 - `frame id` は大文字 `A-Z` または数字 `0-9` の文字列です。
 - `frame size` はヘッダー (6バイト) を除いたフレームのサイズです。
