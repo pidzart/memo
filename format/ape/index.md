@@ -17,3 +17,4 @@
 # References
 
 - [Monkey's Audio developers](https://monkeysaudio.com/developers.html)
+https://wiki.hydrogenaud.io/index.php?title=Category:Metadata
