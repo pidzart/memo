@@ -148,7 +148,7 @@ It is present when the "Extended header" flag of the common header is set.
 - `"TP4"` - 解釈/リミックス
 - `"TCM"` - 作曲者
   `"/"` の文字で区切られます。
-- `"TXT"` - 作詞家/テキストライター
+- `"TXT"` - 作詞者/テキストライター
   `"/"` の文字で区切られます。
 - `"TLA"` - 言語コード ISO-639-2
 - `"TCO"` - コンテンツタイプ
@@ -176,47 +176,16 @@ It is present when the "Extended header" flag of the common header is set.
 - `"TCR"` - 著作権メッセージ
 - `"TPB"` - 出版社
 - `"TEN"` - エンコード者
-- `"TSS"` - エンコードソフトウェア/ハードウェア/設定
+- `"TSS"` - エンコード ソフトウェア/ハードウェア/設定
 - `"TOF"` - オリジナルファイル名
 - `"TLE"` - 音楽の長さ
 - `"TSI"` - タグを除いたファイルサイズ
 - `"TDY"` - プレイリストディレイ
-- `"TKE"` - 著作権メッセージ
-- `"TOT"` - 著作権メッセージ
-- `"TOA"` - 著作権メッセージ
-- `"TOL"` - 著作権メッセージ
-- `"TOR"` - 著作権メッセージ
-
-  TKE
-   The 'Initial key' frame contains the musical key in which the sound
-   starts. It is represented as a string with a maximum length of three
-   characters. The ground keys are represented with "A","B","C","D","E",
-   "F" and "G" and halfkeys represented with "b" and "#". Minor is
-   represented as "m". Example "Cbm". Off key is represented with an "o"
-   only.
-
-  TOT
-   The 'Original album/Movie/Show title' frame is intended for the title
-   of the original recording(/source of sound), if for example the music
-   in the file should be a cover of a previously released song.
-   
-  TOA
-   The 'Original artist(s)/performer(s)' frame is intended for the
-   performer(s) of the original recording, if for example the music in
-   the file should be a cover of a previously released song. The
-   performers are seperated with the "/" character.
-
-  TOL
-   The 'Original Lyricist(s)/text writer(s)' frame is intended for the
-   text writer(s) of the original recording, if for example the music in
-   the file should be a cover of a previously released song. The text
-   writers are seperated with the "/" character.
-
-  TOR
-   The 'Original release year' frame is intended for the year when the
-   original recording, if for example the music in the file should be a
-   cover of a previously released song, was released. The field is
-   formatted as in the "TDY" frame.
+- `"TKE"` - 開始キー
+- `"TOT"` - オリジナル アルバム/映画/番組タイトル
+- `"TOA"` - オリジナル アーティスト/パフォーマー
+- `"TOL"` - オリジナル 作詞者/テキストライター
+- `"TOR"` - オリジナル リリース年
 
 # ID3v2.2
 
