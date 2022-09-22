@@ -171,79 +171,21 @@ It is present when the "Extended header" flag of the common header is set.
   常に四文字です。
 - `"TRD"` - 記録日
 - `"TMT"` - メディアタイプ
-- `"TT3"` - サブタイトル/説明
-- `"TT3"` - サブタイトル/説明
-- `"TT3"` - サブタイトル/説明
-
-  TFT
-   The 'File type' frame indicates which type of audio this tag defines.
-   The following type and refinements are defined:
-   
-     MPG    MPEG Audio
-       /1     MPEG 2 layer I
-       /2     MPEG 2 layer II
-       /3     MPEG 2 layer III
-       /2.5   MPEG 2.5
-       /AAC   Advanced audio compression
-     
-   but other types may be used, not for these types though. This is used
-   in a similar way to the predefined types in the "TMT" frame, but
-   without parenthesis. If this frame is not present audio type is
-   assumed to be "MPG".
-
-  TBP
-   BPM is short for beats per minute, and is easily computed by
-   dividing the number of beats in a musical piece with its length. To
-   get a more accurate result, do the BPM calculation on the main-part
-   only. To acquire best result measure the time between each beat and
-   calculate individual BPM for each beat and use the median value as
-   result. BPM is an integer and represented as a numerical string.
-
-  TCR
-   The 'Copyright message' frame, which must begin with a year and a
-   space character (making five characters), is intended for the
-   copyright holder of the original sound, not the audio file itself. The
-   absence of this frame means only that the copyright information is
-   unavailable or has been removed, and must not be interpreted to mean
-   that the sound is public domain. Every time this field is displayed
-   the field must be preceded with "Copyright " (C) " ", where (C) is one
-   character showing a C in a circle.
-
-  TPB
-   The 'Publisher' frame simply contains the name of the label or
-   publisher.
-
-  TEN
-   The 'Encoded by' frame contains the name of the person or
-   organisation that encoded the audio file. This field may contain a
-   copyright message, if the audio file also is copyrighted by the
-   encoder.
-
-  TSS
-   The 'Software/hardware and settings used for encoding' frame
-   includes the used audio encoder and its settings when the file was
-   encoded. Hardware refers to hardware encoders, not the computer on
-   which a program was run.
-
-  TOF
-   The 'Original filename' frame contains the preferred filename for the
-   file, since some media doesn't allow the desired length of the
-   filename. The filename is case sensitive and includes its suffix.
-
-  TLE
-   The 'Length' frame contains the length of the audiofile in
-   milliseconds, represented as a numeric string.
-
-  TSI
-   The 'Size' frame contains the size of the audiofile in bytes
-   excluding the tag, represented as a numeric string.
-
-  TDY
-   The 'Playlist delay' defines the numbers of milliseconds of silence
-   between every song in a playlist. The player should use the "ETC"
-   frame, if present, to skip initial silence and silence at the end of
-   the audio to match the 'Playlist delay' time. The time is represented
-   as a numeric string.
+- `"TFT"` - ファイルタイプ
+- `"TBP"` - BPM
+- `"TCR"` - 著作権メッセージ
+- `"TPB"` - 出版社
+- `"TEN"` - エンコード者
+- `"TSS"` - エンコードソフトウェア/ハードウェア/設定
+- `"TOF"` - オリジナルファイル名
+- `"TLE"` - 音楽の長さ
+- `"TSI"` - タグを除いたファイルサイズ
+- `"TDY"` - プレイリストディレイ
+- `"TKE"` - 著作権メッセージ
+- `"TOT"` - 著作権メッセージ
+- `"TOA"` - 著作権メッセージ
+- `"TOL"` - 著作権メッセージ
+- `"TOR"` - 著作権メッセージ
 
   TKE
    The 'Initial key' frame contains the musical key in which the sound
