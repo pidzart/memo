@@ -127,7 +127,7 @@ It is present when the "Extended header" flag of the common header is set.
 | 3 | frame id | str |
 | 3 | frame size | int |
 | 1 | encoding | byte |
-|   | information | encode str null |
+|   | information | encode str |
 
 - Text information フレームはテキスト情報を保存します。
 - `frame id` は `"T00" - "TZZ"` から `"TXX"` を除くいずれかです。
@@ -186,6 +186,66 @@ It is present when the "Extended header" flag of the common header is set.
 - `"TOA"` - オリジナル アーティスト/パフォーマー
 - `"TOL"` - オリジナル 作詞者/テキストライター
 - `"TOR"` - オリジナル リリース年
+
+# User defined text information フレーム
+
+## ID3v2.2 `"TXX"` 
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | str |
+| 3 | frame size | int |
+| 1 | encoding | byte |
+|   | description | encode str null |
+|   | value | encode str |
+
+- Text information フレームはテキスト情報を保存します。
+- `frame id` は `"TXX"` です。
+- `encoding` は文字列のエンコードです。
+  - `0x00` の場合は `latin-1` です。
+  - `0x01` の場合は `ucs-2` です。
+- `description` はフレームの説明です。同じ説明のフレームはファイルに一つだけです。
+- `value` はフレームの値です。
+
+# URL link フレーム
+
+## ID3v2.2 `"TXX"` 
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | str |
+| 3 | frame size | int |
+|   | url | encode str |
+
+- URL link フレームはURLを保存します。
+- `frame id` は `"W00" - "WZZ"` から `"WXX"` を除くいずれかです。
+- `url` はURLです。
+
+### 詳細
+
+- `"WAF"` - 公式オーディオファイルWEBページ
+
+  WAR
+   The 'Official artist/performer webpage' frame is a URL pointing at
+   the artists official webpage. There may be more than one "WAR" frame
+   in a tag if the audio contains more than one performer.
+   
+  WAS
+   The 'Official audio source webpage' frame is a URL pointing at the
+   official webpage for the source of the audio file, e.g. a movie.
+   
+  WCM
+   The 'Commercial information' frame is a URL pointing at a webpage
+   with information such as where the album can be bought. There may be
+   more than one "WCM" frame in a tag.
+   
+  WCP
+   The 'Copyright/Legal information' frame is a URL pointing at a
+   webpage where the terms of use and ownership of the file is described.
+   
+  WPB
+   The 'Publishers official webpage' frame is a URL pointing at the
+   official wepage for the publisher.
 
 # ID3v2.2
 
