@@ -176,16 +176,16 @@ It is present when the "Extended header" flag of the common header is set.
 - `"TCR"` - 著作権メッセージ
 - `"TPB"` - 出版社
 - `"TEN"` - エンコード者
-- `"TSS"` - エンコード ソフトウェア/ハードウェア/設定
+- `"TSS"` - エンコードソフトウェア/ハードウェア/設定
 - `"TOF"` - オリジナルファイル名
 - `"TLE"` - 音楽の長さ
 - `"TSI"` - タグを除いたファイルサイズ
 - `"TDY"` - プレイリストディレイ
 - `"TKE"` - 開始キー
-- `"TOT"` - オリジナル アルバム/映画/番組タイトル
-- `"TOA"` - オリジナル アーティスト/パフォーマー
-- `"TOL"` - オリジナル 作詞者/テキストライター
-- `"TOR"` - オリジナル リリース年
+- `"TOT"` - オリジナルアルバム/映画/番組タイトル
+- `"TOA"` - オリジナルアーティスト/パフォーマー
+- `"TOL"` - オリジナル作詞者/テキストライター
+- `"TOR"` - オリジナルリリース年
 
 # User defined text information フレーム
 
@@ -209,7 +209,7 @@ It is present when the "Extended header" flag of the common header is set.
 
 # URL link フレーム
 
-## ID3v2.2 `"TXX"` 
+## ID3v2.2 `"W00" - "WZZ"` 
 
 | size | name | type |
 | ---: | --- | --- |
@@ -223,29 +223,30 @@ It is present when the "Extended header" flag of the common header is set.
 
 ### 詳細
 
-- `"WAF"` - 公式オーディオファイルWEBページ
+- `"WAF"` - オーディオファイル公式WEBページ
+- `"WAR"` - アーティスト/パフォーマー公式WEBページ
+- `"WAS"` - オーディオソース公式WEBページ
+- `"WCM"` - コマーシャル情報WEBページ
+- `"WCP"` - 著作権/法的情報WEBページ
+- `"WPB"` - 出版社公式WEBページ
 
-  WAR
-   The 'Official artist/performer webpage' frame is a URL pointing at
-   the artists official webpage. There may be more than one "WAR" frame
-   in a tag if the audio contains more than one performer.
-   
-  WAS
-   The 'Official audio source webpage' frame is a URL pointing at the
-   official webpage for the source of the audio file, e.g. a movie.
-   
-  WCM
-   The 'Commercial information' frame is a URL pointing at a webpage
-   with information such as where the album can be bought. There may be
-   more than one "WCM" frame in a tag.
-   
-  WCP
-   The 'Copyright/Legal information' frame is a URL pointing at a
-   webpage where the terms of use and ownership of the file is described.
-   
-  WPB
-   The 'Publishers official webpage' frame is a URL pointing at the
-   official wepage for the publisher.
+# User defined URL link フレーム
+
+## ID3v2.2 `"WXX"` 
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | str |
+| 3 | frame size | int |
+| 1 | encoding | byte |
+|   | description | encode str null |
+|   | url | encode str |
+
+- User defined URL link フレームはURLを保存します。
+- `frame id` は `"WXX"` です。
+- `encoding` は文字列のエンコードです。常に `0x00` で `latin-1` エンコードです。
+- `description` はフレームの説明です。同じ説明のフレームはファイルに一つだけです。
+- `url` はURLです。
 
 # ID3v2.2
 
