@@ -248,6 +248,25 @@ It is present when the "Extended header" flag of the common header is set.
 - `description` はフレームの説明です。同じ説明のフレームはファイルに一つだけです。
 - `url` はURLです。
 
+# Involved people list フレーム
+
+## ID3v2.2 `"IPL"` 
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | str |
+| 3 | frame size | int |
+| 1 | encoding | byte |
+|   | people 1 | encode str null |
+|   | people 2 | encode str null |
+|   | ... | |
+|   | people N | encode str |
+
+- Involved people list フレームはURLを保存します。
+- `frame id` は `"IPL"` です。
+- `encoding` は文字列のエンコードです。
+- `people` は関係者で、ヌル文字区切りのリストです。
+
 # ID3v2.2
 
 https://id3.org/id3v2-00
