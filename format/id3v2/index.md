@@ -267,6 +267,47 @@ It is present when the "Extended header" flag of the common header is set.
 - `encoding` は文字列のエンコードです。
 - `people` は関係者で、ヌル文字区切りのリストです。
 
+# Music CD Identifier フレーム
+
+## ID3v2.2 `"MCI"` 
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | str |
+| 3 | frame size | int |
+|  | cd toc | bytes |
+
+- Music CD Identifier フレームはCDDBでCDを識別する情報を保存します。
+- `frame id` は `"MCI"` です。
+- `cd toc` CDからの目次です。
+
+# Event timing codes フレーム
+
+## ID3v2.2 `"ETC"` 
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | str |
+| 3 | frame size | int |
+| 1 | time stamp format | bytes |
+| 1 | event type 1 | bytes |
+| 4 | time stamp 1 | bytes |
+| 1 | event type 2 | bytes |
+| 4 | time stamp 2 | bytes |
+|   | ... | |
+| 1 | event type N | bytes |
+| 4 | time stamp N | bytes |
+
+
+- Event timing codes フレームは曲のキーイベントと同期します。
+- `frame id` は `"ETC"` です。
+- `time stamp format` はタイムスタンプのフォーマットです。
+  - `0x01`の場合は32ビット、絶対時間、MPEGフレーム単位です。
+  - `0x02`の場合は32ビット、絶対時間、ミリ秒単位です。
+- `event type` はイベントのタイプです。
+- `time stamp` はタイムスタンプです。
+- イベントリストは時間順にソートされている必要があります。
+
 # ID3v2.2
 
 https://id3.org/id3v2-00
