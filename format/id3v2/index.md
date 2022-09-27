@@ -9,6 +9,22 @@
   - Involved people list
   - Music CD Identifier
   - Event timing codes
+  - MPEG location lookup table
+  - Synced tempo codes
+  - Unsychronised lyrics/text transcription
+  - Synchronised lyrics/text
+  - Comments
+  - Relative volume adjustment
+  - Equalisation
+  - Reverb
+  - Attached picture
+  - General encapsulated object
+  - Play counter
+  - Popularimeter
+  - Recommended buffer size
+  - Encrypted meta frame
+  - Audio encryption
+  - Linked information
 - [Footer](#footer)
 - [ID3v2.2](#id3v22)
   - [frame](#frame)
@@ -318,6 +334,35 @@ It is present when the "Extended header" flag of the common header is set.
 - `event type` はイベントのタイプです。
 - `time stamp` はタイムスタンプです。
 - イベントリストは時間順にソートされている必要があります。
+
+# MPEG location lookup table
+
+## ID3v2.2 `"MLL"` 
+
+| size | name | type |
+| ---: | --- | --- |
+| 3 | frame id | str |
+| 3 | frame size | int |
+| 2 | MPEG frames between reference | int |
+| 3 | bytes between reference | int |
+| 3 | milliseconds between reference | int |
+| 1 | bits for bytes deviation | int |
+| 1 | bits for milliseconds deviation | int |
+| b bits | deviation in bytes 1 | int |
+| m bits | deviation in milliseconds 1 | int |
+| | ... | |
+| b bits | deviation in bytes N | int |
+| m bits | deviation in milliseconds N | int |
+
+- MPEG location lookup table フレームはMPEGフレームのバイト位置を保存します。
+- `frame id` は `"MLL"` です。
+- `MPEG frames between reference` は各参照間のフレーム数の差です。
+- `bytes between reference` は各参照間のフレーム数の差です。
+- `milliseconds between reference` は各参照間のフレーム数の差です。
+- `bits for bytes deviation` は各参照間のフレーム数の差です。
+- `bits for milliseconds deviation` は各参照間のフレーム数の差です。
+- `deviation in bytes` は各参照間のフレーム数の差です。
+- `deviation in milliseconds` は各参照間のフレーム数の差です。
 
 # ID3v2.2
 
