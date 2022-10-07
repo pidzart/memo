@@ -1,20 +1,22 @@
 # Text information
 
-## ID3v2.2 `"T00" - "TZZ"` 
+## ID3v2.2 `"T00" - "TZZ"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-| 1 | encoding | byte |
-|   | information | encode str |
+| size | name        | type       |
+| ---: | ----------- | ---------- |
+|    3 | frame id    | str        |
+|    3 | frame size  | int        |
+|    1 | encoding    | byte       |
+|      | information | str |
 
 - Text information フレームはテキスト情報を保存します。
 - `frame id` は `"T00" - "TZZ"` から `"TXX"` を除くいずれかです。
 - `encoding` は文字列のエンコードです。
-  - `0x00` の場合は `latin-1` です。
-  - `0x01` の場合は `ucs-2` です。
+  - `$00` の場合は ISO-8859-1 です。
+  - `$01` の場合は UCS-2 (UTF-16 ビッグエンディアン) です。
 - `information` はテキスト情報です。
+  `encoding` によって指定された
+  ヌル終端文字 (`$00` または `$00 00`) より後は無視されます。
 
 ### 詳細
 
@@ -32,7 +34,7 @@
   `"/"` の文字で区切られます。
 - `"TLA"` - 言語コード ISO-639-2
 - `"TCO"` - コンテンツタイプ
-  `"("` と `")"` で囲ってID3v1.1のジャンルやID3v2のコンテンツタイプを参照できます。
+  `"("` と `")"` で囲って ID3v1.1 のジャンルや ID3v2 のコンテンツタイプを参照できます。
   `"("` で開始する場合は `"(("` で開始します。
   - `"(RX)"` Remix
   - `"(CR)"` Cover
@@ -69,15 +71,15 @@
 
 # User defined text information
 
-## ID3v2.2 `"TXX"` 
+## ID3v2.2 `"TXX"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-| 1 | encoding | byte |
-|   | description | encode str null |
-|   | value | encode str |
+| size | name        | type            |
+| ---: | ----------- | --------------- |
+|    3 | frame id    | str             |
+|    3 | frame size  | int             |
+|    1 | encoding    | byte            |
+|      | description | encode str null |
+|      | value       | encode str      |
 
 - Text information フレームはテキスト情報を保存します。
 - `frame id` は `"TXX"` です。

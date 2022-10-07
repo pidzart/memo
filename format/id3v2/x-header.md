@@ -9,18 +9,18 @@ ID3v2.2 は拡張ヘッダーがありません
 
 # ID3v2.3 拡張ヘッダー
 
-| size | name | type |
-| ---: | --- | --- |
-| 4 | extended header size | int |
-| 2 | extended flags | flag |
-| 4 | padding size | int |
-| 4 | crc data | option bytes |
+| size | name                 | type  |
+| ---: | -------------------- | ----- |
+|    4 | extended header size | int   |
+|    2 | extended flags       | flag  |
+|    4 | padding size         | int   |
+|    4 | crc data [option]    | bytes |
 
 ## extended header size
 
 拡張ヘッダーサイズを除いた拡張ヘッダーのサイズです。
 拡張ヘッダーは拡張フラグとパディングサイズ、
-オプションでCRCデータを含むため、
+オプションで CRC データを含むため、
 サイズは 6 または 10 です。
 
 ## extended flags
@@ -40,25 +40,25 @@ ID3v2.2 は拡張ヘッダーがありません
 
 # ID3v2.4 拡張ヘッダー
 
-| size | name | type |
-| ---: | --- | --- |
-| 4 | extended header size | syncsafe int |
-| 1 | extended flags size | int |
-| 1 | extended flags | flag |
-| 1 | tag is update size | option int |
-| 0 | tag is update | option bytes |
-| 1 | crc data size | option int |
-| 5 | crc data | option bytes |
-| 1 | tag restrictions size | option int |
-| 1 | tag restrictions | option flag |
+| size | name                  | type           |
+| ---: | --------------------- | -------------- |
+|    4 | extended header size  | syncsafe int   |
+|    1 | extended flags size   | int            |
+|    1 | extended flags        | flag           |
+|    1 | tag is update size    | [option] int   |
+|    0 | tag is update         | [option] bytes |
+|    1 | crc data size         | [option] int   |
+|    5 | crc data              | [option] bytes |
+|    1 | tag restrictions size | [option] int   |
+|    1 | tag restrictions      | [option] flag  |
 
 ## extended header size
 
-拡張ヘッダーのサイズを32ビット同期安全整数で保存します。
+拡張ヘッダーのサイズを 32 ビット同期安全整数で保存します。
 拡張ヘッダーは拡張ヘッダーサイズと拡張フラグを含むため、
-少なくとも `$06` 以上です
+少なくとも 6 以上です
 
-拡張ヘッダーの各データは8ビット同期安全整数のサイズと指定したバイト数のデータで構成されます。
+拡張ヘッダーの各データは 127 以下のサイズと指定したバイト数のデータで構成されます。
 
 ## extended flags
 
@@ -83,7 +83,7 @@ ID3v2.2 は拡張ヘッダーがありません
 
 データ: なし
 
-このタグはファイルで以前に見つかったタグの更新です。 
+このタグはファイルで以前に見つかったタグの更新です。
 以前のタグのデータを上書きします。
 
 ## crc data size
@@ -98,7 +98,7 @@ CRC データのサイズです。
 データ: CRC-32
 
 タグに含まれるフレームとパディングのデータから計算された CRC-32 のデータです。
-40ビット同期安全整数として保存します。
+40 ビット同期安全整数として保存します。
 
 ## tag restrictions
 
@@ -117,16 +117,16 @@ CRC データのサイズです。
   - `%0`: 制限なし
   - `%1`: ISO-8859-1 または UTF-8
 - r: テキストの文字数制限
-  1フレームあたりの文字数が制限されます。
+  1 フレームあたりの文字数が制限されます。
   - `%00`: 制限なし
-  - `%01`: 1024文字以下
-  - `%10`: 128文字以下
-  - `%11`: 30文字以下
+  - `%01`: 1024 文字以下
+  - `%10`: 128 文字以下
+  - `%11`: 30 文字以下
 - s: 画像エンコード制限
   - `%0`: 制限なし
   - `%1`: PNG または JPEG
 - t: 画像サイズ制限
   - `%00`: 制限なし
-  - `%01`: 256×256ピクセル以下
-  - `%10`: 64×64ピクセル以下
-  - `%11`: 64×64ピクセルちょうど
+  - `%01`: 256×256 ピクセル以下
+  - `%10`: 64×64 ピクセル以下
+  - `%11`: 64×64 ピクセルちょうど

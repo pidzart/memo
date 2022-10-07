@@ -1,12 +1,12 @@
 # ヘッダー
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | tag header | str |
-| 1 | major version | int |
-| 1 | revision | int |
-| 1 | flags | flags |
-| 4 | size | syncsafe int |
+| size | name          | type         |
+| ---: | ------------- | ------------ |
+|    3 | tag header    | `"ID3"`      |
+|    1 | major version | int          |
+|    1 | revision      | int          |
+|    1 | flags         | flags        |
+|    4 | size          | syncsafe int |
 
 ## tag header
 
