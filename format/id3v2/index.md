@@ -1,40 +1,4 @@
-- [Header](#header)
-- [Extended Header](#extended-header)
-- [Frame](#frame)
-  - Unique file identifier
-  - Text information
-  - User defined text information
-  - URL link
-  - User defined URL link
-  - Involved people list
-  - Music CD Identifier
-  - Event timing codes
-  - MPEG location lookup table
-  - Synced tempo codes
-  - Unsychronised lyrics/text transcription
-  - Synchronised lyrics/text
-  - Comments
-  - Relative volume adjustment
-  - Equalisation
-  - Reverb
-  - Attached picture
-  - General encapsulated object
-  - Play counter
-  - Popularimeter
-  - Recommended buffer size
-  - Encrypted meta frame
-  - Audio encryption
-  - Linked information
-- [Footer](#footer)
-- [ID3v2.2](#id3v22)
-  - [frame](#frame)
-- [ID3v2.3](#id3v23)
-  - [extended header](#extended-header)
-  - [frame](#frame-1)
-- [ID3v2.4](#id3v24)
-  - [extended header](#extended-header-1)
-  - [frame](#frame-2)
-  - [footer](#footer)
+# ID3v2
 
 `ID3v2` タグはおもに `MP3` 音楽ファイルのメタ情報を保存するために使われます。
 `MP3` ファイルの最初に保存され、`"ID3"` で始まります。
@@ -60,6 +24,57 @@ Integers = $ xx xx xx xx\
 Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
 ($ xx is hexa number, %xxxxxxxx is binary number)
 
+# ヘッダー
+
+| size | name          | type         |
+| ---: | ------------- | ------------ |
+|    3 | tag header    | `"ID3"`      |
+|    1 | major version | int          |
+|    1 | revision      | int          |
+|    1 | flags         | flags        |
+|    4 | size          | syncsafe int |
+
+## tag header
+
+タグのヘッダーです。
+必ず `"ID3"` (`0x49 44 33`)です。
+ID3v2 タグが存在することを表します。
+
+## major version
+
+タグのメジャーバージョンです。
+メジャーバージョンは `0xff` になりません。
+
+- `0x02`: ID3v2.2
+- `0x03`: ID3v2.3
+- `0x04`: ID3v2.4
+
+## revision
+
+タグのリビジョンです。
+リビジョンは `0xff` になりません。
+
+## flags
+
+タグのフラグです。
+`0babcd0000`
+
+- a: 非同期 (2.2 2.3 2.4)
+  すべてのフレームが非同期フレームであることを示します。
+- b: 圧縮 (2.2)
+  圧縮が使用されていることを示します。
+- b: 拡張ヘッダー (2.3 2.4)
+  ヘッダーの直後に拡張ヘッダーが存在することを示します。
+- c: 実験的インジケータ (2.3 2.4)
+  タグが実験段階であることを示します。
+- d: フッター (2.4)
+  タグの最後にフッターが存在することを示します。
+
+## size
+
+ヘッダーとフッターを除いたタグのサイズです。
+同期安全整数を使用します。
+
 # Header
 
 | size | name | type |
@@ -83,8 +98,6 @@ Synchsafe integers = %0xxxxxxx 0xxxxxxx 0xxxxxxx 0xxxxxxx\
   - フラグ `c` がセットされた場合、を使用します。
   - フラグ `d` がセットされた場合、を使用します。
 - `size` はヘッダー (10バイト) を除いたタグのサイズです。同期安全整数を使用します。
-
-
 
 ![id3v2 header svg](id3v2-header.svg)
 
