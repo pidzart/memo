@@ -1,15 +1,12 @@
-- [ID3v1.0](#id3v10)
-- [ID3v1.1](#id3v11)
-- [ID3v1.2](#id3v12)
-- [ID3v1 Enhanced](#id3v1-enhanced)
-- [Genres list](#genres-list)
-  - [Winamp extention genres list](#winamp-extention-genres-list)
+# ID3v1
 
 # ID3v1.0
 
+ID3v1.0 タグはMP3ファイルの最後128バイトに保存されます。
+
 | size | name | type |
 | ---: | --- | --- |
-| 3 | header | string |
+| 3 | header | `"TAG"` |
 | 30 | title | string |
 | 30 | artist | string |
 | 30 | album | string |
@@ -17,15 +14,40 @@
 | 30 | comment | string |
 | 1 | genre | byte |
 
-- `ID3v1.0` タグはMP3ファイルの最後128バイトに保存されます。
-- `header` は必ず `"TAG"` (`0x54 0x41 0x47`)で、 `ID3v1.0` タグが存在することを表します。
-- `title` は音楽のタイトルです。
-- `artist` は音楽のアーティスト名です。
-- `album` は音楽のアルバム名です。
-- `year` は音楽の発表年です。 数字4文字で表します。
-- `comment` はコメントです。
-- `genre` は音楽のジャンルです。 [ジャンルリスト](#genres-list)からジャンル番号を保存します。
-- 文字列が短い場合は残りをNULLバイト (`0x00`) で埋めます。
+## header
+
+必ず `"TAG"` (`0x54 0x41 0x47`)です。
+ID3v1.0 タグが存在することを表します。
+
+## title
+
+音楽のタイトルです。
+文字列が短い場合は残りを NULL バイト (`0x00`) で埋めます。
+
+## artist
+
+音楽のアーティスト名です。
+文字列が短い場合は残りを NULL バイト (`0x00`) で埋めます。
+
+## album
+
+音楽のアルバム名です。
+文字列が短い場合は残りを NULL バイト (`0x00`) で埋めます。
+
+## year
+
+音楽の発表年です。
+数字4文字で表します。
+
+## comment
+
+コメントです。
+文字列が短い場合は残りを NULL バイト (`0x00`) で埋めます。
+
+## genre
+
+音楽のジャンルです。
+[ジャンルリスト](#genres-list)からジャンル番号を保存します。
 
 # ID3v1.1
 
