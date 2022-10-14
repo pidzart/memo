@@ -208,58 +208,104 @@ CRC データのサイズです。
   - `0b10`: 64×64 ピクセル以下
   - `0b11`: 64×64 ピクセルちょうど
 
-# Header
+# フッター
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | tag header | str |
-| 1 | major version | int |
-| 1 | revision version | int |
-| 1 | flags | flag |
-| 4 | size | syncsafe int |
+| size | name          | type         |
+| ---: | ------------- | ------------ |
+|    3 | tag footer    | `"3DI"`      |
+|    1 | major version | int          |
+|    1 | revision      | int          |
+|    1 | flags         | flags        |
+|    4 | size          | syncsafe int |
 
-- `ID3v2` タグはMP3ファイルの最初に保存されます。
-- `tag header` は必ず `"ID3"` (`0x49 0x44 0x33`)で、 `ID3v2` タグが存在することを表します。
-- `major version` はタグのバージョンです。
-- `revision version` はタグのリビジョンバージョンです。
-- `flags` はタグのフラグです。
-  `0xabcd0000`
-  - フラグ `a` がセットされた場合、非同期を使用します。
-  - フラグ `b` がセットされた場合
-    - `ID3v2.2` タグでは圧縮タグを使用します。
-    - `ID3v2.3` `ID3v2.4` タグでは拡張ヘッダーを使用します。
-  - フラグ `c` がセットされた場合、を使用します。
-  - フラグ `d` がセットされた場合、を使用します。
-- `size` はヘッダー (10バイト) を除いたタグのサイズです。同期安全整数を使用します。
+## tag footer
 
-![id3v2 header svg](id3v2-header.svg)
+タグのフッターです。
+必ず `"3DI"` (`0x33 44 49`)です。
+ID3v2 タグが存在することを表します。
 
-- Version represents the version of the tag.
-  Different versions are not compatible.
-  - `0x02` = ID3v2.2
-  - `0x03` = ID3v2.3
-  - `0x04` = ID3v2.4
-- Can be read by applications that support larger revision versions of tags. (backward compatibility)
-- Size does not include common header and footer.
+## major version
 
-# Extended Header
+タグのメジャーバージョンです。
+メジャーバージョンは `0xff` になりません。
 
-Extended header added in v2.3.
-It is present when the "Extended header" flag of the common header is set.
+- `0x02`: ID3v2.2
+- `0x03`: ID3v2.3
+- `0x04`: ID3v2.4
 
-## ID3v2.3 Extended Header
+## revision
 
-![id3v2.3 extended header svg](id3v2-3-extended-header.svg)
+タグのリビジョンです。
+リビジョンは `0xff` になりません。
 
-## ID3v2.3 Extended Header
+## flags
 
-![id3v2.4 extended header svg](id3v2-4-extended-header.svg)
+タグのフラグです。
+`0bABCD0000`
 
-# Footer
+- A: 非同期 (2.2 2.3 2.4)
+  すべてのフレームが非同期フレームであることを示します。
+- B: 圧縮 (2.2)
+  圧縮が使用されていることを示します。
+- B: 拡張ヘッダー (2.3 2.4)
+  ヘッダーの直後に拡張ヘッダーが存在することを示します。
+- C: 実験的インジケータ (2.3 2.4)
+  タグが実験段階であることを示します。
+- D: フッター (2.4)
+  タグの最後にフッターが存在することを示します。
 
-## ID3v2.4 Footer
+## size
 
-![id3v2.4 footer svg](id3v2-4-footer.svg)
+ヘッダーとフッターを除いたタグのサイズです。
+同期安全整数を使用します。
+
+# フレーム
+
+# 固有ファイル識別子フレーム
+
+固有ファイル識別子フレームは外部データベースでファイルを識別するための識別子を保存するフレームです。
+
+## ID3v2.2 `"UFI"` フレーム
+
+| size | name       | type    |
+| ---: | ---------- | ------- |
+|    3 | frame id   | `"UFI"` |
+|    3 | frame size | int     |
+|      | owner id   | str     |
+| < 64 | id         | bytes   |
+
+## owner id
+
+データベースを示す URL または E-メールアドレスのヌル終端文字列です。
+長さが 0 の場合はこのフレームは無視されます。
+同じオーナー ID を持つ UFI フレームはファイルに一つだけです。
+
+## id
+
+データベース内のオーディオファイルの識別子です。
+
+## ID3v2.3 `"UFID"` フレーム
+
+| size | name       | type     |
+| ---: | ---------- | -------- |
+|    4 | frame id   | `"UFID"` |
+|    4 | frame size | int      |
+|    2 | frame flag | flag     |
+|      | owner id   | str      |
+| < 64 | id         | bytes    |
+
+## owner id
+
+データベースを示す URL または E-メールアドレスのヌル終端文字列です。
+長さが 1 以上である必要があります。
+同じオーナー ID を持つ UFID フレームはファイルに一つだけです。
+`"http://www.id3.org/dummy/ufid.html"` はテストの時に使用されます。
+
+## id
+
+データベース内のオーディオファイルの識別子です。
+
+## ID3v2.4
 
 # Frame
 
