@@ -86,12 +86,12 @@ ID3v2.2 は拡張ヘッダーがありません
 
 # ID3v2.3 拡張ヘッダー
 
-| size | name                 | type  |
-| ---: | -------------------- | ----- |
-|    4 | extended header size | int   |
-|    2 | extended flags       | flag  |
-|    4 | padding size         | int   |
-|    4 | crc data [option]    | bytes |
+| size | name                 | type        |
+| ---: | -------------------- | ----------- |
+|    4 | extended header size | int         |
+|    2 | extended flags       | flag        |
+|    4 | padding size         | int         |
+|    4 | crc data             | bytes [opt] |
 
 ## extended header size
 
@@ -117,17 +117,17 @@ ID3v2.2 は拡張ヘッダーがありません
 
 # ID3v2.4 拡張ヘッダー
 
-| size | name                  | type           |
-| ---: | --------------------- | -------------- |
-|    4 | extended header size  | syncsafe int   |
-|    1 | extended flags size   | int            |
-|    1 | extended flags        | flag           |
-|    1 | tag is update size    | [option] int   |
-|    0 | tag is update         | [option] bytes |
-|    1 | crc data size         | [option] int   |
-|    5 | crc data              | [option] bytes |
-|    1 | tag restrictions size | [option] int   |
-|    1 | tag restrictions      | [option] flag  |
+| size | name                  | type         |
+| ---: | --------------------- | ------------ |
+|    4 | extended header size  | syncsafe int |
+|    1 | extended flags size   | int          |
+|    1 | extended flags        | flag         |
+|    1 | tag is update size    | int [opt]    |
+|    0 | tag is update         | bytes [opt]  |
+|    1 | crc data size         | int [opt]    |
+|    5 | crc data              | bytes [opt]  |
+|    1 | tag restrictions size | int [opt]    |
+|    1 | tag restrictions      | flag [opt]   |
 
 ## extended header size
 
