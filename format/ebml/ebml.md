@@ -11,7 +11,7 @@ VINT
 
 - __VINT_WIDTH__: (バイト数 - 1)個の0
 - __VINT_MARKER__: 目印の1
-- __VINT_DATA__: 整数データ
+- __VINT_DATA__: ビッグエンディアン符号なし整数データ
 
 を並べることで整数をバイト列で表すもの。
 
@@ -47,5 +47,11 @@ EBML Element
 | データ | データサイズ | バイト列 |
 
 で構成される。
+
+## ID
+
+## データサイズ
+
+## データ
 
 https://github.com/ietf-wg-cellar/ebml-specification/blob/master/specification.markdown
