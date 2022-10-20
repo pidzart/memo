@@ -54,4 +54,4 @@ EBML Element
 
 ## データ
 
-https://github.com/ietf-wg-cellar/ebml-specification/blob/master/specification.markdown
+[EBML specification](https://github.com/ietf-wg-cellar/ebml-specification/blob/242ada684e31aa84b64dbaf99b68695844777a7c/specification.markdown)
