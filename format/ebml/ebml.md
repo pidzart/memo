@@ -67,6 +67,23 @@ EBML要素を識別するための識別子。
 
 ## データサイズ
 
+EBML要素データサイズ
+EBML Element Data Size
+
+EBML要素データのバイト長さを表す。
+最大のサイズはEBMLMaxSizeLengthで指定されている場合はEBMLMaxSizeLength、指定されていない場合は8バイト。
+VINT_DATA部分の全てのビットが1の場合はデータサイズが不明であることを表す。
+
+データサイズが不明なデータは
+
+- グローバル要素を除く、有効な親要素が出現する。
+- グローバル要素を除く、有効な兄弟要素が出現する。
+- グローバル要素を除く、有効なルート要素が出現する。
+- 親要素のデータの終わりに到達する。
+- EBMLドキュメントの終わりに到達する。
+
+場合に終了する。
+
 ## データ
 
 [EBML specification](https://github.com/ietf-wg-cellar/ebml-specification/blob/242ada684e31aa84b64dbaf99b68695844777a7c/specification.markdown)
