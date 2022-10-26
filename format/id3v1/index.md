@@ -1,7 +1,7 @@
 # ID3v1
 
 ID3v1 は MP3 ファイルの最後に固定長のメタデータを保存します。
-`ID3v1.0` `ID3v1.1` と非公式の `ID3v1.2` `ID3v1 Enhanced` の4つのバージョンがあります。
+`ID3v1.0` `ID3v1.1` と非公式の `ID3v1.2` `ID3v1 Enhanced` の 4 つのバージョンがあります。
 
 # 定義
 
@@ -18,15 +18,15 @@ ID3v1 は MP3 ファイルの最後に固定長のメタデータを保存しま
 
 ID3v1.0 タグは MP3 ファイルの最後 128 バイトに保存されます。
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | header | `"TAG"` |
-| 30 | title | string |
-| 30 | artist | string |
-| 30 | album | string |
-| 4 | year | string |
-| 30 | comment | string |
-| 1 | genre | byte |
+| size | name    | type    |
+| ---: | ------- | ------- |
+|    3 | header  | `"TAG"` |
+|   30 | title   | string  |
+|   30 | artist  | string  |
+|   30 | album   | string  |
+|    4 | year    | string  |
+|   30 | comment | string  |
+|    1 | genre   | byte    |
 
 ## header
 
@@ -48,7 +48,7 @@ ID3v1.0 タグが存在することを表します。
 ## year
 
 音楽の発表年です。
-数字4文字で表します。
+数字 4 文字で表します。
 
 ## comment
 
@@ -64,17 +64,17 @@ ID3v1.0 タグが存在することを表します。
 ID3v1.1 タグはほとんどが ID3v1.0 タグと同じです。
 ID3v1.1 タグは MP3 ファイルの最後 128 バイトに保存されます。
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | header | `"TAG"` |
-| 30 | title | string |
-| 30 | artist | string |
-| 30 | album | string |
-| 4 | year | string |
-| 28 | comment | string |
-| 1 | separator | byte |
-| 1 | album track | number |
-| 1 | genre | byte |
+| size | name        | type    |
+| ---: | ----------- | ------- |
+|    3 | header      | `"TAG"` |
+|   30 | title       | string  |
+|   30 | artist      | string  |
+|   30 | album       | string  |
+|    4 | year        | string  |
+|   28 | comment     | string  |
+|    1 | separator   | byte    |
+|    1 | album track | number  |
+|    1 | genre       | byte    |
 
 ## header
 
@@ -96,12 +96,12 @@ ID3v1.1 タグが存在することを表します。
 ## year
 
 音楽の発表年です。
-数字4文字で表します。
+数字 4 文字で表します。
 
 ## comment
 
 コメントです。
-ID3v1.0 タグのコメントより2バイト短いです。
+ID3v1.0 タグのコメントより 2 バイト短いです。
 
 ## separator
 
@@ -121,23 +121,23 @@ ID3v1.0 タグのコメントより2バイト短いです。
 ID3v1.2 タグは MP3 ファイルの最後 256 バイトに保存されます。
 後半の 128 バイトは ID3v1.1 と同じです。
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | extended header | `"EXT"` |
-| 30 | extended title | string |
-| 30 | extended artist | string |
-| 30 | extended album | string |
-| 15 | extended comment | string |
-| 20 | subgenre | string |
-| 3 | header | `"TAG"` |
-| 30 | title | string |
-| 30 | artist | string |
-| 30 | album | string |
-| 4 | year | string |
-| 28 | comment | string |
-| 1 | separator | byte |
-| 1 | album track | number |
-| 1 | genre | byte |
+| size | name             | type    |
+| ---: | ---------------- | ------- |
+|    3 | extended header  | `"EXT"` |
+|   30 | extended title   | string  |
+|   30 | extended artist  | string  |
+|   30 | extended album   | string  |
+|   15 | extended comment | string  |
+|   20 | subgenre         | string  |
+|    3 | header           | `"TAG"` |
+|   30 | title            | string  |
+|   30 | artist           | string  |
+|   30 | album            | string  |
+|    4 | year             | string  |
+|   28 | comment          | string  |
+|    1 | separator        | byte    |
+|    1 | album track      | number  |
+|    1 | genre            | byte    |
 
 ## extended header
 
@@ -191,7 +191,7 @@ ID3v1.1 タグが存在することを表します。
 ## year
 
 音楽の発表年です。
-数字4文字で表します。
+数字 4 文字で表します。
 
 ## comment
 
@@ -216,23 +216,23 @@ ID3v1.1 タグが存在することを表します。
 ID3v1 Enhanced タグは MP3 ファイルの最後 355 バイトに保存されます。
 後半の 128 バイトは ID3v1.0 と同じです。
 
-| size | name | type |
-| ---: | --- | --- |
-| 4 | enhanced header | `"TAG+"` |
-| 60 | enhanced title | string |
-| 60 | enhanced artist | string |
-| 60 | enhanced album | string |
-| 1 | speed | byte |
-| 30 | genre | string |
-| 6 | start time | string |
-| 6 | end time | string |
-| 3 | header | `"TAG"` |
-| 30 | title | string |
-| 30 | artist | string |
-| 30 | album | string |
-| 4 | year | string |
-| 30 | comment | string |
-| 1 | genre | byte |
+| size | name            | type     |
+| ---: | --------------- | -------- |
+|    4 | enhanced header | `"TAG+"` |
+|   60 | enhanced title  | string   |
+|   60 | enhanced artist | string   |
+|   60 | enhanced album  | string   |
+|    1 | speed           | byte     |
+|   30 | genre           | string   |
+|    6 | start time      | string   |
+|    6 | end time        | string   |
+|    3 | header          | `"TAG"`  |
+|   30 | title           | string   |
+|   30 | artist          | string   |
+|   30 | album           | string   |
+|    4 | year            | string   |
+|   30 | comment         | string   |
+|    1 | genre           | byte     |
 
 ## enhanced header
 
@@ -273,13 +273,13 @@ album に入りきらなかった情報を保存します。
 
 音楽ファイルの音楽が始まる時間です。
 mmm 分 ss 秒を `"mmm:ss"` という文字列で表します。
-`"001:23"` の場合は1分23秒から音楽が始まります。
+`"001:23"` の場合は 1 分 23 秒から音楽が始まります。
 
 ## end time
 
 音楽ファイルの音楽が終わる時間です。
 mmm 分 ss 秒を `"mmm:ss"` という文字列で表します。
-`"003:21"` の場合は3分21秒で音楽が終わります。
+`"003:21"` の場合は 3 分 21 秒で音楽が終わります。
 
 ## header
 
@@ -304,7 +304,7 @@ ID3v1.0 タグが存在することを表します。
 ## year
 
 音楽の発表年です。
-数字4文字で表します。
+数字 4 文字で表します。
 
 ## comment
 

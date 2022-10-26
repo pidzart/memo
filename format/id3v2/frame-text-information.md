@@ -2,12 +2,12 @@
 
 ## ID3v2.2 `"T00" - "TZZ"`
 
-| size | name        | type       |
-| ---: | ----------- | ---------- |
-|    3 | frame id    | str        |
-|    3 | frame size  | int        |
-|    1 | encoding    | byte       |
-|      | information | str |
+| size | name        | type |
+| ---: | ----------- | ---- |
+|    3 | frame id    | str  |
+|    3 | frame size  | int  |
+|    1 | encoding    | byte |
+|      | information | str  |
 
 - Text information フレームはテキスト情報を保存します。
 - `frame id` は `"T00" - "TZZ"` から `"TXX"` を除くいずれかです。

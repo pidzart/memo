@@ -7,7 +7,7 @@
 
 - **`int`**: 整数 (Integer)、ビッグエンディアン
 - **`syncsafe int`**: 同期安全整数 (SuncSafe Integer)、ビッグエンディアン
-  各バイトの最上位ビットが必ず0になります。
+  各バイトの最上位ビットが必ず 0 になります。
 - **`str`**: 文字列、`ISO-8859-1` (`latin-1`) エンコード
 - **`encode str`**: エンコード指定文字列
   - `0x00` の場合は `ISO-8859-1` (`latin-1`) エンコード
@@ -311,43 +311,43 @@ ID3v2 タグが存在することを表します。
 
 ## ID3v2.2 frame header
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
+| size | name       | type |
+| ---: | ---------- | ---- |
+|    3 | frame id   | str  |
+|    3 | frame size | int  |
 
 - `frame id` は大文字 `A-Z` または数字 `0-9` の文字列です。
-- `frame size` はヘッダー (6バイト) を除いたフレームのサイズです。
-  フレームのサイズは1バイトより大きい必要があります。
+- `frame size` はヘッダー (6 バイト) を除いたフレームのサイズです。
+  フレームのサイズは 1 バイトより大きい必要があります。
 
 # Unique file identifier
 
 ## ID3v2.2 `"UFI"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-|   | owner id | str null |
-| < 64 | id | bytes |
+| size | name       | type     |
+| ---: | ---------- | -------- |
+|    3 | frame id   | str      |
+|    3 | frame size | int      |
+|      | owner id   | str null |
+| < 64 | id         | bytes    |
 
 - Unique file identifier フレームはデータベース内でオーディオファイルの情報の識別子を保存します。
 - `frame id` は `"UFI"` です。
 - `owner id` はデータベースの識別子です。
-  長さが0の場合はこのフレームは無視されます。
+  長さが 0 の場合はこのフレームは無視されます。
   同じ `owner id` を持つ UFI フレームはファイルに一つだけです。
 - `id` はデータベース内のオーディオファイルの識別子です。
 
 # Text information
 
-## ID3v2.2 `"T00" - "TZZ"` 
+## ID3v2.2 `"T00" - "TZZ"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-| 1 | encoding | byte |
-|   | information | encode str |
+| size | name        | type       |
+| ---: | ----------- | ---------- |
+|    3 | frame id    | str        |
+|    3 | frame size  | int        |
+|    1 | encoding    | byte       |
+|      | information | encode str |
 
 - Text information フレームはテキスト情報を保存します。
 - `frame id` は `"T00" - "TZZ"` から `"TXX"` を除くいずれかです。
@@ -372,7 +372,7 @@ ID3v2 タグが存在することを表します。
   `"/"` の文字で区切られます。
 - `"TLA"` - 言語コード ISO-639-2
 - `"TCO"` - コンテンツタイプ
-  `"("` と `")"` で囲ってID3v1.1のジャンルやID3v2のコンテンツタイプを参照できます。
+  `"("` と `")"` で囲って ID3v1.1 のジャンルや ID3v2 のコンテンツタイプを参照できます。
   `"("` で開始する場合は `"(("` で開始します。
   - `"(RX)"` Remix
   - `"(CR)"` Cover
@@ -409,15 +409,15 @@ ID3v2 タグが存在することを表します。
 
 # User defined text information
 
-## ID3v2.2 `"TXX"` 
+## ID3v2.2 `"TXX"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-| 1 | encoding | byte |
-|   | description | encode str null |
-|   | value | encode str |
+| size | name        | type            |
+| ---: | ----------- | --------------- |
+|    3 | frame id    | str             |
+|    3 | frame size  | int             |
+|    1 | encoding    | byte            |
+|      | description | encode str null |
+|      | value       | encode str      |
 
 - Text information フレームはテキスト情報を保存します。
 - `frame id` は `"TXX"` です。
@@ -429,124 +429,124 @@ ID3v2 タグが存在することを表します。
 
 # URL link
 
-## ID3v2.2 `"W00" - "WZZ"` 
+## ID3v2.2 `"W00" - "WZZ"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-|   | url | encode str |
+| size | name       | type       |
+| ---: | ---------- | ---------- |
+|    3 | frame id   | str        |
+|    3 | frame size | int        |
+|      | url        | encode str |
 
-- URL link フレームはURLを保存します。
+- URL link フレームは URL を保存します。
 - `frame id` は `"W00" - "WZZ"` から `"WXX"` を除くいずれかです。
-- `url` はURLです。
+- `url` は URL です。
 
 ### 詳細
 
-- `"WAF"` - オーディオファイル公式WEBページ
-- `"WAR"` - アーティスト/パフォーマー公式WEBページ
-- `"WAS"` - オーディオソース公式WEBページ
-- `"WCM"` - コマーシャル情報WEBページ
-- `"WCP"` - 著作権/法的情報WEBページ
-- `"WPB"` - 出版社公式WEBページ
+- `"WAF"` - オーディオファイル公式 WEB ページ
+- `"WAR"` - アーティスト/パフォーマー公式 WEB ページ
+- `"WAS"` - オーディオソース公式 WEB ページ
+- `"WCM"` - コマーシャル情報 WEB ページ
+- `"WCP"` - 著作権/法的情報 WEB ページ
+- `"WPB"` - 出版社公式 WEB ページ
 
 # User defined URL link
 
-## ID3v2.2 `"WXX"` 
+## ID3v2.2 `"WXX"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-| 1 | encoding | byte |
-|   | description | encode str null |
-|   | url | encode str |
+| size | name        | type            |
+| ---: | ----------- | --------------- |
+|    3 | frame id    | str             |
+|    3 | frame size  | int             |
+|    1 | encoding    | byte            |
+|      | description | encode str null |
+|      | url         | encode str      |
 
-- User defined URL link フレームはURLを保存します。
+- User defined URL link フレームは URL を保存します。
 - `frame id` は `"WXX"` です。
 - `encoding` は文字列のエンコードです。常に `0x00` で `latin-1` エンコードです。
 - `description` はフレームの説明です。同じ説明のフレームはファイルに一つだけです。
-- `url` はURLです。
+- `url` は URL です。
 
 # Involved people list
 
-## ID3v2.2 `"IPL"` 
+## ID3v2.2 `"IPL"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-| 1 | encoding | byte |
-|   | people 1 | encode str null |
-|   | people 2 | encode str null |
-|   | ... | |
-|   | people N | encode str |
+| size | name       | type            |
+| ---: | ---------- | --------------- |
+|    3 | frame id   | str             |
+|    3 | frame size | int             |
+|    1 | encoding   | byte            |
+|      | people 1   | encode str null |
+|      | people 2   | encode str null |
+|      | ...        |                 |
+|      | people N   | encode str      |
 
-- Involved people list フレームはURLを保存します。
+- Involved people list フレームは URL を保存します。
 - `frame id` は `"IPL"` です。
 - `encoding` は文字列のエンコードです。
 - `people` は関係者で、ヌル文字区切りのリストです。
 
 # Music CD Identifier
 
-## ID3v2.2 `"MCI"` 
+## ID3v2.2 `"MCI"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-|  | cd toc | bytes |
+| size | name       | type  |
+| ---: | ---------- | ----- |
+|    3 | frame id   | str   |
+|    3 | frame size | int   |
+|      | cd toc     | bytes |
 
-- Music CD Identifier フレームはCDDBでCDを識別する情報を保存します。
+- Music CD Identifier フレームは CDDB で CD を識別する情報を保存します。
 - `frame id` は `"MCI"` です。
-- `cd toc` CDからの目次です。
+- `cd toc` CD からの目次です。
 
 # Event timing codes
 
-## ID3v2.2 `"ETC"` 
+## ID3v2.2 `"ETC"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-| 1 | time stamp format | bytes |
-| 1 | event type 1 | bytes |
-| 4 | time stamp 1 | bytes |
-| 1 | event type 2 | bytes |
-| 4 | time stamp 2 | bytes |
-|   | ... | |
-| 1 | event type N | bytes |
-| 4 | time stamp N | bytes |
+| size | name              | type  |
+| ---: | ----------------- | ----- |
+|    3 | frame id          | str   |
+|    3 | frame size        | int   |
+|    1 | time stamp format | bytes |
+|    1 | event type 1      | bytes |
+|    4 | time stamp 1      | bytes |
+|    1 | event type 2      | bytes |
+|    4 | time stamp 2      | bytes |
+|      | ...               |       |
+|    1 | event type N      | bytes |
+|    4 | time stamp N      | bytes |
 
 - Event timing codes フレームは曲のキーイベントと同期します。
 - `frame id` は `"ETC"` です。
 - `time stamp format` はタイムスタンプのフォーマットです。
-  - `0x01`の場合は32ビット、絶対時間、MPEGフレーム単位です。
-  - `0x02`の場合は32ビット、絶対時間、ミリ秒単位です。
+  - `0x01`の場合は 32 ビット、絶対時間、MPEG フレーム単位です。
+  - `0x02`の場合は 32 ビット、絶対時間、ミリ秒単位です。
 - `event type` はイベントのタイプです。
 - `time stamp` はタイムスタンプです。
 - イベントリストは時間順にソートされている必要があります。
 
 # MPEG location lookup table
 
-## ID3v2.2 `"MLL"` 
+## ID3v2.2 `"MLL"`
 
-| size | name | type |
-| ---: | --- | --- |
-| 3 | frame id | str |
-| 3 | frame size | int |
-| 2 | MPEG frames between reference | int |
-| 3 | bytes between reference | int |
-| 3 | milliseconds between reference | int |
-| 1 | bits for bytes deviation | int |
-| 1 | bits for milliseconds deviation | int |
-| b bits | deviation in bytes 1 | int |
-| m bits | deviation in milliseconds 1 | int |
-| | ... | |
-| b bits | deviation in bytes N | int |
-| m bits | deviation in milliseconds N | int |
+|   size | name                            | type |
+| -----: | ------------------------------- | ---- |
+|      3 | frame id                        | str  |
+|      3 | frame size                      | int  |
+|      2 | MPEG frames between reference   | int  |
+|      3 | bytes between reference         | int  |
+|      3 | milliseconds between reference  | int  |
+|      1 | bits for bytes deviation        | int  |
+|      1 | bits for milliseconds deviation | int  |
+| b bits | deviation in bytes 1            | int  |
+| m bits | deviation in milliseconds 1     | int  |
+|        | ...                             |      |
+| b bits | deviation in bytes N            | int  |
+| m bits | deviation in milliseconds N     | int  |
 
-- MPEG location lookup table フレームはMPEGフレームのバイト位置を保存します。
+- MPEG location lookup table フレームは MPEG フレームのバイト位置を保存します。
 - `frame id` は `"MLL"` です。
 - `MPEG frames between reference` は各参照間のフレーム数の差です。
 - `bytes between reference` は各参照間のフレーム数の差です。
